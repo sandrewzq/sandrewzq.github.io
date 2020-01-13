@@ -106,15 +106,6 @@
   .person:hover {
     border-color: #f1f1f1;
   }
- 
-    .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-    }
-
-    .carousel-caption h3 {
-      color: #fff !important;
-    }
 
 </style>
 
@@ -123,6 +114,8 @@
 	
         <div class="container">
             <div class=" row" >
+			
+			<canvas id="particles-js-canvas" style="position:absolute;z-index:1;top:0px;left:0px;" width="100%" height="50%"></canvas>
 			
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="z-index:2;">
                 
@@ -416,7 +409,7 @@
 
                 
                     <li>
-                        <a target="_blank"  href="https://github.com/kinggozhang">
+                        <a target="_blank"  href="https://github.com/sandrewzq">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -465,6 +458,13 @@
 
 <script src="/js/hux-blog.min.js"></script>
 
+
+
+	
+<script src="/js/particles.js"></script>
+
+	
+<script src="/js/particles_config.js"></script>
 
 
 
