@@ -18,7 +18,7 @@
         
     </title>
 
-    <link rel="canonical" href="http://yoursite.com/">
+    <link rel="canonical" href="http://yoursite.com/tags/test/">
 
     <!-- Bootstrap Core CSS -->
 
@@ -383,81 +383,62 @@ margin-top: 40px;
             ">
             
 	        
-                <!-- Main Content -->
-
-
-
-
-<div class="w3-row-padding">
-	<a href="/2020/01/14/test/">
-        <h2 class="post-title">
-            test
-        </h2>
-        <h3 class="post-subtitle">
+                
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 归档列表 -->
             
-        </h3>
-	</a>
-
-<div>
-
-    <a href="/2020/01/14/test/">
-
-        <div class="post-content-preview">
-            test
-...
-        </div>
-    </a>
-    
-        <p class="post-meta">
-            Posted by Sandrew on
-            2020-01-14
-        </p>
-    
-
-</div>
-</div>
-<hr>
-
-
-<div class="w3-row-padding">
-	<a href="/2020/01/13/hello-world/">
-        <h2 class="post-title">
-            Hello World
-        </h2>
-        <h3 class="post-subtitle">
             
-        </h3>
-	</a>
 
-<div>
+             <!-- 归档列表 -->
 
-    <a href="/2020/01/13/hello-world/">
+            
+            <div class="one-tag-list">
+                <span class="fa fa-calendar-times-o listing-seperator" id="2020">
+                    <span class="tag-text">2020</span>
+                </span>
+                <ul>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    01-14
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/2020/01/14/test/" style="color: #0085a1">
+                        <span>
+                            test
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    01-13
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/2020/01/13/hello-world/" style="color: #0085a1">
+                        <span>
+                            Hello World
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                </ul>
+            </div>
+            
 
-        <div class="post-content-preview">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub..........
+
         </div>
-    </a>
-    
-        <p class="post-meta">
-            Posted by Sandrew on
-            2020-01-13
-        </p>
-    
-
+    </div>
 </div>
-</div>
-<hr>
-
-
-
-<!-- Pager -->
-
-<ul class="pager">
-    
-    
-</ul>
-
-
             
 
 
@@ -690,7 +671,7 @@ margin-top: 40px;
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("http://yoursite.com/index.html/js/jquery.tagcloud.js",function(){
+        async("http://yoursite.com/tags/test/index.html/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
