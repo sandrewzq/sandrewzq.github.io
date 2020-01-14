@@ -91,11 +91,12 @@
 	<!-- Modified by Yu-Hsuan Yen -->
 <!-- Post Header -->
 <style type="text/css">
-    header.intro-header{
-    }
-   .post-heading{
-    padding:20px;
-    }
+  header.intro-header {}
+
+  .post-heading {
+    padding: 20px;
+  }
+
   .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -103,40 +104,171 @@
     height: 80%;
     opacity: 0.7;
   }
+
   .person:hover {
     border-color: #f1f1f1;
   }
 
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+
+/* Hitokoto Page */
+.hitokoto-fullpage {
+    width: 85%;
+}  
+/* Content Style */
+.hitokoto-content {
+    /*border-radius: 2px;*/
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+}
+@media screen and (max-width: 600px) {
+/*table{
+*  *         border-collapse: collapse;
+*   *             }
+*    *                 td ,th  {
+*     *                         border:1px   solid  #d7d7d7;
+*      *                             }*/
+/* Hitokoto Page */
+.hitokoto-fullpage {
+    margin-bottom: 10vh !important;
+}
+
+.hitokoto-fullpage .word {
+    line-height: 2.6rem !important;
+}
+
+/* Content Style */
+.hitokoto-content {
+    /*border-radius: 2px;*/
+    padding: 20px;
+}
+
+}
+/* Hitokoto Page */
+.hitokoto-fullpage {
+position: relative;
+color: white;
+z-index: 1;
+margin-top: 10vh;
+margin-bottom: 10vh;
+margin-left: auto;
+margin-right: auto;
+font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'å¾®è½¯é›…é»‘', Arial, sans-serif;
+}
+
+.hitokoto-fullpage .bracket {
+font-size: 30px;
+}
+
+.hitokoto-fullpage .bracket.left {
+position: absolute;
+left: 0;
+top: 0;
+}
+
+.hitokoto-fullpage .bracket.right {
+position: absolute;
+right: 0;
+bottom: 0;
+}
+
+.hitokoto-fullpage .word {
+font-size: 2.3rem;
+text-align: center;
+line-height: 50px;
+word-break: normal;
+margin: 0;
+padding: 15px 50px;
+}
+
+.hitokoto-fullpage .author {
+font-size: 20px;
+color: rgba(255, 255, 255, 0.8);
+float: right;
+margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
 </style>
 
 <header id="headerid" class="w3-indigo intro-header" style="position:relative;">
-    <!-- Signature -->
-	
-        <div class="container">
-            <div class=" row" >
-			
-			<canvas id="particles-js-canvas" style="position:absolute;z-index:1;top:0px;left:0px;" width="100%" height="50%"></canvas>
-			
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="z-index:2;">
-                
-                    <div class="post-heading" style="padding:40px">
-                        <div class="tags">
-                            
-                        </div>
-                        <h1>Hello World</h1>
-                        <h2 class="subheading"></h2>
-                        <span class="meta">
-                            Posted by Sandrew on
-                            2020-01-13
-                        </span>
-                    </div>
-                
-                </div>
-            </div>
+  <!-- Signature -->
+
+  <div class="container">
+    <div class=" row">
+      
+      <canvas id="particles-js-canvas" style="position:absolute;z-index:1;top:0px;left:0px;" width="100%"
+        height="50%"></canvas>
+      
+      <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="z-index:2;"> -->
+      <div class="" style="z-index:2;"> 
+        
+        <div class="post-heading" style="padding:40px">
+          <div class="tags">
+            
+          </div>
+          <h1>Hello World</h1>
+          <h2 class="subheading"></h2>
+          <span class="meta">
+            Posted by Sandrew on
+            2020-01-13
+          </span>
         </div>
-  
+        
+      </div>
+    </div>
+  </div>
+
 </header>
 
+
+<script defer>
+  (function hitokoto() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://v1.hitokoto.cn/?c=b');
+    xhr.send();
+    xhr.onreadystatechange = function (data) {
+      if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+          var params = JSON.parse(data.currentTarget.response);
+
+          // 修改一言text
+          var hitokoto_text = params.hitokoto;
+          var text = document.querySelector('#hitokoto_text');
+          Array.isArray(text) ? text[0].innerText = hitokoto_text : text.innerText = hitokoto_text;
+          // 修改一言author
+          var hitokoto_author = params.from;
+          hitokoto_author = '-「'+hitokoto_author+'」';
+          var author = document.querySelector('#hitokoto_author');
+          Array.isArray(author) ? author[0].innerText = hitokoto_author : author.innerText = hitokoto_author;
+        } else {
+          console.log('Error pJS - XMLHttpRequest status: ' + xhr.status);
+          console.log('Error pJS - File config not found');
+        }
+      }
+    };
+  })()
+</script>
 	
     <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
