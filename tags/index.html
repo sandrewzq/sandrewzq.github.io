@@ -370,162 +370,90 @@ margin-top: 40px;
     <!-- Main Content -->
 <div class="container">
     <div class="row">
-        
-
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-	        
-
-
-
-                <!-- 如果开启评论功能 -->
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 标签云 -->
+            <div id='tag_cloud' class="tags">
                 
-                    <hr>
-                    
-
-                    
-
-
-                    
-
-                    
-
+                    <a href="#我的世界" title="我的世界" rel="1">我的世界</a>
+                
+                    <a href="#Game" title="Game" rel="1">Game</a>
+                
+                    <a href="#test" title="test" rel="1">test</a>
                 
             </div>
 
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Categories -->
-
-    <h5>分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/">我的世界</a><span class="category-list-count">1</span></li></ul>
-    </div>
-
-        <hr>
-    
-        <!-- Featured Tags -->
-
-<section>
-    <!-- no hr -->
-    <h5><a href="/tags/">标签云</a></h5>
-    <div class="tags">
-        
-            
-            <a href="/tags/#test" title="test" rel="1">test</a>
-            
-        
-            
-            <a href="/tags/#我的世界" title="我的世界" rel="1">我的世界</a>
-            
-        
-            
-            <a href="/tags/#Game" title="Game" rel="1">Game</a>
-            
-        
-    </div>
-</section>
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">关于</a></h5>
-    <div class="short-about">
-
-        
-
-        
-            <p>Things that happen in real life are sometimes a hundred times more fascinating than anything a person could make up off the top of his head. - Leonardo DiCaprio</p>
-        
-
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
+            <!-- 标签列表 -->
 
             
-
-            
-
-            
-                <li>
-                    <a target="_blank"  href="https://github.com/sandrewzq">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="我的世界">
+                    <span class="tag-text">我的世界</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2020/01/17/Linux搭建我的世界服务器/">
+                        <h2 class="post-title">
+                            Linux搭建我的世界服务器
+                        </h2>
+                        
                     </a>
-                </li>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
             
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="Game">
+                    <span class="tag-text">Game</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2020/01/17/Linux搭建我的世界服务器/">
+                        <h2 class="post-title">
+                            Linux搭建我的世界服务器
+                        </h2>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
             
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="test">
+                    <span class="tag-text">test</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2020/01/13/hello-world/">
+                        <h2 class="post-title">
+                            Hello World
+                        </h2>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
             
-            
-        </ul>
-    </div>
-</section>
-
-        <hr>
-    
-        
-  <h5>最近发表</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/2020/01/17/Linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/">Linux搭建我的世界服务器</a>
-        </li>
-      
-        <li>
-          <a href="/2020/01/13/hello-world/">Hello World</a>
-        </li>
-      
-    </ul>
-  </div>
-
-        <hr>
-    
-        
-    <h5>归档</h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<h5>友链</h5>
-<ul class="list-inline">
-
-    
-        <li><a href="http://www.sumoon.com" target="_blank">ACE theme</a></li>
-    
-</ul>
 
 
-        <hr>
-    
-</div>
-
-
-        
+        </div>
     </div>
 </div>
 
