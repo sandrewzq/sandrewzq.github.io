@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Github Pages及Gitee Pages使用教程 - Secret base
+        
+    </title>
+
+    <link rel="canonical" href="http://yoursite.com/2022/02/28/Github-Pages及Gitee-Pages使用教程/">
+
+    <!-- Bootstrap Core CSS -->
+
+   
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    
+
+    <!-- Custom CSS --> 
+    
+<link rel="stylesheet" href="/css/beantech.min.css">
+
+
+    
+<link rel="stylesheet" href="/css/donate.css">
+
+	
+<link rel="stylesheet" href="/css/w3.css">
+
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+    
+<link rel="stylesheet" href="/css/widget.css">
+
+
+    
+<link rel="stylesheet" href="/css/rocket.css">
+
+
+    
+<link rel="stylesheet" href="/css/signature.css">
+
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Secret base" type="application/atom+xml">
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+  header.intro-header{
+    }
+   .post-heading{
+    padding:20px;
+    }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+
+
+
+
+
+@media screen and (min-width: 600px) {
+  /* Hitokoto Page */
+  .hitokoto-fullpage {
+      width: 85%;
+  }  
+  /* Content Style */
+  .hitokoto-content {
+      /*border-radius: 2px;*/
+      padding: 80px 56px;
+      margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*table{
+  *  *         border-collapse: collapse;
+  *   *             }
+  *    *                 td ,th  {
+  *     *                         border:1px   solid  #d7d7d7;
+  *      *                             }*/
+  /* Hitokoto Page */
+  .hitokoto-fullpage {
+      margin-bottom: 10vh !important;
+  }
+
+  .hitokoto-fullpage .word {
+      line-height: 2.6rem !important;
+  }
+
+  /* Content Style */
+  .hitokoto-content {
+      /*border-radius: 2px;*/
+      padding: 20px;
+  }
+}
+/* Hitokoto Page */
+.hitokoto-fullpage {
+position: relative;
+color: white;
+z-index: 1;
+margin-top: 10vh;
+margin-bottom: 10vh;
+margin-left: auto;
+margin-right: auto;
+font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'å¾®è½¯é›…é»‘', Arial, sans-serif;
+}
+.hitokoto-fullpage .bracket {
+font-size: 30px;
+}
+.hitokoto-fullpage .bracket.left {
+position: absolute;
+left: 0;
+top: 0;
+}
+.hitokoto-fullpage .bracket.right {
+position: absolute;
+right: 0;
+bottom: 0;
+}
+.hitokoto-fullpage .word {
+font-size: 2.3rem;
+text-align: center;
+line-height: 50px;
+word-break: normal;
+margin: 0;
+padding: 15px 50px;
+}
+.hitokoto-fullpage .author {
+font-size: 20px;
+color: rgba(255, 255, 255, 0.8);
+float: right;
+margin-top: 40px;
+}
+
+
+
+
+
+
+</style>
+
+<header id="headerid" class="w3-indigo intro-header" style="position:relative;">
+  <!-- Signature -->
+
+  <div class="container">
+    <div class=" row">
+      
+      <canvas id="particles-js-canvas" style="position:absolute;z-index:1;top:0px;left:0px;" width="100%"
+        height="50%"></canvas>
+      
+      <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="z-index:2;"> -->
+      <div class="" style="z-index:2;"> 
+        
+        <div class="post-heading" style="padding:40px">
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#git" title="git">git</a>
+            
+            <a class="tag" href="/tags/#Git Pages" title="Git Pages">Git Pages</a>
+            
+          </div>
+          <h1>Github Pages及Gitee Pages使用教程</h1>
+          <h2 class="subheading"></h2>
+          <span class="meta">
+            Posted by Sandrew on
+            2022-02-28
+          </span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</header>
+
+
+<script defer>
+  (function hitokoto() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://v1.hitokoto.cn/?c=a');
+    xhr.send();
+    xhr.onreadystatechange = function (data) {
+      if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+          var params = JSON.parse(data.currentTarget.response);
+
+          // 修改一言text
+          var hitokoto_text = params.hitokoto;
+          var text = document.querySelector('#hitokoto_text');
+          Array.isArray(text) ? text[0].innerText = hitokoto_text : text.innerText = hitokoto_text;
+          // 修改一言author
+          var hitokoto_author = params.from;
+          hitokoto_author = '-「'+hitokoto_author+'」';
+          var author = document.querySelector('#hitokoto_author');
+          Array.isArray(author) ? author[0].innerText = hitokoto_author : author.innerText = hitokoto_author;
+        } else {
+          console.log('Error pJS - XMLHttpRequest status: ' + xhr.status);
+          console.log('Error pJS - File config not found');
+        }
+      }
+    };
+  })()
+</script>
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Secret base</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a  href="/">主页</a>
+                    </li>
+		    
+                    
+
+                        
+                        <li>
+           
+                            <a  href="http://sandrew.gitee.io/arknights" target="_blank" rel="noopener">明日方舟资料站</a>
+                           
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+           
+                            <a  href="http://sandrew.gitee.io/free-software" target="_blank" rel="noopener">free-software</a>
+                           
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+           
+                            <a  href="#">menu3</a>
+                           
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+           
+                            <a  href="#">menu3</a>
+                           
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+           
+                            <a  href="#">menu5</a>
+                           
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h2 id="1-什么是Github-Pages及Gitee-Pages">1.什么是Github Pages及Gitee Pages</h2>
+<p>显而易见，从名字上就可以轻易地看出这两个’Pages’分别属于两家代码托管服务。<br>
+对于GitHub Pages，其官方文档是这样介绍的:</p>
+<blockquote>
+<p>GitHub Pages是一个静态站点托管服务,可以通过部署程序把HTML，CS和JavaScript等文件组成的静态库发布成为一个静态站点。</p>
+</blockquote>
+<p>而Gitee Pages的核心功能与Github Pages一样，都是提供一个静态站点托管服务。可以通过这两种服务搭建一个轻量化博客或者静态个人站。</p>
+<h2 id="2-Pages服务的优点">2.Pages服务的优点</h2>
+<p>相比于著名的WordPress博客系统，Pages服务最大的优势就是轻量化，无需LAMP环境。而且它完全免费，也不需要部署服务器的费用。</p>
+<h2 id="3-Pages快速开始">3.Pages快速开始</h2>
+<blockquote>
+<p>以Github Pages举例，Gitee Pages操作基本一致。</p>
+</blockquote>
+<ol>
+<li>
+<p>在GitHub中新建一个test_pages仓库，选择Repository权限为public。<br>
+<img src="create.jpg" alt=""></p>
+</li>
+<li>
+<p>创建仓库成功后，点击creating a new file，新建一个文件。<br>
+<img src="newfile.jpg" alt=""></p>
+</li>
+<li>
+<p>文件名必须为index.html。内容为’这是一个github pages页面’,然后点击save保存。<br>
+<img src="index.jpg" alt=""></p>
+</li>
+<li>
+<p>接着在仓库的setting页签下点击左侧的Pages菜单。<br>
+<img src="pages.jpg" alt=""></p>
+</li>
+<li>
+<p>选择对应的分支及目录后，点击save按钮，稍后即可看到成功提示及链接。(注意：假如仓库为private权限，此处会提示需要把仓库转换为public或者升级为GitHub Pro服务才可用)<br>
+<img src="sucess.jpg" alt=""></p>
+</li>
+</ol>
+<h2 id="4-Pages-进阶，使用-Jekyll、Hugo、Hexo、docsify等生成自己的静态网页">4. Pages 进阶，使用 Jekyll、Hugo、Hexo、docsify等生成自己的静态网页</h2>
+<p>Jekyll、Hugo、Hexo、docsify 是简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 Markdown 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。<br>
+Jekyll 使用文档：<a href="https://www.jekyll.com.cn/docs/home/" target="_blank" rel="noopener">https://www.jekyll.com.cn/docs/home/</a><br>
+Hugo 使用文档：<a href="https://gohugo.io/documentation/" target="_blank" rel="noopener">https://gohugo.io/documentation/</a><br>
+Hexo 使用文档：<a href="https://hexo.io/docs/" target="_blank" rel="noopener">https://hexo.io/docs/</a><br>
+docsify 使用文档：<a href="http://www.yii-china.com/docsify/" target="_blank" rel="noopener">http://www.yii-china.com/docsify/</a></p>
+<h4 id="参考链接">参考链接</h4>
+<p><a href="https://docs.github.com/cn/pages/quickstart" target="_blank" rel="noopener">GitHub Pages快速入门</a><br>
+<a href="https://gitee.com/help/articles/4136" target="_blank" rel="noopener">Gitee Pages官方文档</a><br>
+<a href="https://sspai.com/post/54608" target="_blank" rel="noopener">GitHub Pages 搭建教程</a></p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2021/12/23/mysql根据经纬度求两地距离/" data-toggle="tooltip" data-placement="top" title="mysql根据经纬度求两地距离">下一篇 &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <br>
+
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                    <!--  css & js -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+				
+            </div>
+
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">标签云</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#git" title="git">git</a>
+                        
+                          <a class="tag" href="/tags/#Git Pages" title="Git Pages">Git Pages</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://www.sumoon.com" target="_blank">ACE theme</a></li>
+                    
+                        <li><a href="https://www.kafecat.com/" target="_blank">加菲猫&#39;s Home</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/sandrewzq">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Sandrew 2022 
+                    <br>
+                    Powered by <a href="http://www.hexo.io" target="_blank" rel="noopener">Hexo</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    Theme by <a href="https://github.com/kinggozhang/hexo-theme-ace" target="_blank" rel="noopener">ACE</a> 
+					
+					
+					<i class="fa fa-eye" id="leancounter"></i>
+					
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+   
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+
+<!-- Bootstrap Core JavaScript -->
+
+   
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/hux-blog.min.js"></script>
+
+
+
+	
+<script src="/js/particles.js"></script>
+
+	
+<script src="/js/particles_config.js"></script>
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://yoursite.com/2022/02/28/Github-Pages%E5%8F%8AGitee-Pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.html/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://yoursite.com/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

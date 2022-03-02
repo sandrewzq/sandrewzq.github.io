@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Secret base</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2022-03-02T13:21:43.480Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Sandrew</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Github Pages及Gitee Pages使用教程</title>
+    <link href="http://yoursite.com/2022/02/28/Github-Pages%E5%8F%8AGitee-Pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2022/02/28/Github-Pages%E5%8F%8AGitee-Pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2022-02-28T10:52:12.000Z</published>
+    <updated>2022-03-02T13:21:43.480Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-什么是Github-Pages及Gitee-Pages">1.什么是Github Pages及Gitee Pages</h2><p>显而易见，从名字上就可以轻易地看出这两个’Pages’分别属于两家代码托管服务。<br>对于GitHub Pages，其官方文档是这样介绍的:</p><blockquote><p>GitHub Pages是一个静态站点托管服务,可以通过部署程序把HTML，CS和JavaScript等文件组成的静态库发布成为一个静态站点。</p></blockquote><p>而Gitee Pages的核心功能与Github Pages一样，都是提供一个静态站点托管服务。可以通过这两种服务搭建一个轻量化博客或者静态个人站。</p><h2 id="2-Pages服务的优点">2.Pages服务的优点</h2><p>相比于著名的WordPress博客系统，Pages服务最大的优势就是轻量化，无需LAMP环境。而且它完全免费，也不需要部署服务器的费用。</p><h2 id="3-Pages快速开始">3.Pages快速开始</h2><blockquote><p>以Github Pages举例，Gitee Pages操作基本一致。</p></blockquote><ol><li><p>在GitHub中新建一个test_pages仓库，选择Repository权限为public。<br><img src="create.jpg" alt=""></p></li><li><p>创建仓库成功后，点击creating a new file，新建一个文件。<br><img src="newfile.jpg" alt=""></p></li><li><p>文件名必须为index.html。内容为’这是一个github pages页面’,然后点击save保存。<br><img src="index.jpg" alt=""></p></li><li><p>接着在仓库的setting页签下点击左侧的Pages菜单。<br><img src="pages.jpg" alt=""></p></li><li><p>选择对应的分支及目录后，点击save按钮，稍后即可看到成功提示及链接。(注意：假如仓库为private权限，此处会提示需要把仓库转换为public或者升级为GitHub Pro服务才可用)<br><img src="sucess.jpg" alt=""></p></li></ol><h2 id="4-Pages-进阶，使用-Jekyll、Hugo、Hexo、docsify等生成自己的静态网页">4. Pages 进阶，使用 Jekyll、Hugo、Hexo、docsify等生成自己的静态网页</h2><p>Jekyll、Hugo、Hexo、docsify 是简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 Markdown 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。<br>Jekyll 使用文档：<a href="https://www.jekyll.com.cn/docs/home/" target="_blank" rel="noopener">https://www.jekyll.com.cn/docs/home/</a><br>Hugo 使用文档：<a href="https://gohugo.io/documentation/" target="_blank" rel="noopener">https://gohugo.io/documentation/</a><br>Hexo 使用文档：<a href="https://hexo.io/docs/" target="_blank" rel="noopener">https://hexo.io/docs/</a><br>docsify 使用文档：<a href="http://www.yii-china.com/docsify/" target="_blank" rel="noopener">http://www.yii-china.com/docsify/</a></p><h4 id="参考链接">参考链接</h4><p><a href="https://docs.github.com/cn/pages/quickstart" target="_blank" rel="noopener">GitHub Pages快速入门</a><br><a href="https://gitee.com/help/articles/4136" target="_blank" rel="noopener">Gitee Pages官方文档</a><br><a href="https://sspai.com/post/54608" target="_blank" rel="noopener">GitHub Pages 搭建教程</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-什么是Github-Pages及Gitee-Pages&quot;&gt;1.什么是Github Pages及Gitee Pages&lt;/h2&gt;
+&lt;p&gt;显而易见，从名字上就可以轻易地看出这两个’Pages’分别属于两家代码托管服务。&lt;br&gt;
+对于GitHub Pages，其官方
+      
+    
+    </summary>
+    
+    
+      <category term="Git Pages" scheme="http://yoursite.com/categories/Git-Pages/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+      <category term="Git Pages" scheme="http://yoursite.com/tags/Git-Pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql根据经纬度求两地距离</title>
+    <link href="http://yoursite.com/2021/12/23/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/"/>
+    <id>http://yoursite.com/2021/12/23/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/</id>
+    <published>2021-12-23T08:05:02.000Z</published>
+    <updated>2022-02-28T09:50:20.724Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="0-mysql提供了两个函数">0.mysql提供了两个函数</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#1.两点距离(1.4142135623730951)</span><br><span class="line">select st_distance(point(0,0),point(1,1));</span><br><span class="line">select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加</span><br><span class="line"></span><br><span class="line">#2.两点球面距离（157249.0357231545m）</span><br><span class="line">select st_distance_sphere(point(0,0),point(1,1));</span><br><span class="line">select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6.</span><br></pre></td></tr></table></figure><h5 id="1-第一个函数是计算平面坐标系下，两点的距离，就是">1.第一个函数是计算平面坐标系下，两点的距离，就是</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">|AB| &#x3D; \sqrt&#123;(x1-x2)^2 + (y1-y2)^2&#125;</span><br></pre></td></tr></table></figure><p>如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。</p><h5 id="2-第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。">2.第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ST_Distance_Sphere(g1, g2 [, radius])</span><br></pre></td></tr></table></figure><p>调用方式</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select c.*,st_distance_sphere(point(#&#123;baseLongitude&#125;, #&#123;baseLatitude&#125;),point(c.longitude, c.latitude)) as distance</span><br><span class="line">from community c</span><br></pre></td></tr></table></figure><h4 id="参考链接">参考链接</h4><p><a href="https://www.cnblogs.com/hdwang/p/9994153.html" target="_blank" rel="noopener">mysql根据经纬度求两地距离</a><br><a href="https://dev.mysql.com/doc/refman/5.7/en/spatial-convenience-functions.html#function_st-distance-sphere" target="_blank" rel="noopener">Spatial Convenience Functions</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;0-mysql提供了两个函数&quot;&gt;0.mysql提供了两个函数&lt;/h5&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b
+      
+    
+    </summary>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>威联通qnap安装ElasticSearch</title>
+    <link href="http://yoursite.com/2021/12/16/%E5%A8%81%E8%81%94%E9%80%9Aqnap%E5%AE%89%E8%A3%85ElasticSearch/"/>
+    <id>http://yoursite.com/2021/12/16/%E5%A8%81%E8%81%94%E9%80%9Aqnap%E5%AE%89%E8%A3%85ElasticSearch/</id>
+    <published>2021-12-16T02:50:07.000Z</published>
+    <updated>2022-02-28T09:50:20.724Z</updated>
+    
+    <content type="html"><![CDATA[<p>11</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;11&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git同时push到多个repository</title>
+    <link href="http://yoursite.com/2021/09/28/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/"/>
+    <id>http://yoursite.com/2021/09/28/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/</id>
+    <published>2021-09-28T06:06:58.000Z</published>
+    <updated>2022-02-28T09:50:20.723Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>使用git remote add添加一个remote,我这里命名为all，后面写上第一个repository地址</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add all git@github.com:sandrewzq&#x2F;myGitPage.git</span><br></pre></td></tr></table></figure><ol start="2"><li>继续添加repository</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url --add all git@gitee.com:Sandrew&#x2F;sandrew.git</span><br><span class="line">git remote set-url --add all git@e.coding.net:sandrew&#x2F;sandrew&#x2F;sandrew.git</span><br></pre></td></tr></table></figure><p>3.完成后使用命令即可看到已添加成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote get-url --all all</span><br></pre></td></tr></table></figure><p><img src="gitremotegeturl.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;使用git remote add添加一个remote,我这里命名为all，后面写上第一个repository地址&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux搭建我的世界服务器</title>
+    <link href="http://yoursite.com/2020/01/17/Linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://yoursite.com/2020/01/17/Linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2020-01-17T01:49:26.000Z</published>
+    <updated>2022-02-28T09:50:20.719Z</updated>
+    
+    <content type="html"><![CDATA[<h1>前言</h1><h3 id="前排提示">前排提示</h3><blockquote><p>本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程<a href="https://www.mcbbs.net/thread-894575-1-1.html" target="_blank" rel="noopener">【Linux&amp;开服教程】从零开始的Linux服务器技术从萌新到入门教程</a></p></blockquote><p>前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。<br>系统选择的是 <strong>CentOs 7</strong>，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。</p><h4 id="运行环境">运行环境</h4><pre><code>操作系统：CentOS 7.6 64位Java:jdk1.8.0_241我的世界服务端Server:Paper-1.14.4-b236我的世界客户端:Minecraft 1.14SSH客户端:XshellFTP客户端:XFtp</code></pre><h1>准备一台作为服务器的主机</h1><p>我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。<br><img src="%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt=""></p><h1>准备工作</h1><h4 id="远程连接服务器">远程连接服务器</h4><p>使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell<br>新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。<br><img src="%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt=""></p><h4 id="下载Java">下载Java</h4><p>根据机器的情况选择对应版本，我选择的是<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">Linux x64版本</a><br><img src="java.png" alt=""></p><h4 id="安装Java">安装Java</h4><p>安装Java过程可以看<a href="https://www.cnblogs.com/xuliangxing/p/7066913.html" target="_blank" rel="noopener">Linux 下安装JDK1.8</a>，我也记录下我的安装过程。</p><p>由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。</p><p>然后使用进入jdk-8u241-linux-x64.tar.gz所在目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd  &#x2F;download</span><br></pre></td></tr></table></figure><p>解压jdk-8u241-linux-x64.tar.gz</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar  -zxvf  jdk-8u241-linux-x64.tar.gz</span><br></pre></td></tr></table></figure><p>解压后完成后会看到jdk<br><img src="jdk.png" alt=""></p><p>要将jdk安装在usr/java当中，所以在usr目录下新建一个java文件夹</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir &#x2F;usr&#x2F;java</span><br></pre></td></tr></table></figure><p>本人已测试，我的世界服务器server端仅需要jre即可运行，所以我们只需安装jre即可，先进入刚才解压好的java目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd  &#x2F;download&#x2F;jdk1.8.0_241</span><br></pre></td></tr></table></figure><p><img src="jre.png" alt=""><br>然后安装jre到/usr/java目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv &#x2F;download&#x2F;jdk1.8.0_241&#x2F;jre &#x2F;usr&#x2F;java</span><br></pre></td></tr></table></figure><p>接下来使用vim修改环境变量</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;profile</span><br></pre></td></tr></table></figure><p>在文件末尾添加，其中JRE_HOME写刚才jre的安装路径</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JRE_HOME&#x3D;&#x2F;usr&#x2F;java&#x2F;jre</span><br><span class="line">export CLASSPATH&#x3D;.:$&#123;JRE_HOME&#125;&#x2F;lib:$CLASSPATH</span><br><span class="line">export JAVA_PATH&#x3D;$&#123;JRE_HOME&#125;&#x2F;bin</span><br><span class="line">export PATH&#x3D;$PATH:$&#123;JAVA_PATH&#125;</span><br></pre></td></tr></table></figure><p><img src="%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt=""><br>完毕后保存退出，在任意目录下执行java命令检查是否设置成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure><p>显示java版本号即表示成功<br><img src="javaversion.png" alt=""></p><h1>安装我的世界服务器server端</h1><p>首先进入刚才建好的minecraft_server目录，可以使用如下命令下载server端，我选择的是Paper-1.14.4-b23版本。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;yivesmirror.com&#x2F;files&#x2F;paper&#x2F;Paper-1.14.4-b236.jar</span><br></pre></td></tr></table></figure><p>也可以去<a href="https://yivesmirror.com/downloads/paper" target="_blank" rel="noopener">Yive’s Mirror</a>自行选择下载任意版本，然后通过ftp工具上传到minecraft_server目录。</p><h1>运行我的世界服务器server</h1><p>进入目录，然后用java -jar命令启动运行文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd minecraft_server&#x2F;</span><br><span class="line">java -jar Paper-1.14.4-b236.jar</span><br></pre></td></tr></table></figure><p>等待运行完成<br><img src="%E8%BF%90%E8%A1%8C%E5%AE%8C%E6%88%90.png" alt=""><br>完成后输入stop关闭服务器，就可以看到目录下完整的配置文件了<br><img src="%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6.png" alt=""></p><h1>新建后台启动脚本</h1><p>我们使用screen工具来后台启动，所以先安装screen</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install screen</span><br></pre></td></tr></table></figure><p>安装完成后，使用touch命令新建启动脚本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch launch.sh</span><br></pre></td></tr></table></figure><p>然后编辑lauch.sh文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim launch.sh</span><br></pre></td></tr></table></figure><p>添加下面的命令，其中-Xmx可以根据自己的机器内存情况适当调整</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -dmS mc java -Xms512m -Xmx1224m -XX:+AggressiveOpts -XX:+UseCompressedOops -jar &#x2F;minecraft_server&#x2F;Paper-1.14.4-b236.jar</span><br></pre></td></tr></table></figure><p>然后再新建关闭脚本并编辑</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch stop.sh</span><br><span class="line">vim stop.sh</span><br></pre></td></tr></table></figure><p>添加关闭命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">screen -dr mc -X stuff &quot;say 服务器将在10S后关闭！\n&quot;</span><br><span class="line">sleep 10</span><br><span class="line">screen -dr mc -X stuff &quot;stop\n&quot;</span><br></pre></td></tr></table></figure><p>两个脚本都创建好之后，使用chmod命令添加执行权限</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x launch.sh</span><br><span class="line">chmod +x stop.sh</span><br></pre></td></tr></table></figure><p>接下来就能看到launch.sh和stop.sh都变成可以执行文件了<br><img src="%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC.png" alt=""><br>大功告成之后我们就可以使用脚本来进行后台起停操作了</p><p>启动服务器</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;launch.sh</span><br></pre></td></tr></table></figure><p>关闭服务器</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;stop.sh</span><br></pre></td></tr></table></figure><h1>其他事项</h1><h4 id="服务器参数配置">服务器参数配置</h4><p>服务器参数使用server.properties文件及其他yml文件设置，具体设置可以参考<a href="https://www.mcbbs.net/thread-478126-1-1.html" target="_blank" rel="noopener">Minecraft服务器优化教程 —— 让多带50%的玩家不再是梦</a></p><h4 id="如何使用客户端并游玩">如何使用客户端并游玩</h4><p>参见<a href="https://www.mcbbs.net/thread-38297-1-1.html" target="_blank" rel="noopener">我的世界Minecraft Java版 下载指南|文件结构说明|推荐启动器</a></p><h4 id="服务器运行状态查看">服务器运行状态查看</h4><p>查看游戏目录安装目录下的/minecraft_server/logs文件夹的latest.log文件</p><h1>参考资料及感谢</h1><p><a href="https://www.jianshu.com/p/89f14756d16c" target="_blank" rel="noopener">Linux下搭建带mod的Minecraft服务器</a></p><p><a href="https://www.mcbbs.net/thread-770886-1-1.html" target="_blank" rel="noopener">Ubuntu(Linux)开服教程</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;前言&lt;/h1&gt;
+&lt;h3 id=&quot;前排提示&quot;&gt;前排提示&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程&lt;a href=&quot;https://www.mcbbs.net/thread-894575-1-1.
+      
+    
+    </summary>
+    
+    
+      <category term="Game" scheme="http://yoursite.com/categories/Game/"/>
+    
+    
+      <category term="我的世界" scheme="http://yoursite.com/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/"/>
+    
+      <category term="Game" scheme="http://yoursite.com/tags/Game/"/>
+    
+  </entry>
+  
+</feed>
