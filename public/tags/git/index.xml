@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>git on Sandrew&#39;s Base</title>
+        <link>/tags/git/</link>
+        <description>Recent content in git on Sandrew&#39;s Base</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 28 Feb 2022 18:52:12 +0000</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Github Pages及Gitee Pages使用教程</title>
+        <link>/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Mon, 28 Feb 2022 18:52:12 +0000</pubDate>
+        
+        <guid>/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;h2 id=&#34;1什么是github-pages及gitee-pages&#34;&gt;1.什么是Github Pages及Gitee Pages&lt;/h2&gt;
+&lt;p&gt;显而易见，从名字上就可以轻易地看出这两个&amp;rsquo;Pages&amp;rsquo;分别属于两家代码托管服务。
+对于GitHub Pages，其官方文档是这样介绍的:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GitHub Pages是一个静态站点托管服务,可以通过部署程序把HTML，CS和JavaScript等文件组成的静态库发布成为一个静态站点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;而Gitee Pages的核心功能与Github Pages一样，都是提供一个静态站点托管服务。可以通过这两种服务搭建一个轻量化博客或者静态个人站。&lt;/p&gt;
+&lt;h2 id=&#34;2pages服务的优点&#34;&gt;2.Pages服务的优点&lt;/h2&gt;
+&lt;p&gt;相比于著名的WordPress博客系统，Pages服务最大的优势就是轻量化，无需LAMP环境。而且它完全免费，也不需要部署服务器的费用。&lt;/p&gt;
+&lt;h2 id=&#34;3pages快速开始&#34;&gt;3.Pages快速开始&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以Github Pages举例，Gitee Pages操作基本一致。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在GitHub中新建一个test_pages仓库，选择Repository权限为public。
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/create.jpg&#34;
+	width=&#34;767&#34;
+	height=&#34;781&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/create_hu8ba0c9acc3539e68e4cb9af8b7bcd409_58171_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/create_hu8ba0c9acc3539e68e4cb9af8b7bcd409_58171_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;98&#34;
+		data-flex-basis=&#34;235px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建仓库成功后，点击creating a new file，新建一个文件。
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/newfile.jpg&#34;
+	width=&#34;1275&#34;
+	height=&#34;716&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/newfile_huc0d0067778959d77f287ad49196b4d83_77431_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/newfile_huc0d0067778959d77f287ad49196b4d83_77431_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;427px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文件名必须为index.html。内容为&amp;rsquo;这是一个github pages页面&amp;rsquo;,然后点击save保存。
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.jpg&#34;
+	width=&#34;1282&#34;
+	height=&#34;482&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index_hu0e337c71850150f2c0d7511ab30f9b51_23569_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index_hu0e337c71850150f2c0d7511ab30f9b51_23569_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;265&#34;
+		data-flex-basis=&#34;638px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着在仓库的setting页签下点击左侧的Pages菜单。
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/pages.jpg&#34;
+	width=&#34;1075&#34;
+	height=&#34;789&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/pages_hu307d603e461aaabee6532c9d30da5f4e_55783_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/pages_hu307d603e461aaabee6532c9d30da5f4e_55783_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;136&#34;
+		data-flex-basis=&#34;326px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择对应的分支及目录后，点击save按钮，稍后即可看到成功提示及链接。(注意：假如仓库为private权限，此处会提示需要把仓库转换为public或者升级为GitHub Pro服务才可用)
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/sucess.jpg&#34;
+	width=&#34;1116&#34;
+	height=&#34;655&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/sucess_hu8ae95b5ecaa533902255b57bf8fb4ee1_74824_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/sucess_hu8ae95b5ecaa533902255b57bf8fb4ee1_74824_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;408px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4-pages-进阶使用-jekyllhugohexodocsify等生成自己的静态网页&#34;&gt;4. Pages 进阶，使用 Jekyll、Hugo、Hexo、docsify等生成自己的静态网页&lt;/h2&gt;
+&lt;p&gt;Jekyll、Hugo、Hexo、docsify 是简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 Markdown 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。
+Jekyll 使用文档：https://www.jekyll.com.cn/docs/home/
+Hugo 使用文档：https://gohugo.io/documentation/
+Hexo 使用文档：https://hexo.io/docs/
+docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
+&lt;h4 id=&#34;参考链接&#34;&gt;参考链接&lt;/h4&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/cn/pages/quickstart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages快速入门&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/help/articles/4136&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gitee Pages官方文档&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/54608&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages 搭建教程&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>git同时push到多个repository</title>
+        <link>/p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/</link>
+        <pubDate>Tue, 28 Sep 2021 14:06:58 +0000</pubDate>
+        
+        <guid>/p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;使用git remote add添加一个remote,我这里命名为all，后面写上第一个repository地址&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add all git@github.com:sandrewzq/myGitPage.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;继续添加repository&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote set-url --add all git@gitee.com:Sandrew/sandrew.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote set-url --add all git@e.coding.net:sandrew/sandrew/sandrew.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;3.完成后使用命令即可看到已添加成功&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote get-url --all all
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/gitremotegeturl.jpg&#34;
+	width=&#34;453&#34;
+	height=&#34;49&#34;
+	srcset=&#34;/p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/gitremotegeturl_hu6911a38af304c5f823143cd828126866_9810_480x0_resize_q75_box.jpg 480w, /p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/gitremotegeturl_hu6911a38af304c5f823143cd828126866_9810_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;924&#34;
+		data-flex-basis=&#34;2218px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

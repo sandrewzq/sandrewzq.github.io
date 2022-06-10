@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 前排提示 本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程【Linux&amp;amp;开服教程】从零开始的Linux服务器技术从萌新到入门教程
+前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。 系统选择的是 CentOs 7，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。
+运行环境 操作系统：CentOS 7.6 64位Java:jdk1.8.0_241我的世界服务端Server:Paper-1.14.4-b236我的世界客户端:Minecraft 1.14SSH客户端:XshellFTP客户端:XFtp准备一台作为服务器的主机 我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。 准备工作 远程连接服务器 使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell 新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。 下载Java 根据机器的情况选择对应版本，我选择的是Linux x64版本 安装Java 安装Java过程可以看Linux 下安装JDK1.8，我也记录下我的安装过程。
+由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。
+然后使用进入jdk-8u241-linux-x64.tar.gz所在目录
+1 cd /download 解压jdk-8u241-linux-x64.tar.gz
+1 tar -zxvf jdk-8u241-linux-x64.tar.gz 解压后完成后会看到jdk 要将jdk安装在usr/java当中，所以在usr目录下新建一个java文件夹
+1 mkdir /usr/java 本人已测试，我的世界服务器server端仅需要jre即可运行，所以我们只需安装jre即可，先进入刚才解压好的java目录
+1 cd /download/jdk1.8.0_241 然后安装jre到/usr/java目录
+1 mv /download/jdk1.8.0_241/jre /usr/java 接下来使用vim修改环境变量
+1 vim /etc/profile 在文件末尾添加，其中JRE_HOME写刚才jre的安装路径
+1 2 3 4 export JRE_HOME=/usr/java/jre export CLASSPATH=.:${JRE_HOME}/lib:$CLASSPATH export JAVA_PATH=${JRE_HOME}/bin export PATH=$PATH:${JAVA_PATH} 完毕后保存退出，在任意目录下执行java命令检查是否设置成功'><title>Linux搭建我的世界服务器</title>
+
+<link rel='canonical' href='/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/'>
+
+<link rel="stylesheet" href="/scss/style.min.0d6801e40f97865d11b796a59ab5cccec41427c09bbb58dec945c9cf7412db70.css"><meta property='og:title' content='Linux搭建我的世界服务器'>
+<meta property='og:description' content='前言 前排提示 本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程【Linux&amp;amp;开服教程】从零开始的Linux服务器技术从萌新到入门教程
+前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。 系统选择的是 CentOs 7，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。
+运行环境 操作系统：CentOS 7.6 64位Java:jdk1.8.0_241我的世界服务端Server:Paper-1.14.4-b236我的世界客户端:Minecraft 1.14SSH客户端:XshellFTP客户端:XFtp准备一台作为服务器的主机 我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。 准备工作 远程连接服务器 使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell 新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。 下载Java 根据机器的情况选择对应版本，我选择的是Linux x64版本 安装Java 安装Java过程可以看Linux 下安装JDK1.8，我也记录下我的安装过程。
+由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。
+然后使用进入jdk-8u241-linux-x64.tar.gz所在目录
+1 cd /download 解压jdk-8u241-linux-x64.tar.gz
+1 tar -zxvf jdk-8u241-linux-x64.tar.gz 解压后完成后会看到jdk 要将jdk安装在usr/java当中，所以在usr目录下新建一个java文件夹
+1 mkdir /usr/java 本人已测试，我的世界服务器server端仅需要jre即可运行，所以我们只需安装jre即可，先进入刚才解压好的java目录
+1 cd /download/jdk1.8.0_241 然后安装jre到/usr/java目录
+1 mv /download/jdk1.8.0_241/jre /usr/java 接下来使用vim修改环境变量
+1 vim /etc/profile 在文件末尾添加，其中JRE_HOME写刚才jre的安装路径
+1 2 3 4 export JRE_HOME=/usr/java/jre export CLASSPATH=.:${JRE_HOME}/lib:$CLASSPATH export JAVA_PATH=${JRE_HOME}/bin export PATH=$PATH:${JAVA_PATH} 完毕后保存退出，在任意目录下执行java命令检查是否设置成功'>
+<meta property='og:url' content='/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/'>
+<meta property='og:site_name' content='Sandrew&#39;s Base'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='我的世界' /><meta property='article:tag' content='Game' /><meta property='article:published_time' content='2020-01-17T09:49:26&#43;00:00'/><meta property='article:modified_time' content='2020-01-17T09:49:26&#43;00:00'/>
+<meta name="twitter:title" content="Linux搭建我的世界服务器">
+<meta name="twitter:description" content="前言 前排提示 本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程【Linux&amp;amp;开服教程】从零开始的Linux服务器技术从萌新到入门教程
+前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。 系统选择的是 CentOs 7，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。
+运行环境 操作系统：CentOS 7.6 64位Java:jdk1.8.0_241我的世界服务端Server:Paper-1.14.4-b236我的世界客户端:Minecraft 1.14SSH客户端:XshellFTP客户端:XFtp准备一台作为服务器的主机 我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。 准备工作 远程连接服务器 使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell 新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。 下载Java 根据机器的情况选择对应版本，我选择的是Linux x64版本 安装Java 安装Java过程可以看Linux 下安装JDK1.8，我也记录下我的安装过程。
+由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。
+然后使用进入jdk-8u241-linux-x64.tar.gz所在目录
+1 cd /download 解压jdk-8u241-linux-x64.tar.gz
+1 tar -zxvf jdk-8u241-linux-x64.tar.gz 解压后完成后会看到jdk 要将jdk安装在usr/java当中，所以在usr目录下新建一个java文件夹
+1 mkdir /usr/java 本人已测试，我的世界服务器server端仅需要jre即可运行，所以我们只需安装jre即可，先进入刚才解压好的java目录
+1 cd /download/jdk1.8.0_241 然后安装jre到/usr/java目录
+1 mv /download/jdk1.8.0_241/jre /usr/java 接下来使用vim修改环境变量
+1 vim /etc/profile 在文件末尾添加，其中JRE_HOME写刚才jre的安装路径
+1 2 3 4 export JRE_HOME=/usr/java/jre export CLASSPATH=.:${JRE_HOME}/lib:$CLASSPATH export JAVA_PATH=${JRE_HOME}/bin export PATH=$PATH:${JAVA_PATH} 完毕后保存退出，在任意目录下执行java命令检查是否设置成功">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Sandrew&#39;s Base</a></h1>
+            <h2 class="site-description">站点介绍.</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/game/" >
+                Game
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/">Linux搭建我的世界服务器</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 17, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="前言">前言</h1>
+<h3 id="前排提示">前排提示</h3>
+<blockquote>
+<p>本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程<a class="link" href="https://www.mcbbs.net/thread-894575-1-1.html"  target="_blank" rel="noopener"
+    >【Linux&amp;开服教程】从零开始的Linux服务器技术从萌新到入门教程</a></p>
+</blockquote>
+<p>前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。
+系统选择的是 <strong>CentOs 7</strong>，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。</p>
+<h4 id="运行环境">运行环境</h4>
+<pre><code>操作系统：CentOS 7.6 64位
+Java:jdk1.8.0_241
+我的世界服务端Server:Paper-1.14.4-b236
+我的世界客户端:Minecraft 1.14
+SSH客户端:Xshell
+FTP客户端:XFtp
+</code></pre>
+<h1 id="准备一台作为服务器的主机">准备一台作为服务器的主机</h1>
+<p>我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。
+<img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.png"
+	width="1140"
+	height="225"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8_hu77508d3558a17d357988bf54d7b520ac_17340_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8_hu77508d3558a17d357988bf54d7b520ac_17340_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="506"
+		data-flex-basis="1216px"
+	
+></p>
+<h1 id="准备工作">准备工作</h1>
+<h4 id="远程连接服务器">远程连接服务器</h4>
+<p>使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell
+新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。
+<img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.png"
+	width="478"
+	height="218"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9_hu19c6f1369a664b5bc108fe1437dd72ab_16122_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9_hu19c6f1369a664b5bc108fe1437dd72ab_16122_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="219"
+		data-flex-basis="526px"
+	
+></p>
+<h4 id="下载java">下载Java</h4>
+<p>根据机器的情况选择对应版本，我选择的是<a class="link" href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"  target="_blank" rel="noopener"
+    >Linux x64版本</a>
+<img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java.png"
+	width="569"
+	height="371"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java_hue5d16db0dcaf79e6c0c7db4883fa7313_37561_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java_hue5d16db0dcaf79e6c0c7db4883fa7313_37561_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="153"
+		data-flex-basis="368px"
+	
+></p>
+<h4 id="安装java">安装Java</h4>
+<p>安装Java过程可以看<a class="link" href="https://www.cnblogs.com/xuliangxing/p/7066913.html"  target="_blank" rel="noopener"
+    >Linux 下安装JDK1.8</a>，我也记录下我的安装过程。</p>
+<p>由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。</p>
+<p>然后使用进入jdk-8u241-linux-x64.tar.gz所在目录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd  /download
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>解压jdk-8u241-linux-x64.tar.gz</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tar  -zxvf  jdk-8u241-linux-x64.tar.gz
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>解压后完成后会看到jdk
+<img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jdk.png"
+	width="544"
+	height="66"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jdk_huf306c81c7adceee90d43333c144682b3_5629_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jdk_huf306c81c7adceee90d43333c144682b3_5629_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="824"
+		data-flex-basis="1978px"
+	
+></p>
+<p>要将jdk安装在usr/java当中，所以在usr目录下新建一个java文件夹</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mkdir /usr/java
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>本人已测试，我的世界服务器server端仅需要jre即可运行，所以我们只需安装jre即可，先进入刚才解压好的java目录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd  /download/jdk1.8.0_241
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jre.png"
+	width="595"
+	height="275"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jre_huf0785ae8eb8d087438ab7219ae0f8fce_24046_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jre_huf0785ae8eb8d087438ab7219ae0f8fce_24046_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="216"
+		data-flex-basis="519px"
+	
+>
+然后安装jre到/usr/java目录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mv /download/jdk1.8.0_241/jre /usr/java
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接下来使用vim修改环境变量</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /etc/profile
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在文件末尾添加，其中JRE_HOME写刚才jre的安装路径</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">export JRE_HOME=/usr/java/jre
+</span></span><span class="line"><span class="cl">export CLASSPATH=.:${JRE_HOME}/lib:$CLASSPATH
+</span></span><span class="line"><span class="cl">export JAVA_PATH=${JRE_HOME}/bin
+</span></span><span class="line"><span class="cl">export PATH=$PATH:${JAVA_PATH}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png"
+	width="786"
+	height="666"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F_hu0f64571b629e96c0c40871bedc8bae2a_31150_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F_hu0f64571b629e96c0c40871bedc8bae2a_31150_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="118"
+		data-flex-basis="283px"
+	
+>
+完毕后保存退出，在任意目录下执行java命令检查是否设置成功</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">java -version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>显示java版本号即表示成功
+<img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/javaversion.png"
+	width="491"
+	height="113"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/javaversion_hu8a6a5c1234149bc25e07224a091e5415_9939_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/javaversion_hu8a6a5c1234149bc25e07224a091e5415_9939_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="434"
+		data-flex-basis="1042px"
+	
+></p>
+<h1 id="安装我的世界服务器server端">安装我的世界服务器server端</h1>
+<p>首先进入刚才建好的minecraft_server目录，可以使用如下命令下载server端，我选择的是Paper-1.14.4-b23版本。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wget https://yivesmirror.com/files/paper/Paper-1.14.4-b236.jar
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>也可以去<a class="link" href="https://yivesmirror.com/downloads/paper"  target="_blank" rel="noopener"
+    >Yive&rsquo;s Mirror</a>自行选择下载任意版本，然后通过ftp工具上传到minecraft_server目录。</p>
+<h1 id="运行我的世界服务器server">运行我的世界服务器server</h1>
+<p>进入目录，然后用java -jar命令启动运行文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd minecraft_server/
+</span></span><span class="line"><span class="cl">java -jar Paper-1.14.4-b236.jar
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>等待运行完成
+<img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BF%90%E8%A1%8C%E5%AE%8C%E6%88%90.png"
+	width="658"
+	height="446"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BF%90%E8%A1%8C%E5%AE%8C%E6%88%90_hub68889758c39ebb260d53734a1b3ea65_41790_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BF%90%E8%A1%8C%E5%AE%8C%E6%88%90_hub68889758c39ebb260d53734a1b3ea65_41790_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="147"
+		data-flex-basis="354px"
+	
+>
+完成后输入stop关闭服务器，就可以看到目录下完整的配置文件了
+<img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6.png"
+	width="490"
+	height="364"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6_hu8cdf2745952d22aa346b540730b3ea0d_27278_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6_hu8cdf2745952d22aa346b540730b3ea0d_27278_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="134"
+		data-flex-basis="323px"
+	
+></p>
+<h1 id="新建后台启动脚本">新建后台启动脚本</h1>
+<p>我们使用screen工具来后台启动，所以先安装screen</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install screen
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完成后，使用touch命令新建启动脚本</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">touch launch.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后编辑lauch.sh文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim launch.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>添加下面的命令，其中-Xmx可以根据自己的机器内存情况适当调整</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">screen -dmS mc java -Xms512m -Xmx1224m -XX:+AggressiveOpts -XX:+UseCompressedOops -jar /minecraft_server/Paper-1.14.4-b236.jar
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后再新建关闭脚本并编辑</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">touch stop.sh
+</span></span><span class="line"><span class="cl">vim stop.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>添加关闭命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">screen -dr mc -X stuff &#34;say 服务器将在10S后关闭！\n&#34;
+</span></span><span class="line"><span class="cl">sleep 10
+</span></span><span class="line"><span class="cl">screen -dr mc -X stuff &#34;stop\n&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>两个脚本都创建好之后，使用chmod命令添加执行权限</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">chmod +x launch.sh
+</span></span><span class="line"><span class="cl">chmod +x stop.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接下来就能看到launch.sh和stop.sh都变成可以执行文件了
+<img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC.png"
+	width="504"
+	height="399"
+	srcset="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC_huc1be02dee09e75e628682bd02c744757_29801_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC_huc1be02dee09e75e628682bd02c744757_29801_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="126"
+		data-flex-basis="303px"
+	
+>
+大功告成之后我们就可以使用脚本来进行后台起停操作了</p>
+<p>启动服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">./launch.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>关闭服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">./stop.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="其他事项">其他事项</h1>
+<h4 id="服务器参数配置">服务器参数配置</h4>
+<p>服务器参数使用server.properties文件及其他yml文件设置，具体设置可以参考<a class="link" href="https://www.mcbbs.net/thread-478126-1-1.html"  target="_blank" rel="noopener"
+    >Minecraft服务器优化教程 —— 让多带50%的玩家不再是梦</a></p>
+<h4 id="如何使用客户端并游玩">如何使用客户端并游玩</h4>
+<p>参见<a class="link" href="https://www.mcbbs.net/thread-38297-1-1.html"  target="_blank" rel="noopener"
+    >我的世界Minecraft Java版 下载指南|文件结构说明|推荐启动器</a></p>
+<h4 id="服务器运行状态查看">服务器运行状态查看</h4>
+<p>查看游戏目录安装目录下的/minecraft_server/logs文件夹的latest.log文件</p>
+<h1 id="参考资料及感谢">参考资料及感谢</h1>
+<p><a class="link" href="https://www.jianshu.com/p/89f14756d16c"  target="_blank" rel="noopener"
+    >Linux下搭建带mod的Minecraft服务器</a></p>
+<p><a class="link" href="https://www.mcbbs.net/thread-770886-1-1.html"  target="_blank" rel="noopener"
+    >Ubuntu(Linux)开服教程</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/">我的世界</a>
+        
+            <a href="/tags/game/">Game</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2022 Sandrew&#39;s Base
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#前排提示">前排提示</a>
+          <ol>
+            <li><a href="#运行环境">运行环境</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#远程连接服务器">远程连接服务器</a></li>
+            <li><a href="#下载java">下载Java</a></li>
+            <li><a href="#安装java">安装Java</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#服务器参数配置">服务器参数配置</a></li>
+            <li><a href="#如何使用客户端并游玩">如何使用客户端并游玩</a></li>
+            <li><a href="#服务器运行状态查看">服务器运行状态查看</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
