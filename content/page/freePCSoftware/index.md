@@ -7,7 +7,7 @@ menu:
         params:
             icon: apps
 ---
-## 说明
+# 说明
 `这是一个免费PC软件收集表~`
 
 ### office
@@ -62,12 +62,20 @@ NAME                                 | WINDOWS | LINUX |  MAC  |
 
 
 
-### 视频软件
+### 播放器
 NAME                                 | WINDOWS | LINUX |  MAC  |
 :------------------------------------| ------: | ----: | ----: |
 [PotPlayer][PotPlayer]               |    ✅   |  ❌  |   ❌  |
 
 [PotPlayer]: http://www.potplayercn.com/
+
+
+### 视频处理
+NAME                                 | WINDOWS | LINUX |  MAC  |
+:------------------------------------| ------: | ----: | ----: |
+[小丸工具箱][小丸工具箱]               |    ✅   |  ❌  |   ❌  |
+
+[小丸工具箱]: https://maruko.appinn.me/
 
 
 ### 视频录制软件
@@ -173,7 +181,7 @@ NAME                                 | WINDOWS | LINUX |  MAC  |
 NAME                                   | WINDOWS | LINUX |  MAC  |
 :--------------------------------------| ------: | ----: | ----: |
 [Everything][Everything]               |    ✅   |  ❌  |   ❌  |
-[万彩办公大师][万彩办公大师]               |    ✅   |  ❌  |   ❌  |
+[万彩办公大师][万彩办公大师]             |    ✅   |  ❌  |   ❌  |
 
 [Everything]: https://www.voidtools.com/zh-cn/downloads/
 [万彩办公大师]: http://www.wofficebox.com/
