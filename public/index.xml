@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Sandrew&#39;s Base</title>
+        <link>/</link>
+        <description>Recent content on Sandrew&#39;s Base</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 28 Feb 2022 18:52:12 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Github Pages及Gitee Pages使用教程</title>
+        <link>/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Mon, 28 Feb 2022 18:52:12 +0000</pubDate>
+        
+        <guid>/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;h2 id=&#34;1什么是github-pages及gitee-pages&#34;&gt;1.什么是Github Pages及Gitee Pages&lt;/h2&gt;
+&lt;p&gt;显而易见，从名字上就可以轻易地看出这两个&amp;rsquo;Pages&amp;rsquo;分别属于两家代码托管服务。
+对于GitHub Pages，其官方文档是这样介绍的:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GitHub Pages是一个静态站点托管服务,可以通过部署程序把HTML，CS和JavaScript等文件组成的静态库发布成为一个静态站点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;而Gitee Pages的核心功能与Github Pages一样，都是提供一个静态站点托管服务。可以通过这两种服务搭建一个轻量化博客或者静态个人站。&lt;/p&gt;
+&lt;h2 id=&#34;2pages服务的优点&#34;&gt;2.Pages服务的优点&lt;/h2&gt;
+&lt;p&gt;相比于著名的WordPress博客系统，Pages服务最大的优势就是轻量化，无需LAMP环境。而且它完全免费，也不需要部署服务器的费用。&lt;/p&gt;
+&lt;h2 id=&#34;3pages快速开始&#34;&gt;3.Pages快速开始&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以Github Pages举例，Gitee Pages操作基本一致。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在GitHub中新建一个test_pages仓库，选择Repository权限为public。
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/create.jpg&#34;
+	width=&#34;767&#34;
+	height=&#34;781&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/create_hu8ba0c9acc3539e68e4cb9af8b7bcd409_58171_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/create_hu8ba0c9acc3539e68e4cb9af8b7bcd409_58171_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;98&#34;
+		data-flex-basis=&#34;235px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建仓库成功后，点击creating a new file，新建一个文件。
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/newfile.jpg&#34;
+	width=&#34;1275&#34;
+	height=&#34;716&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/newfile_huc0d0067778959d77f287ad49196b4d83_77431_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/newfile_huc0d0067778959d77f287ad49196b4d83_77431_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;427px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文件名必须为index.html。内容为&amp;rsquo;这是一个github pages页面&amp;rsquo;,然后点击save保存。
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.jpg&#34;
+	width=&#34;1282&#34;
+	height=&#34;482&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index_hu0e337c71850150f2c0d7511ab30f9b51_23569_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index_hu0e337c71850150f2c0d7511ab30f9b51_23569_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;265&#34;
+		data-flex-basis=&#34;638px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着在仓库的setting页签下点击左侧的Pages菜单。
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/pages.jpg&#34;
+	width=&#34;1075&#34;
+	height=&#34;789&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/pages_hu307d603e461aaabee6532c9d30da5f4e_55783_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/pages_hu307d603e461aaabee6532c9d30da5f4e_55783_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;136&#34;
+		data-flex-basis=&#34;326px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择对应的分支及目录后，点击save按钮，稍后即可看到成功提示及链接。(注意：假如仓库为private权限，此处会提示需要把仓库转换为public或者升级为GitHub Pro服务才可用)
+&lt;img src=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/sucess.jpg&#34;
+	width=&#34;1116&#34;
+	height=&#34;655&#34;
+	srcset=&#34;/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/sucess_hu8ae95b5ecaa533902255b57bf8fb4ee1_74824_480x0_resize_q75_box.jpg 480w, /p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/sucess_hu8ae95b5ecaa533902255b57bf8fb4ee1_74824_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;408px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4-pages-进阶使用-jekyllhugohexodocsify等生成自己的静态网页&#34;&gt;4. Pages 进阶，使用 Jekyll、Hugo、Hexo、docsify等生成自己的静态网页&lt;/h2&gt;
+&lt;p&gt;Jekyll、Hugo、Hexo、docsify 是简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 Markdown 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。
+Jekyll 使用文档：https://www.jekyll.com.cn/docs/home/
+Hugo 使用文档：https://gohugo.io/documentation/
+Hexo 使用文档：https://hexo.io/docs/
+docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
+&lt;h4 id=&#34;参考链接&#34;&gt;参考链接&lt;/h4&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/cn/pages/quickstart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages快速入门&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/help/articles/4136&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gitee Pages官方文档&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/54608&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages 搭建教程&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>mysql根据经纬度求两地距离</title>
+        <link>/p/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/</link>
+        <pubDate>Thu, 23 Dec 2021 16:05:02 +0000</pubDate>
+        
+        <guid>/p/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/</guid>
+        <description>&lt;h5 id=&#34;0mysql提供了两个函数&#34;&gt;0.mysql提供了两个函数&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#1.两点距离(1.4142135623730951)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select st_distance(point(0,0),point(1,1));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#2.两点球面距离（157249.0357231545m）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select st_distance_sphere(point(0,0),point(1,1));
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;1第一个函数是计算平面坐标系下两点的距离就是&#34;&gt;1.第一个函数是计算平面坐标系下，两点的距离，就是&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;|AB| = \sqrt{(x1-x2)^2 + (y1-y2)^2}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。&lt;/p&gt;
+&lt;h5 id=&#34;2第二个函数是计算球面距离的公式传入的参数是经纬度经度-180180纬度-9090返回的值以m为单位的距离&#34;&gt;2.第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ST_Distance_Sphere(g1, g2 [, radius])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;调用方式&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select c.*,st_distance_sphere(point(#{baseLongitude}, #{baseLatitude}),point(c.longitude, c.latitude)) as distance
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;from community c
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;参考链接&#34;&gt;参考链接&lt;/h4&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/hdwang/p/9994153.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;mysql根据经纬度求两地距离&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://dev.mysql.com/doc/refman/5.7/en/spatial-convenience-functions.html#function_st-distance-sphere&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Spatial Convenience Functions&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>git同时push到多个repository</title>
+        <link>/p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/</link>
+        <pubDate>Tue, 28 Sep 2021 14:06:58 +0000</pubDate>
+        
+        <guid>/p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;使用git remote add添加一个remote,我这里命名为all，后面写上第一个repository地址&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add all git@github.com:sandrewzq/myGitPage.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;继续添加repository&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote set-url --add all git@gitee.com:Sandrew/sandrew.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote set-url --add all git@e.coding.net:sandrew/sandrew/sandrew.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;3.完成后使用命令即可看到已添加成功&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote get-url --all all
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/gitremotegeturl.jpg&#34;
+	width=&#34;453&#34;
+	height=&#34;49&#34;
+	srcset=&#34;/p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/gitremotegeturl_hu6911a38af304c5f823143cd828126866_9810_480x0_resize_q75_box.jpg 480w, /p/git%E5%90%8C%E6%97%B6push%E5%88%B0%E5%A4%9A%E4%B8%AArepository/gitremotegeturl_hu6911a38af304c5f823143cd828126866_9810_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;924&#34;
+		data-flex-basis=&#34;2218px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Linux搭建我的世界服务器</title>
+        <link>/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <pubDate>Fri, 17 Jan 2020 09:49:26 +0000</pubDate>
+        
+        <guid>/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+        <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;h3 id=&#34;前排提示&#34;&gt;前排提示&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-894575-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【Linux&amp;amp;开服教程】从零开始的Linux服务器技术从萌新到入门教程&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。
+系统选择的是 &lt;strong&gt;CentOs 7&lt;/strong&gt;，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。&lt;/p&gt;
+&lt;h4 id=&#34;运行环境&#34;&gt;运行环境&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;操作系统：CentOS 7.6 64位
+Java:jdk1.8.0_241
+我的世界服务端Server:Paper-1.14.4-b236
+我的世界客户端:Minecraft 1.14
+SSH客户端:Xshell
+FTP客户端:XFtp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;准备一台作为服务器的主机&#34;&gt;准备一台作为服务器的主机&lt;/h1&gt;
+&lt;p&gt;我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。
+&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.png&#34;
+	width=&#34;1140&#34;
+	height=&#34;225&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8_hu77508d3558a17d357988bf54d7b520ac_17340_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8_hu77508d3558a17d357988bf54d7b520ac_17340_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;506&#34;
+		data-flex-basis=&#34;1216px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;准备工作&#34;&gt;准备工作&lt;/h1&gt;
+&lt;h4 id=&#34;远程连接服务器&#34;&gt;远程连接服务器&lt;/h4&gt;
+&lt;p&gt;使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell
+新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。
+&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.png&#34;
+	width=&#34;478&#34;
+	height=&#34;218&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9_hu19c6f1369a664b5bc108fe1437dd72ab_16122_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9_hu19c6f1369a664b5bc108fe1437dd72ab_16122_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;219&#34;
+		data-flex-basis=&#34;526px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;下载java&#34;&gt;下载Java&lt;/h4&gt;
+&lt;p&gt;根据机器的情况选择对应版本，我选择的是&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linux x64版本&lt;/a&gt;
+&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java.png&#34;
+	width=&#34;569&#34;
+	height=&#34;371&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java_hue5d16db0dcaf79e6c0c7db4883fa7313_37561_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java_hue5d16db0dcaf79e6c0c7db4883fa7313_37561_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;368px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;安装java&#34;&gt;安装Java&lt;/h4&gt;
+&lt;p&gt;安装Java过程可以看&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/xuliangxing/p/7066913.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linux 下安装JDK1.8&lt;/a&gt;，我也记录下我的安装过程。&lt;/p&gt;
+&lt;p&gt;由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。&lt;/p&gt;
+&lt;p&gt;然后使用进入jdk-8u241-linux-x64.tar.gz所在目录&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd  /download
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;解压jdk-8u241-linux-x64.tar.gz&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tar  -zxvf  jdk-8u241-linux-x64.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;解压后完成后会看到jdk
+&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jdk.png&#34;
+	width=&#34;544&#34;
+	height=&#34;66&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jdk_huf306c81c7adceee90d43333c144682b3_5629_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jdk_huf306c81c7adceee90d43333c144682b3_5629_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;824&#34;
+		data-flex-basis=&#34;1978px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;要将jdk安装在usr/java当中，所以在usr目录下新建一个java文件夹&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir /usr/java
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;本人已测试，我的世界服务器server端仅需要jre即可运行，所以我们只需安装jre即可，先进入刚才解压好的java目录&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd  /download/jdk1.8.0_241
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jre.png&#34;
+	width=&#34;595&#34;
+	height=&#34;275&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jre_huf0785ae8eb8d087438ab7219ae0f8fce_24046_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/jre_huf0785ae8eb8d087438ab7219ae0f8fce_24046_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;216&#34;
+		data-flex-basis=&#34;519px&#34;
+	
+&gt;
+然后安装jre到/usr/java目录&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mv /download/jdk1.8.0_241/jre /usr/java
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下来使用vim修改环境变量&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim /etc/profile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在文件末尾添加，其中JRE_HOME写刚才jre的安装路径&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export JRE_HOME=/usr/java/jre
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export CLASSPATH=.:${JRE_HOME}/lib:$CLASSPATH
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export JAVA_PATH=${JRE_HOME}/bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export PATH=$PATH:${JAVA_PATH}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png&#34;
+	width=&#34;786&#34;
+	height=&#34;666&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F_hu0f64571b629e96c0c40871bedc8bae2a_31150_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F_hu0f64571b629e96c0c40871bedc8bae2a_31150_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;118&#34;
+		data-flex-basis=&#34;283px&#34;
+	
+&gt;
+完毕后保存退出，在任意目录下执行java命令检查是否设置成功&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;显示java版本号即表示成功
+&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/javaversion.png&#34;
+	width=&#34;491&#34;
+	height=&#34;113&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/javaversion_hu8a6a5c1234149bc25e07224a091e5415_9939_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/javaversion_hu8a6a5c1234149bc25e07224a091e5415_9939_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;434&#34;
+		data-flex-basis=&#34;1042px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;安装我的世界服务器server端&#34;&gt;安装我的世界服务器server端&lt;/h1&gt;
+&lt;p&gt;首先进入刚才建好的minecraft_server目录，可以使用如下命令下载server端，我选择的是Paper-1.14.4-b23版本。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://yivesmirror.com/files/paper/Paper-1.14.4-b236.jar
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;也可以去&lt;a class=&#34;link&#34; href=&#34;https://yivesmirror.com/downloads/paper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Yive&amp;rsquo;s Mirror&lt;/a&gt;自行选择下载任意版本，然后通过ftp工具上传到minecraft_server目录。&lt;/p&gt;
+&lt;h1 id=&#34;运行我的世界服务器server&#34;&gt;运行我的世界服务器server&lt;/h1&gt;
+&lt;p&gt;进入目录，然后用java -jar命令启动运行文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd minecraft_server/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar Paper-1.14.4-b236.jar
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;等待运行完成
+&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BF%90%E8%A1%8C%E5%AE%8C%E6%88%90.png&#34;
+	width=&#34;658&#34;
+	height=&#34;446&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BF%90%E8%A1%8C%E5%AE%8C%E6%88%90_hub68889758c39ebb260d53734a1b3ea65_41790_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BF%90%E8%A1%8C%E5%AE%8C%E6%88%90_hub68889758c39ebb260d53734a1b3ea65_41790_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;147&#34;
+		data-flex-basis=&#34;354px&#34;
+	
+&gt;
+完成后输入stop关闭服务器，就可以看到目录下完整的配置文件了
+&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6.png&#34;
+	width=&#34;490&#34;
+	height=&#34;364&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6_hu8cdf2745952d22aa346b540730b3ea0d_27278_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%8C%E6%95%B4%E6%96%87%E4%BB%B6_hu8cdf2745952d22aa346b540730b3ea0d_27278_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;134&#34;
+		data-flex-basis=&#34;323px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;新建后台启动脚本&#34;&gt;新建后台启动脚本&lt;/h1&gt;
+&lt;p&gt;我们使用screen工具来后台启动，所以先安装screen&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;yum install screen
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装完成后，使用touch命令新建启动脚本&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;touch launch.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后编辑lauch.sh文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim launch.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;添加下面的命令，其中-Xmx可以根据自己的机器内存情况适当调整&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;screen -dmS mc java -Xms512m -Xmx1224m -XX:+AggressiveOpts -XX:+UseCompressedOops -jar /minecraft_server/Paper-1.14.4-b236.jar
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后再新建关闭脚本并编辑&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;touch stop.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim stop.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;添加关闭命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;screen -dr mc -X stuff &amp;#34;say 服务器将在10S后关闭！\n&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sleep 10
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;screen -dr mc -X stuff &amp;#34;stop\n&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;两个脚本都创建好之后，使用chmod命令添加执行权限&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod +x launch.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod +x stop.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下来就能看到launch.sh和stop.sh都变成可以执行文件了
+&lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC.png&#34;
+	width=&#34;504&#34;
+	height=&#34;399&#34;
+	srcset=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC_huc1be02dee09e75e628682bd02c744757_29801_480x0_resize_box_3.png 480w, /p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC_huc1be02dee09e75e628682bd02c744757_29801_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;303px&#34;
+	
+&gt;
+大功告成之后我们就可以使用脚本来进行后台起停操作了&lt;/p&gt;
+&lt;p&gt;启动服务器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./launch.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;关闭服务器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./stop.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;其他事项&#34;&gt;其他事项&lt;/h1&gt;
+&lt;h4 id=&#34;服务器参数配置&#34;&gt;服务器参数配置&lt;/h4&gt;
+&lt;p&gt;服务器参数使用server.properties文件及其他yml文件设置，具体设置可以参考&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-478126-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Minecraft服务器优化教程 —— 让多带50%的玩家不再是梦&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;如何使用客户端并游玩&#34;&gt;如何使用客户端并游玩&lt;/h4&gt;
+&lt;p&gt;参见&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-38297-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的世界Minecraft Java版 下载指南|文件结构说明|推荐启动器&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;服务器运行状态查看&#34;&gt;服务器运行状态查看&lt;/h4&gt;
+&lt;p&gt;查看游戏目录安装目录下的/minecraft_server/logs文件夹的latest.log文件&lt;/p&gt;
+&lt;h1 id=&#34;参考资料及感谢&#34;&gt;参考资料及感谢&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/89f14756d16c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linux下搭建带mod的Minecraft服务器&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-770886-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu(Linux)开服教程&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Math Typesetting</title>
+        <link>/p/math-typesetting/</link>
+        <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>/p/math-typesetting/</guid>
+        <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
+&lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a partial under &lt;code&gt;/layouts/partials/math.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Within this partial reference the &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/autorender.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Auto-render Extension&lt;/a&gt; or host these scripts locally.&lt;/li&gt;
+&lt;li&gt;Include the partial in your templates like so:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; partial &lt;span class=&#34;s2&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;math&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in a project&amp;rsquo;s configuration&lt;/li&gt;
+&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;math: true&lt;/code&gt; in content files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the online reference of &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/supported.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Supported TeX Functions&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>大佬博客</title>
+        <link>/%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        <item>
+        <title>关于</title>
+        <link>/%E5%85%B3%E4%BA%8E/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>免费PC软件</title>
+        <link>/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/</guid>
+        <description>&lt;h1 id=&#34;说明&#34;&gt;说明&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;这是一个免费PC软件收集表~&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;office&#34;&gt;office&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/jgraph/drawio-desktop/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;drawio&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.islide.cc/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;iSlide&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://zh-cn.libreoffice.org/download/libreoffice/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Libre Office&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://pc.wps.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WPS&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;editor&#34;&gt;editor&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/rizonesoft/Notepad3&#34;  title=&#34;https://www.rizonesoft.com/&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Notepad3&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://notepad-plus-plus.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Notepad++&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VS Code&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;ssh工具&#34;&gt;ssh工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;iOS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;ANDROID&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;FTP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.bitvise.com/ssh-client-download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bitvise&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/electerm/electerm/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;electerm&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.hostbuf.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;FinalShell&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://mobaxterm.mobatek.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MobaXterm&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⬜&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⬜&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tabby.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tabby&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.termius.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Termius&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⚠&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;看图软件&#34;&gt;看图软件&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bandisoft.com/honeyview/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Honeyview&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;播放器&#34;&gt;播放器&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.potplayercn.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PotPlayer&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;视频处理&#34;&gt;视频处理&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://maruko.appinn.me/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;小丸工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;视频录制软件&#34;&gt;视频录制软件&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bandicam.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bandicam&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://mathewsachin.github.io/Captura/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Captura&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ieway.cn/evcapture.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;EvCapture&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.screentogif.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ScreenToGif&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;硬盘工具&#34;&gt;硬盘工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.alex-is.de/PHP/fusion/downloads.php?cat_id=4&amp;amp;download_id=9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AS SSD Benchmark&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://crystalmark.info/en/software/crystaldiskinfo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CrystalDiskInfo&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.diskgenius.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DiskGenius&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hdtune.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;HD Tune&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;网络工具&#34;&gt;网络工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sordum.org/7952/dns-jumper-v2-2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DNS Jumper&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/HMBSbige/NatTypeTester/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;NatTypeTester&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;验机工具&#34;&gt;验机工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cpuid.com/softwares/cpu-z.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CPU-Z&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.techpowerup.com/download/techpowerup-gpu-z/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GPU-Z&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.kbtool.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;卡硬工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.tbtool.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;图吧工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;清理工具&#34;&gt;清理工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://geekuninstaller.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Geek Uninstaller&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.fosshub.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;EmptyFolderNuker&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;文件比较工具&#34;&gt;文件比较工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.sourcegear.com/diffmerge/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DiffMerge&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⬜&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://dupeguru.voltaicideas.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DupeGuru&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.visipics.info/index.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VisiPics&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://winmerge.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WinMerge&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;下载工具&#34;&gt;下载工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.freedownloadmanager.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;FDM&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.qbittorrent.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;qbittorrent&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;文件压缩工具&#34;&gt;文件压缩工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.7-zip.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;7-Zip&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⬜&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.bandisoft.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bandizip&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⬜&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.peazip.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PeaZip&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⬜&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.win-rar.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WinRAR&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;其他工具&#34;&gt;其他工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.voidtools.com/zh-cn/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Everything&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.wofficebox.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;万彩办公大师&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>在线工具</title>
+        <link>/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</guid>
+        <description>&lt;h3 id=&#34;正则工具&#34;&gt;正则工具&lt;/h3&gt;
+&lt;p&gt;Regex101 &lt;a class=&#34;link&#34; href=&#34;https://regex101.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://regex101.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Regex-Vis &lt;a class=&#34;link&#34; href=&#34;https://regex-vis.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://regex-vis.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ip工具&#34;&gt;ip工具&lt;/h3&gt;
+&lt;p&gt;iP地址查询 &lt;a class=&#34;link&#34; href=&#34;https://www.ip138.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.ip138.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;编译&#34;&gt;编译&lt;/h3&gt;
+&lt;p&gt;多语言编译浏览器 &lt;a class=&#34;link&#34; href=&#34;https://godbolt.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://godbolt.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;在线工具箱&#34;&gt;在线工具箱&lt;/h3&gt;
+&lt;p&gt;程序员的工具箱 &lt;a class=&#34;link&#34; href=&#34;https://tool.lu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tool.lu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;在线ps图片&#34;&gt;在线ps图片&lt;/h3&gt;
+&lt;p&gt;美图秀秀 &lt;a class=&#34;link&#34; href=&#34;https://pc.meitu.com/design/edit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://pc.meitu.com/design/edit&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;免费svg图标&#34;&gt;免费SVG图标&lt;/h3&gt;
+&lt;p&gt;Tabler Icons &lt;a class=&#34;link&#34; href=&#34;https://tablericons.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tablericons.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
