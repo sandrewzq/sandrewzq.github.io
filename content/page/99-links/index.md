@@ -14,7 +14,7 @@ links:
     website: https://jimmycai.com/
 menu:
     main: 
-        weight: 0
+        weight: 99
         params:
             icon: link
 

@@ -56,9 +56,9 @@ params:
         emoji: 
         subtitle: 站点介绍.
         avatar:
-            enabled: false
+            enabled: true
             local: true
-            src: img/avatar.png
+            src: img/avatar.jpg
 
     article:
         math: true

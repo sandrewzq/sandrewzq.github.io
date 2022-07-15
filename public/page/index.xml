@@ -6,13 +6,106 @@
         <description>Recent content in Pages on Sandrew&#39;s Base</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 15 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>TrackersListCollection</title>
+        <link>/trackerslistcollection/</link>
+        <pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>/trackerslistcollection/</guid>
+        <description>&lt;h2 id=&#34;trackerslist&#34;&gt;TrackersList&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://trackerslist.com/all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://trackerslist.com/all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ngosang.github.io/trackerslist/trackers_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ngosang.github.io/trackerslist/trackers_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.staticaly.com/gh/XIU2/TrackersListCollection/master/all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.staticaly.com/gh/XIU2/TrackersListCollection/master/all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://at.raxianch.moe/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://at.raxianch.moe/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://at.raxianch.moe/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://at.raxianch.moe/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;othertracker&#34;&gt;OtherTracker&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://open.acgtracker.com:1096/announce&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://open.acgtracker.com:1096/announce&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;h3 id=&#34;acgtracker&#34;&gt;ACGTracker&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://acgtracker.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://acgtracker.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;trackerslist-1&#34;&gt;trackerslist&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ngosang/trackerslist&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/ngosang/trackerslist&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ngosang.github.io/trackerslist/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ngosang.github.io/trackerslist/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;xiu2trackerslistcollection&#34;&gt;XIU2/TrackersListCollection&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/XIU2/TrackersListCollection&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/XIU2/TrackersListCollection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://trackerslist.com/#/zh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://trackerslist.com/#/zh&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>归档</title>
         <link>/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
         <guid>/archives/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>pojie</title>
+        <link>/pojie/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/pojie/</guid>
+        <description>&lt;h3 id=&#34;激活工具&#34;&gt;激活工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.lond.cn/down/otp.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Office Tool Plus&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;docs%5cTools%5cHWIDGEN.zip&#34; &gt;HWIDGEN&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://cmwtat.cloudmoe.com/cn.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;云萌 Win10 激活工具&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
         </item>
         <item>
         <title>大佬博客</title>
@@ -25,12 +118,23 @@
 </description>
         </item>
         <item>
+        <title>工具收集</title>
+        <link>/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/</guid>
+        <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/&#34; &gt;免费PC软件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/&#34; &gt;在线工具&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/trackerslistcollection/&#34; &gt;TrackersListCollection&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>关于</title>
         <link>/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <description>&lt;p&gt;This is a test page .&lt;/p&gt;
 </description>
         </item>
         <item>

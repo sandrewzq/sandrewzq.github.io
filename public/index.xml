@@ -6,22 +6,74 @@
         <description>Recent content on Sandrew&#39;s Base</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 28 Feb 2022 18:52:12 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 15 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>TrackersListCollection</title>
+        <link>/trackerslistcollection/</link>
+        <pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>/trackerslistcollection/</guid>
+        <description>&lt;h2 id=&#34;trackerslist&#34;&gt;TrackersList&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://trackerslist.com/all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://trackerslist.com/all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ngosang.github.io/trackerslist/trackers_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ngosang.github.io/trackerslist/trackers_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.staticaly.com/gh/XIU2/TrackersListCollection/master/all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.staticaly.com/gh/XIU2/TrackersListCollection/master/all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://at.raxianch.moe/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://at.raxianch.moe/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://at.raxianch.moe/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://at.raxianch.moe/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;othertracker&#34;&gt;OtherTracker&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://open.acgtracker.com:1096/announce&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://open.acgtracker.com:1096/announce&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;h3 id=&#34;acgtracker&#34;&gt;ACGTracker&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://acgtracker.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://acgtracker.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;trackerslist-1&#34;&gt;trackerslist&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ngosang/trackerslist&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/ngosang/trackerslist&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ngosang.github.io/trackerslist/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ngosang.github.io/trackerslist/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;xiu2trackerslistcollection&#34;&gt;XIU2/TrackersListCollection&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/XIU2/TrackersListCollection&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/XIU2/TrackersListCollection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://trackerslist.com/#/zh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://trackerslist.com/#/zh&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Github Pages及Gitee Pages使用教程</title>
         <link>/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
         <pubDate>Mon, 28 Feb 2022 18:52:12 +0000</pubDate>
         
         <guid>/p/github-pages%E5%8F%8Agitee-pages%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
-        <description>&lt;h2 id=&#34;1什么是github-pages及gitee-pages&#34;&gt;1.什么是Github Pages及Gitee Pages&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;什么是github-pages及gitee-pages&#34;&gt;什么是Github Pages及Gitee Pages&lt;/h2&gt;
 &lt;p&gt;显而易见，从名字上就可以轻易地看出这两个&amp;rsquo;Pages&amp;rsquo;分别属于两家代码托管服务。
 对于GitHub Pages，其官方文档是这样介绍的:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;GitHub Pages是一个静态站点托管服务,可以通过部署程序把HTML，CS和JavaScript等文件组成的静态库发布成为一个静态站点。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;而Gitee Pages的核心功能与Github Pages一样，都是提供一个静态站点托管服务。可以通过这两种服务搭建一个轻量化博客或者静态个人站。&lt;/p&gt;
-&lt;h2 id=&#34;2pages服务的优点&#34;&gt;2.Pages服务的优点&lt;/h2&gt;
+&lt;h2 id=&#34;pages服务的优点&#34;&gt;Pages服务的优点&lt;/h2&gt;
 &lt;p&gt;相比于著名的WordPress博客系统，Pages服务最大的优势就是轻量化，无需LAMP环境。而且它完全免费，也不需要部署服务器的费用。&lt;/p&gt;
-&lt;h2 id=&#34;3pages快速开始&#34;&gt;3.Pages快速开始&lt;/h2&gt;
+&lt;h2 id=&#34;pages快速开始&#34;&gt;Pages快速开始&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;以Github Pages举例，Gitee Pages操作基本一致。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -102,18 +154,18 @@
 &gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;4-pages-进阶使用-jekyllhugohexodocsify等生成自己的静态网页&#34;&gt;4. Pages 进阶，使用 Jekyll、Hugo、Hexo、docsify等生成自己的静态网页&lt;/h2&gt;
+&lt;h2 id=&#34;pages-进阶使用-jekyllhugohexodocsify等生成自己的静态网页&#34;&gt;Pages 进阶，使用 Jekyll、Hugo、Hexo、docsify等生成自己的静态网页&lt;/h2&gt;
 &lt;p&gt;Jekyll、Hugo、Hexo、docsify 是简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 Markdown 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。
 Jekyll 使用文档：https://www.jekyll.com.cn/docs/home/
 Hugo 使用文档：https://gohugo.io/documentation/
 Hexo 使用文档：https://hexo.io/docs/
 docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
-&lt;h4 id=&#34;参考链接&#34;&gt;参考链接&lt;/h4&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/cn/pages/quickstart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub Pages快速入门&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/help/articles/4136&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Gitee Pages官方文档&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/54608&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages快速入门&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/help/articles/4136&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gitee Pages官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/54608&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub Pages 搭建教程&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
@@ -123,7 +175,7 @@ docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
         <pubDate>Thu, 23 Dec 2021 16:05:02 +0000</pubDate>
         
         <guid>/p/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/</guid>
-        <description>&lt;h5 id=&#34;0mysql提供了两个函数&#34;&gt;0.mysql提供了两个函数&lt;/h5&gt;
+        <description>&lt;h2 id=&#34;mysql提供了两个函数&#34;&gt;mysql提供了两个函数&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -144,7 +196,7 @@ docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h5 id=&#34;1第一个函数是计算平面坐标系下两点的距离就是&#34;&gt;1.第一个函数是计算平面坐标系下，两点的距离，就是&lt;/h5&gt;
+&lt;/div&gt;&lt;h2 id=&#34;第一个函数是计算平面坐标系下两点的距离就是&#34;&gt;第一个函数是计算平面坐标系下，两点的距离，就是&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -154,7 +206,7 @@ docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。&lt;/p&gt;
-&lt;h5 id=&#34;2第二个函数是计算球面距离的公式传入的参数是经纬度经度-180180纬度-9090返回的值以m为单位的距离&#34;&gt;2.第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。&lt;/h5&gt;
+&lt;h2 id=&#34;第二个函数是计算球面距离的公式传入的参数是经纬度经度-180180纬度-9090返回的值以m为单位的距离&#34;&gt;第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -174,7 +226,7 @@ docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;from community c
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;参考链接&#34;&gt;参考链接&lt;/h4&gt;
+&lt;/div&gt;&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/hdwang/p/9994153.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;mysql根据经纬度求两地距离&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://dev.mysql.com/doc/refman/5.7/en/spatial-convenience-functions.html#function_st-distance-sphere&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -240,7 +292,7 @@ docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
         <pubDate>Fri, 17 Jan 2020 09:49:26 +0000</pubDate>
         
         <guid>/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-        <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;h3 id=&#34;前排提示&#34;&gt;前排提示&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-894575-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -248,7 +300,7 @@ docsify 使用文档：http://www.yii-china.com/docsify/&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。
 系统选择的是 &lt;strong&gt;CentOs 7&lt;/strong&gt;，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。&lt;/p&gt;
-&lt;h4 id=&#34;运行环境&#34;&gt;运行环境&lt;/h4&gt;
+&lt;h3 id=&#34;运行环境&#34;&gt;运行环境&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;操作系统：CentOS 7.6 64位
 Java:jdk1.8.0_241
 我的世界服务端Server:Paper-1.14.4-b236
@@ -256,7 +308,7 @@ Java:jdk1.8.0_241
 SSH客户端:Xshell
 FTP客户端:XFtp
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;准备一台作为服务器的主机&#34;&gt;准备一台作为服务器的主机&lt;/h1&gt;
+&lt;h2 id=&#34;准备一台作为服务器的主机&#34;&gt;准备一台作为服务器的主机&lt;/h2&gt;
 &lt;p&gt;我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。
 &lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.png&#34;
 	width=&#34;1140&#34;
@@ -270,8 +322,8 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;1216px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;准备工作&#34;&gt;准备工作&lt;/h1&gt;
-&lt;h4 id=&#34;远程连接服务器&#34;&gt;远程连接服务器&lt;/h4&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;h3 id=&#34;远程连接服务器&#34;&gt;远程连接服务器&lt;/h3&gt;
 &lt;p&gt;使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell
 新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。
 &lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.png&#34;
@@ -286,7 +338,7 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;526px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;下载java&#34;&gt;下载Java&lt;/h4&gt;
+&lt;h3 id=&#34;下载java&#34;&gt;下载Java&lt;/h3&gt;
 &lt;p&gt;根据机器的情况选择对应版本，我选择的是&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux x64版本&lt;/a&gt;
 &lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java.png&#34;
@@ -301,7 +353,7 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;368px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;安装java&#34;&gt;安装Java&lt;/h4&gt;
+&lt;h3 id=&#34;安装java&#34;&gt;安装Java&lt;/h3&gt;
 &lt;p&gt;安装Java过程可以看&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/xuliangxing/p/7066913.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux 下安装JDK1.8&lt;/a&gt;，我也记录下我的安装过程。&lt;/p&gt;
 &lt;p&gt;由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。&lt;/p&gt;
@@ -433,7 +485,7 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;1042px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;安装我的世界服务器server端&#34;&gt;安装我的世界服务器server端&lt;/h1&gt;
+&lt;h2 id=&#34;安装我的世界服务器server端&#34;&gt;安装我的世界服务器server端&lt;/h2&gt;
 &lt;p&gt;首先进入刚才建好的minecraft_server目录，可以使用如下命令下载server端，我选择的是Paper-1.14.4-b23版本。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -445,7 +497,7 @@ FTP客户端:XFtp
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;也可以去&lt;a class=&#34;link&#34; href=&#34;https://yivesmirror.com/downloads/paper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Yive&amp;rsquo;s Mirror&lt;/a&gt;自行选择下载任意版本，然后通过ftp工具上传到minecraft_server目录。&lt;/p&gt;
-&lt;h1 id=&#34;运行我的世界服务器server&#34;&gt;运行我的世界服务器server&lt;/h1&gt;
+&lt;h2 id=&#34;运行我的世界服务器server&#34;&gt;运行我的世界服务器server&lt;/h2&gt;
 &lt;p&gt;进入目录，然后用java -jar命令启动运行文件&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -483,7 +535,7 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;323px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;新建后台启动脚本&#34;&gt;新建后台启动脚本&lt;/h1&gt;
+&lt;h2 id=&#34;新建后台启动脚本&#34;&gt;新建后台启动脚本&lt;/h2&gt;
 &lt;p&gt;我们使用screen工具来后台启动，所以先安装screen&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -587,16 +639,16 @@ FTP客户端:XFtp
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./stop.sh
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;其他事项&#34;&gt;其他事项&lt;/h1&gt;
-&lt;h4 id=&#34;服务器参数配置&#34;&gt;服务器参数配置&lt;/h4&gt;
+&lt;/div&gt;&lt;h2 id=&#34;其他事项&#34;&gt;其他事项&lt;/h2&gt;
+&lt;h3 id=&#34;服务器参数配置&#34;&gt;服务器参数配置&lt;/h3&gt;
 &lt;p&gt;服务器参数使用server.properties文件及其他yml文件设置，具体设置可以参考&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-478126-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Minecraft服务器优化教程 —— 让多带50%的玩家不再是梦&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;如何使用客户端并游玩&#34;&gt;如何使用客户端并游玩&lt;/h4&gt;
+&lt;h3 id=&#34;如何使用客户端并游玩&#34;&gt;如何使用客户端并游玩&lt;/h3&gt;
 &lt;p&gt;参见&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-38297-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;我的世界Minecraft Java版 下载指南|文件结构说明|推荐启动器&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;服务器运行状态查看&#34;&gt;服务器运行状态查看&lt;/h4&gt;
+&lt;h3 id=&#34;服务器运行状态查看&#34;&gt;服务器运行状态查看&lt;/h3&gt;
 &lt;p&gt;查看游戏目录安装目录下的/minecraft_server/logs文件夹的latest.log文件&lt;/p&gt;
-&lt;h1 id=&#34;参考资料及感谢&#34;&gt;参考资料及感谢&lt;/h1&gt;
+&lt;h2 id=&#34;参考资料及感谢&#34;&gt;参考资料及感谢&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/89f14756d16c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux下搭建带mod的Minecraft服务器&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-770886-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -653,6 +705,47 @@ $$
 $$&lt;/p&gt;</description>
         </item>
         <item>
+        <title>pojie</title>
+        <link>/pojie/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/pojie/</guid>
+        <description>&lt;h3 id=&#34;激活工具&#34;&gt;激活工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.lond.cn/down/otp.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Office Tool Plus&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;docs%5cTools%5cHWIDGEN.zip&#34; &gt;HWIDGEN&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://cmwtat.cloudmoe.com/cn.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;云萌 Win10 激活工具&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
         <title>大佬博客</title>
         <link>/%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -663,12 +756,23 @@ $$&lt;/p&gt;</description>
 </description>
         </item>
         <item>
+        <title>工具收集</title>
+        <link>/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/</guid>
+        <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/&#34; &gt;免费PC软件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/&#34; &gt;在线工具&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/trackerslistcollection/&#34; &gt;TrackersListCollection&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>关于</title>
         <link>/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <description>&lt;p&gt;This is a test page .&lt;/p&gt;
 </description>
         </item>
         <item>

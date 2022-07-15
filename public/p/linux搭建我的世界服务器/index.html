@@ -81,6 +81,21 @@
     <header>
         
             
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huf0ab02c9034de99e1467ba9ea4e8410d_73410_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
         
         
         <div class="site-meta">
@@ -134,6 +149,26 @@
         
 
         <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
             <a href='/archives/' >
                 
                 
@@ -155,43 +190,7 @@
         
 
         <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>搜索</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c1c1c1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12" />
-</svg>
-                
-                <span>在线工具</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/' >
+            <a href='/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/' >
                 
                 
                 
@@ -204,7 +203,7 @@
   <line x1="17" y1="4" x2="17" y2="10" />
 </svg>
                 
-                <span>免费PC软件</span>
+                <span>工具收集</span>
             </a>
         </li>
         
@@ -320,7 +319,7 @@
     <section class="article-content">
     
     
-    <h1 id="前言">前言</h1>
+    <h2 id="前言">前言</h2>
 <h3 id="前排提示">前排提示</h3>
 <blockquote>
 <p>本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程<a class="link" href="https://www.mcbbs.net/thread-894575-1-1.html"  target="_blank" rel="noopener"
@@ -328,7 +327,7 @@
 </blockquote>
 <p>前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。
 系统选择的是 <strong>CentOs 7</strong>，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。</p>
-<h4 id="运行环境">运行环境</h4>
+<h3 id="运行环境">运行环境</h3>
 <pre><code>操作系统：CentOS 7.6 64位
 Java:jdk1.8.0_241
 我的世界服务端Server:Paper-1.14.4-b236
@@ -336,7 +335,7 @@ Java:jdk1.8.0_241
 SSH客户端:Xshell
 FTP客户端:XFtp
 </code></pre>
-<h1 id="准备一台作为服务器的主机">准备一台作为服务器的主机</h1>
+<h2 id="准备一台作为服务器的主机">准备一台作为服务器的主机</h2>
 <p>我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。
 <img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.png"
 	width="1140"
@@ -350,8 +349,8 @@ FTP客户端:XFtp
 		data-flex-basis="1216px"
 	
 ></p>
-<h1 id="准备工作">准备工作</h1>
-<h4 id="远程连接服务器">远程连接服务器</h4>
+<h2 id="准备工作">准备工作</h2>
+<h3 id="远程连接服务器">远程连接服务器</h3>
 <p>使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell
 新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。
 <img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.png"
@@ -366,7 +365,7 @@ FTP客户端:XFtp
 		data-flex-basis="526px"
 	
 ></p>
-<h4 id="下载java">下载Java</h4>
+<h3 id="下载java">下载Java</h3>
 <p>根据机器的情况选择对应版本，我选择的是<a class="link" href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"  target="_blank" rel="noopener"
     >Linux x64版本</a>
 <img src="/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java.png"
@@ -381,7 +380,7 @@ FTP客户端:XFtp
 		data-flex-basis="368px"
 	
 ></p>
-<h4 id="安装java">安装Java</h4>
+<h3 id="安装java">安装Java</h3>
 <p>安装Java过程可以看<a class="link" href="https://www.cnblogs.com/xuliangxing/p/7066913.html"  target="_blank" rel="noopener"
     >Linux 下安装JDK1.8</a>，我也记录下我的安装过程。</p>
 <p>由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。</p>
@@ -513,7 +512,7 @@ FTP客户端:XFtp
 		data-flex-basis="1042px"
 	
 ></p>
-<h1 id="安装我的世界服务器server端">安装我的世界服务器server端</h1>
+<h2 id="安装我的世界服务器server端">安装我的世界服务器server端</h2>
 <p>首先进入刚才建好的minecraft_server目录，可以使用如下命令下载server端，我选择的是Paper-1.14.4-b23版本。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -525,7 +524,7 @@ FTP客户端:XFtp
 </div>
 </div><p>也可以去<a class="link" href="https://yivesmirror.com/downloads/paper"  target="_blank" rel="noopener"
     >Yive&rsquo;s Mirror</a>自行选择下载任意版本，然后通过ftp工具上传到minecraft_server目录。</p>
-<h1 id="运行我的世界服务器server">运行我的世界服务器server</h1>
+<h2 id="运行我的世界服务器server">运行我的世界服务器server</h2>
 <p>进入目录，然后用java -jar命令启动运行文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -563,7 +562,7 @@ FTP客户端:XFtp
 		data-flex-basis="323px"
 	
 ></p>
-<h1 id="新建后台启动脚本">新建后台启动脚本</h1>
+<h2 id="新建后台启动脚本">新建后台启动脚本</h2>
 <p>我们使用screen工具来后台启动，所以先安装screen</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -667,16 +666,16 @@ FTP客户端:XFtp
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">./stop.sh
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="其他事项">其他事项</h1>
-<h4 id="服务器参数配置">服务器参数配置</h4>
+</div><h2 id="其他事项">其他事项</h2>
+<h3 id="服务器参数配置">服务器参数配置</h3>
 <p>服务器参数使用server.properties文件及其他yml文件设置，具体设置可以参考<a class="link" href="https://www.mcbbs.net/thread-478126-1-1.html"  target="_blank" rel="noopener"
     >Minecraft服务器优化教程 —— 让多带50%的玩家不再是梦</a></p>
-<h4 id="如何使用客户端并游玩">如何使用客户端并游玩</h4>
+<h3 id="如何使用客户端并游玩">如何使用客户端并游玩</h3>
 <p>参见<a class="link" href="https://www.mcbbs.net/thread-38297-1-1.html"  target="_blank" rel="noopener"
     >我的世界Minecraft Java版 下载指南|文件结构说明|推荐启动器</a></p>
-<h4 id="服务器运行状态查看">服务器运行状态查看</h4>
+<h3 id="服务器运行状态查看">服务器运行状态查看</h3>
 <p>查看游戏目录安装目录下的/minecraft_server/logs文件夹的latest.log文件</p>
-<h1 id="参考资料及感谢">参考资料及感谢</h1>
+<h2 id="参考资料及感谢">参考资料及感谢</h2>
 <p><a class="link" href="https://www.jianshu.com/p/89f14756d16c"  target="_blank" rel="noopener"
     >Linux下搭建带mod的Minecraft服务器</a></p>
 <p><a class="link" href="https://www.mcbbs.net/thread-770886-1-1.html"  target="_blank" rel="noopener"
@@ -905,43 +904,31 @@ FTP客户端:XFtp
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li>
+    <li><a href="#前言">前言</a>
       <ol>
-        <li><a href="#前排提示">前排提示</a>
-          <ol>
-            <li><a href="#运行环境">运行环境</a></li>
-          </ol>
-        </li>
+        <li><a href="#前排提示">前排提示</a></li>
+        <li><a href="#运行环境">运行环境</a></li>
       </ol>
     </li>
-  </ol>
-
-  <ol>
-    <li>
+    <li><a href="#准备一台作为服务器的主机">准备一台作为服务器的主机</a></li>
+    <li><a href="#准备工作">准备工作</a>
       <ol>
-        <li>
-          <ol>
-            <li><a href="#远程连接服务器">远程连接服务器</a></li>
-            <li><a href="#下载java">下载Java</a></li>
-            <li><a href="#安装java">安装Java</a></li>
-          </ol>
-        </li>
+        <li><a href="#远程连接服务器">远程连接服务器</a></li>
+        <li><a href="#下载java">下载Java</a></li>
+        <li><a href="#安装java">安装Java</a></li>
       </ol>
     </li>
-  </ol>
-
-  <ol>
-    <li>
+    <li><a href="#安装我的世界服务器server端">安装我的世界服务器server端</a></li>
+    <li><a href="#运行我的世界服务器server">运行我的世界服务器server</a></li>
+    <li><a href="#新建后台启动脚本">新建后台启动脚本</a></li>
+    <li><a href="#其他事项">其他事项</a>
       <ol>
-        <li>
-          <ol>
-            <li><a href="#服务器参数配置">服务器参数配置</a></li>
-            <li><a href="#如何使用客户端并游玩">如何使用客户端并游玩</a></li>
-            <li><a href="#服务器运行状态查看">服务器运行状态查看</a></li>
-          </ol>
-        </li>
+        <li><a href="#服务器参数配置">服务器参数配置</a></li>
+        <li><a href="#如何使用客户端并游玩">如何使用客户端并游玩</a></li>
+        <li><a href="#服务器运行状态查看">服务器运行状态查看</a></li>
       </ol>
     </li>
+    <li><a href="#参考资料及感谢">参考资料及感谢</a></li>
   </ol>
 </nav>
         </div>

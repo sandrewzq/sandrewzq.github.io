@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='0.mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 1.第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
-2.第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
+第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
 1 2 select c.*,st_distance_sphere(point(#{baseLongitude}, #{baseLatitude}),point(c.longitude, c.latitude)) as distance from community c 参考链接 mysql根据经纬度求两地距离 Spatial Convenience Functions'><title>mysql根据经纬度求两地距离</title>
 
 <link rel='canonical' href='/p/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/'>
 
 <link rel="stylesheet" href="/scss/style.min.0d6801e40f97865d11b796a59ab5cccec41427c09bbb58dec945c9cf7412db70.css"><meta property='og:title' content='mysql根据经纬度求两地距离'>
-<meta property='og:description' content='0.mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 1.第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
-2.第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
+<meta property='og:description' content='mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
+第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
 1 2 select c.*,st_distance_sphere(point(#{baseLongitude}, #{baseLatitude}),point(c.longitude, c.latitude)) as distance from community c 参考链接 mysql根据经纬度求两地距离 Spatial Convenience Functions'>
 <meta property='og:url' content='/p/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/'>
 <meta property='og:site_name' content='Sandrew&#39;s Base'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='mysql' /><meta property='article:published_time' content='2021-12-23T16:05:02&#43;00:00'/><meta property='article:modified_time' content='2021-12-23T16:05:02&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='MySql' /><meta property='article:published_time' content='2021-12-23T16:05:02&#43;00:00'/><meta property='article:modified_time' content='2021-12-23T16:05:02&#43;00:00'/>
 <meta name="twitter:title" content="mysql根据经纬度求两地距离">
-<meta name="twitter:description" content="0.mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 1.第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
-2.第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
+<meta name="twitter:description" content="mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
+第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
 1 2 select c.*,st_distance_sphere(point(#{baseLongitude}, #{baseLatitude}),point(c.longitude, c.latitude)) as distance from community c 参考链接 mysql根据经纬度求两地距离 Spatial Convenience Functions">
     </head>
     <body class="
@@ -53,6 +53,21 @@
 
     <header>
         
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huf0ab02c9034de99e1467ba9ea4e8410d_73410_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
             
         
         
@@ -107,6 +122,26 @@
         
 
         <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
             <a href='/archives/' >
                 
                 
@@ -128,43 +163,7 @@
         
 
         <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>搜索</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c1c1c1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12" />
-</svg>
-                
-                <span>在线工具</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/' >
+            <a href='/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/' >
                 
                 
                 
@@ -177,7 +176,7 @@
   <line x1="17" y1="4" x2="17" y2="10" />
 </svg>
                 
-                <span>免费PC软件</span>
+                <span>工具收集</span>
             </a>
         </li>
         
@@ -237,7 +236,7 @@
     <header class="article-category">
         
             <a href="/categories/mysql/" >
-                mysql
+                MySql
             </a>
         
     </header>
@@ -293,7 +292,7 @@
     <section class="article-content">
     
     
-    <h5 id="0mysql提供了两个函数">0.mysql提供了两个函数</h5>
+    <h2 id="mysql提供了两个函数">mysql提供了两个函数</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -314,7 +313,7 @@
 </span></span><span class="line"><span class="cl">select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6.
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="1第一个函数是计算平面坐标系下两点的距离就是">1.第一个函数是计算平面坐标系下，两点的距离，就是</h5>
+</div><h2 id="第一个函数是计算平面坐标系下两点的距离就是">第一个函数是计算平面坐标系下，两点的距离，就是</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -324,7 +323,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。</p>
-<h5 id="2第二个函数是计算球面距离的公式传入的参数是经纬度经度-180180纬度-9090返回的值以m为单位的距离">2.第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。</h5>
+<h2 id="第二个函数是计算球面距离的公式传入的参数是经纬度经度-180180纬度-9090返回的值以m为单位的距离">第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -344,7 +343,7 @@
 </span></span><span class="line"><span class="cl">from community c
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="参考链接">参考链接</h4>
+</div><h2 id="参考链接">参考链接</h2>
 <p><a class="link" href="https://www.cnblogs.com/hdwang/p/9994153.html"  target="_blank" rel="noopener"
     >mysql根据经纬度求两地距离</a>
 <a class="link" href="https://dev.mysql.com/doc/refman/5.7/en/spatial-convenience-functions.html#function_st-distance-sphere"  target="_blank" rel="noopener"
@@ -357,7 +356,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/mysql/">mysql</a>
+            <a href="/tags/mysql/">MySql</a>
         
     </section>
 
@@ -571,16 +570,10 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li>
-      <ol>
-        <li>
-          <ol>
-            <li></li>
-            <li><a href="#参考链接">参考链接</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
+    <li><a href="#mysql提供了两个函数">mysql提供了两个函数</a></li>
+    <li><a href="#第一个函数是计算平面坐标系下两点的距离就是">第一个函数是计算平面坐标系下，两点的距离，就是</a></li>
+    <li><a href="#第二个函数是计算球面距离的公式传入的参数是经纬度经度-180180纬度-9090返回的值以m为单位的距离">第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。</a></li>
+    <li><a href="#参考链接">参考链接</a></li>
   </ol>
 </nav>
         </div>

@@ -2,9 +2,9 @@
 title: git同时push到多个repository
 date: 2021-09-28 14:06:58
 categories: 
-- git
+- Git
 tags: 
-- git
+- Git
 ---
 1. 使用git remote add添加一个remote,我这里命名为all，后面写上第一个repository地址
 ```

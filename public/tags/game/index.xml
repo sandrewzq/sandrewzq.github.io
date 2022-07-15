@@ -12,7 +12,7 @@
         <pubDate>Fri, 17 Jan 2020 09:49:26 +0000</pubDate>
         
         <guid>/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-        <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;h3 id=&#34;前排提示&#34;&gt;前排提示&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-894575-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -20,7 +20,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。
 系统选择的是 &lt;strong&gt;CentOs 7&lt;/strong&gt;，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。&lt;/p&gt;
-&lt;h4 id=&#34;运行环境&#34;&gt;运行环境&lt;/h4&gt;
+&lt;h3 id=&#34;运行环境&#34;&gt;运行环境&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;操作系统：CentOS 7.6 64位
 Java:jdk1.8.0_241
 我的世界服务端Server:Paper-1.14.4-b236
@@ -28,7 +28,7 @@ Java:jdk1.8.0_241
 SSH客户端:Xshell
 FTP客户端:XFtp
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;准备一台作为服务器的主机&#34;&gt;准备一台作为服务器的主机&lt;/h1&gt;
+&lt;h2 id=&#34;准备一台作为服务器的主机&#34;&gt;准备一台作为服务器的主机&lt;/h2&gt;
 &lt;p&gt;我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。
 &lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.png&#34;
 	width=&#34;1140&#34;
@@ -42,8 +42,8 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;1216px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;准备工作&#34;&gt;准备工作&lt;/h1&gt;
-&lt;h4 id=&#34;远程连接服务器&#34;&gt;远程连接服务器&lt;/h4&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;h3 id=&#34;远程连接服务器&#34;&gt;远程连接服务器&lt;/h3&gt;
 &lt;p&gt;使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell
 新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。
 &lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.png&#34;
@@ -58,7 +58,7 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;526px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;下载java&#34;&gt;下载Java&lt;/h4&gt;
+&lt;h3 id=&#34;下载java&#34;&gt;下载Java&lt;/h3&gt;
 &lt;p&gt;根据机器的情况选择对应版本，我选择的是&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux x64版本&lt;/a&gt;
 &lt;img src=&#34;/p/linux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%8D%E5%8A%A1%E5%99%A8/java.png&#34;
@@ -73,7 +73,7 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;368px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;安装java&#34;&gt;安装Java&lt;/h4&gt;
+&lt;h3 id=&#34;安装java&#34;&gt;安装Java&lt;/h3&gt;
 &lt;p&gt;安装Java过程可以看&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/xuliangxing/p/7066913.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux 下安装JDK1.8&lt;/a&gt;，我也记录下我的安装过程。&lt;/p&gt;
 &lt;p&gt;由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。&lt;/p&gt;
@@ -205,7 +205,7 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;1042px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;安装我的世界服务器server端&#34;&gt;安装我的世界服务器server端&lt;/h1&gt;
+&lt;h2 id=&#34;安装我的世界服务器server端&#34;&gt;安装我的世界服务器server端&lt;/h2&gt;
 &lt;p&gt;首先进入刚才建好的minecraft_server目录，可以使用如下命令下载server端，我选择的是Paper-1.14.4-b23版本。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -217,7 +217,7 @@ FTP客户端:XFtp
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;也可以去&lt;a class=&#34;link&#34; href=&#34;https://yivesmirror.com/downloads/paper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Yive&amp;rsquo;s Mirror&lt;/a&gt;自行选择下载任意版本，然后通过ftp工具上传到minecraft_server目录。&lt;/p&gt;
-&lt;h1 id=&#34;运行我的世界服务器server&#34;&gt;运行我的世界服务器server&lt;/h1&gt;
+&lt;h2 id=&#34;运行我的世界服务器server&#34;&gt;运行我的世界服务器server&lt;/h2&gt;
 &lt;p&gt;进入目录，然后用java -jar命令启动运行文件&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -255,7 +255,7 @@ FTP客户端:XFtp
 		data-flex-basis=&#34;323px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;新建后台启动脚本&#34;&gt;新建后台启动脚本&lt;/h1&gt;
+&lt;h2 id=&#34;新建后台启动脚本&#34;&gt;新建后台启动脚本&lt;/h2&gt;
 &lt;p&gt;我们使用screen工具来后台启动，所以先安装screen&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -359,16 +359,16 @@ FTP客户端:XFtp
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./stop.sh
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;其他事项&#34;&gt;其他事项&lt;/h1&gt;
-&lt;h4 id=&#34;服务器参数配置&#34;&gt;服务器参数配置&lt;/h4&gt;
+&lt;/div&gt;&lt;h2 id=&#34;其他事项&#34;&gt;其他事项&lt;/h2&gt;
+&lt;h3 id=&#34;服务器参数配置&#34;&gt;服务器参数配置&lt;/h3&gt;
 &lt;p&gt;服务器参数使用server.properties文件及其他yml文件设置，具体设置可以参考&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-478126-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Minecraft服务器优化教程 —— 让多带50%的玩家不再是梦&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;如何使用客户端并游玩&#34;&gt;如何使用客户端并游玩&lt;/h4&gt;
+&lt;h3 id=&#34;如何使用客户端并游玩&#34;&gt;如何使用客户端并游玩&lt;/h3&gt;
 &lt;p&gt;参见&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-38297-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;我的世界Minecraft Java版 下载指南|文件结构说明|推荐启动器&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;服务器运行状态查看&#34;&gt;服务器运行状态查看&lt;/h4&gt;
+&lt;h3 id=&#34;服务器运行状态查看&#34;&gt;服务器运行状态查看&lt;/h3&gt;
 &lt;p&gt;查看游戏目录安装目录下的/minecraft_server/logs文件夹的latest.log文件&lt;/p&gt;
-&lt;h1 id=&#34;参考资料及感谢&#34;&gt;参考资料及感谢&lt;/h1&gt;
+&lt;h2 id=&#34;参考资料及感谢&#34;&gt;参考资料及感谢&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/89f14756d16c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux下搭建带mod的Minecraft服务器&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.mcbbs.net/thread-770886-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

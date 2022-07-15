@@ -1,11 +1,11 @@
 ---
 title: 免费PC软件
-menu:
-    main: 
-        name: 免费PC软件
-        weight: -10
-        params:
-            icon: apps
+# menu:
+#     main: 
+#         name: 免费PC软件
+#         weight: -10
+#         params:
+#             icon: apps
 ---
 # 说明
 `这是一个免费PC软件收集表~`
