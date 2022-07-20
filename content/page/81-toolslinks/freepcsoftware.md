@@ -6,6 +6,10 @@ title: 免费PC软件
 #         weight: -10
 #         params:
 #             icon: apps
+categories:
+- Software
+tags: 
+- Software
 ---
 # 说明
 `这是一个免费PC软件收集表~`
@@ -17,11 +21,14 @@ NAME                                   | WINDOWS | LINUX |  MAC  |
 [iSlide][iSlide]                       |    ✅   |  ✅  |   ✅  |
 [Libre Office][Libre Office]           |    ✅   |  ✅  |   ✅  |
 [WPS][WPS]                             |    ✅   |  ✅  |   ✅  |
+[万彩办公大师][万彩办公大师]             |    ✅   |  ❌  |   ❌  |
 
 [drawio]: https://github.com/jgraph/drawio-desktop/releases
 [iSlide]: https://www.islide.cc/download
 [Libre Office]: https://zh-cn.libreoffice.org/download/libreoffice/
 [WPS]: https://pc.wps.cn/
+[万彩办公大师]: http://www.wofficebox.com/
+
 
 ### editor
 NAME                                          | WINDOWS | LINUX |  MAC  |
@@ -123,11 +130,13 @@ NAME                                     | WINDOWS | LINUX |  MAC  |
 [GPU-Z][GPU-Z]                           |    ✅   |  ❌  |   ❌  |
 [卡硬工具箱][卡硬工具箱]                     |    ✅   |  ❌  |   ❌  |
 [图吧工具箱][图吧工具箱]                     |    ✅   |  ❌  |   ❌  |
+[入梦工具箱][入梦工具箱]                     |    ✅   |  ❌  |   ❌  |
 
 [CPU-Z]: https://www.cpuid.com/softwares/cpu-z.html
 [GPU-Z]: https://www.techpowerup.com/download/techpowerup-gpu-z/
 [卡硬工具箱]: http://www.kbtool.cn/
 [图吧工具箱]: http://www.tbtool.cn/
+[入梦工具箱]: https://github.com/weiyourumeng/RM-Toolbox
 
 
 ### 清理工具
@@ -177,11 +186,24 @@ NAME                                 | WINDOWS | LINUX |  MAC  |
 [WinRAR]: https://www.win-rar.com/
 
 
+### 游戏工具
+NAME                                                 | WINDOWS | LINUX |  MAC  |
+:----------------------------------------------------| ------: | ----: | ----: |
+[Watt Toolkit][Watt Toolkit]                         |    ✅   |  ✅  |   ✅  |
+[UsbEAm Hosts Editor][UsbEAm Hosts Editor]           |    ✅   |  ❌  |   ❌  |
+
+[Watt Toolkit]: https://steampp.net/
+[UsbEAm Hosts Editor]: https://www.dogfight360.com/blog/475/
+
+
+
+
 ### 其他工具
 NAME                                   | WINDOWS | LINUX |  MAC  |
 :--------------------------------------| ------: | ----: | ----: |
 [Everything][Everything]               |    ✅   |  ❌  |   ❌  |
-[万彩办公大师][万彩办公大师]             |    ✅   |  ❌  |   ❌  |
+[微PE工具箱][微PE工具箱]               |    ⬜   |  ⬜  |   ❌  |
+
 
 [Everything]: https://www.voidtools.com/zh-cn/downloads/
-[万彩办公大师]: http://www.wofficebox.com/
+[微PE工具箱]: https://www.wepe.com.cn/
