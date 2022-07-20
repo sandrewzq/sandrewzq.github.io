@@ -79,6 +79,10 @@
   </url><url>
     <loc>/pojie/</loc>
   </url><url>
+    <loc>/tags/software/</loc>
+  </url><url>
+    <loc>/categories/software/</loc>
+  </url><url>
     <loc>/%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2/</loc>
   </url><url>
     <loc>/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/</loc>
@@ -89,6 +93,16 @@
   </url><url>
     <loc>/search/</loc>
   </url><url>
+    <loc>/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</loc>
+  </url><url>
+    <loc>/categories/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</loc>
+  </url><url>
     <loc>/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</loc>
+  </url><url>
+    <loc>/tags/%E5%AD%97%E5%B9%95/</loc>
+  </url><url>
+    <loc>/categories/%E5%AD%97%E5%B9%95/</loc>
+  </url><url>
+    <loc>/%E5%AD%97%E5%B9%95/</loc>
   </url>
 </urlset>

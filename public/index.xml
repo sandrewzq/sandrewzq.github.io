@@ -764,6 +764,7 @@ $$&lt;/p&gt;</description>
         <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/&#34; &gt;免费PC软件&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/&#34; &gt;在线工具&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/trackerslistcollection/&#34; &gt;TrackersListCollection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%AD%97%E5%B9%95/&#34; &gt;字幕搜索&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -821,6 +822,13 @@ $$&lt;/p&gt;</description>
 &lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.wofficebox.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;万彩办公大师&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1143,6 +1151,13 @@ $$&lt;/p&gt;</description>
 &lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/weiyourumeng/RM-Toolbox&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;入梦工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;清理工具&#34;&gt;清理工具&lt;/h3&gt;
@@ -1281,6 +1296,33 @@ $$&lt;/p&gt;</description>
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h3 id=&#34;游戏工具&#34;&gt;游戏工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://steampp.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Watt Toolkit&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.dogfight360.com/blog/475/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UsbEAm Hosts Editor&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h3 id=&#34;其他工具&#34;&gt;其他工具&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1300,10 +1342,10 @@ $$&lt;/p&gt;</description>
 &lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.wofficebox.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;万彩办公大师&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.wepe.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;微PE工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⬜&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;⬜&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1324,26 +1366,68 @@ $$&lt;/p&gt;</description>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</guid>
-        <description>&lt;h3 id=&#34;正则工具&#34;&gt;正则工具&lt;/h3&gt;
+        <description>&lt;h2 id=&#34;正则工具&#34;&gt;正则工具&lt;/h2&gt;
 &lt;p&gt;Regex101 &lt;a class=&#34;link&#34; href=&#34;https://regex101.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://regex101.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Regex-Vis &lt;a class=&#34;link&#34; href=&#34;https://regex-vis.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://regex-vis.com/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;ip工具&#34;&gt;ip工具&lt;/h3&gt;
+&lt;h2 id=&#34;ip工具&#34;&gt;ip工具&lt;/h2&gt;
 &lt;p&gt;iP地址查询 &lt;a class=&#34;link&#34; href=&#34;https://www.ip138.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.ip138.com/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;编译&#34;&gt;编译&lt;/h3&gt;
+&lt;p&gt;站长工具 &lt;a class=&#34;link&#34; href=&#34;https://tool.chinaz.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tool.chinaz.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;编译&#34;&gt;编译&lt;/h2&gt;
 &lt;p&gt;多语言编译浏览器 &lt;a class=&#34;link&#34; href=&#34;https://godbolt.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://godbolt.org/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;在线工具箱&#34;&gt;在线工具箱&lt;/h3&gt;
+&lt;h2 id=&#34;在线工具箱&#34;&gt;在线工具箱&lt;/h2&gt;
 &lt;p&gt;程序员的工具箱 &lt;a class=&#34;link&#34; href=&#34;https://tool.lu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://tool.lu&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;在线ps图片&#34;&gt;在线ps图片&lt;/h3&gt;
+&lt;p&gt;Toolfk &lt;a class=&#34;link&#34; href=&#34;https://www.toolfk.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.toolfk.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在线图片编辑&#34;&gt;在线图片编辑&lt;/h2&gt;
 &lt;p&gt;美图秀秀 &lt;a class=&#34;link&#34; href=&#34;https://pc.meitu.com/design/edit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pc.meitu.com/design/edit&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;免费svg图标&#34;&gt;免费SVG图标&lt;/h3&gt;
+&lt;p&gt;爱给图片编辑器 &lt;a class=&#34;link&#34; href=&#34;https://www.aigei.com/tool/image&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.aigei.com/tool/image&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;免费svg图标&#34;&gt;免费SVG图标&lt;/h2&gt;
 &lt;p&gt;Tabler Icons &lt;a class=&#34;link&#34; href=&#34;https://tablericons.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://tablericons.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;流程图工具&#34;&gt;流程图工具&lt;/h2&gt;
+&lt;p&gt;diagrams &lt;a class=&#34;link&#34; href=&#34;https://www.diagrams.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.diagrams.net/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在线文件转换&#34;&gt;在线文件转换&lt;/h2&gt;
+&lt;p&gt;凹凸凹 &lt;a class=&#34;link&#34; href=&#34;https://www.alltoall.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.alltoall.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;convertio &lt;a class=&#34;link&#34; href=&#34;https://convertio.co/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://convertio.co/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>字幕</title>
+        <link>/%E5%AD%97%E5%B9%95/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%AD%97%E5%B9%95/</guid>
+        <description>&lt;h2 id=&#34;国内&#34;&gt;国内&lt;/h2&gt;
+&lt;p&gt;SubHD &lt;a class=&#34;link&#34; href=&#34;https://subhd.tv/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://subhd.tv/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;射手网 &lt;a class=&#34;link&#34; href=&#34;https://assrt.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://assrt.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;点点字幕 &lt;a class=&#34;link&#34; href=&#34;http://www.ddzimu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.ddzimu.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Opensubtitles &lt;a class=&#34;link&#34; href=&#34;https://www.opensubtitles.org/zh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.opensubtitles.org/zh&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;国外&#34;&gt;国外&lt;/h2&gt;
+&lt;p&gt;subscene &lt;a class=&#34;link&#34; href=&#34;https://subscene.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://subscene.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MovieSub &lt;a class=&#34;link&#34; href=&#34;http://www.moviesubtitles.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.moviesubtitles.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TVsubs &lt;a class=&#34;link&#34; href=&#34;http://www.tvsubs.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.tvsubs.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Subdivx &lt;a class=&#34;link&#34; href=&#34;https://www.subdivx.com/index.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.subdivx.com/index.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DivxSub &lt;a class=&#34;link&#34; href=&#34;https://www.divxmoviesenglishsubtitles.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.divxmoviesenglishsubtitles.com/&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         
