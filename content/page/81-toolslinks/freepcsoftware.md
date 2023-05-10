@@ -143,10 +143,11 @@ categories:
 
 ### 网络工具
 
-| NAME                                     | DESC |
-| :--------------------------------------- | ---: |
-| [Freefrp](https://freefrp.net/)          |      |
-| [Radmin LAN](https://www.radmin-lan.cn/) |      |
+| NAME                                     |   DESC |
+| :--------------------------------------- | -----: |
+| [Freefrp](https://freefrp.net/)          |        |
+| [Radmin LAN](https://www.radmin-lan.cn/) |        |
+| [OPENFRP](https://www.openfrp.net/)      | 免费流量有限 |
 
 ### 游戏工具
 
