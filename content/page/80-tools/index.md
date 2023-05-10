@@ -8,7 +8,7 @@ menu:
             icon: apps
 ---
 
-[免费PC软件]({{< ref "/page/81-toolslinks/freepcsoftware.md" >}} )
+[免费软件]({{< ref "/page/81-toolslinks/freepcsoftware.md" >}} )
 
 [在线工具]({{< ref "/page/81-toolslinks/onlineTools.md" >}} )
 

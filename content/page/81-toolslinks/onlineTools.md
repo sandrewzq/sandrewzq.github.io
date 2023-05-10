@@ -18,10 +18,16 @@ Regex101 https://regex101.com/
 Regex-Vis https://regex-vis.com/
 
 
-## ip工具
+## 网络工具
 iP地址查询 https://www.ip138.com/
 
 站长工具 https://tool.chinaz.com/
+
+DNS工具 https://tools.ipip.net/dns.php
+
+端口检测 https://canyouseeme.org/
+
+端口扫描 https://tool.chinaz.com/port/
 
 
 ## 编译
