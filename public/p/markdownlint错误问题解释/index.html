@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 最近在用VSCode写markdown的文件，编辑器一直在给我提示一个插件叫做markdownlint，用了之后感觉很不错，可以帮助自己更加规范的写文章，所以就记录下所有的错误信息以便查找
+MD001 - Heading levels should only increment by one level at a time 标题级数只能每次扩大一个，也就是说不能隔级创建标题，必须h1-h2-h3&amp;hellip;这样
+MD002 - First heading should be a top level heading 文档的第一个标题必须是最高级的标题，也就是h1
+MD003 - Heading style 整篇文档的标题格式要采取统一的
+MD004 - Unordered list style 整篇文档的无序列表的格式要一致
+MD005 - Inconsistent indentation for list items at the same level 同一个等级的列表的缩进要一致
+MD006 - Consider starting bulleted lists at the beginning of the line 一级标题不能够缩进
+MD007 - Unordered list indentation 无序列表嵌套的时候默认采取两个空格的缩进方式
+MD008 - 无 Rules'>
+<title>MarkdownLint错误问题解释</title>
+
+<link rel='canonical' href='/p/markdownlint%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98%E8%A7%A3%E9%87%8A/'>
+
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='MarkdownLint错误问题解释'>
+<meta property='og:description' content='前言 最近在用VSCode写markdown的文件，编辑器一直在给我提示一个插件叫做markdownlint，用了之后感觉很不错，可以帮助自己更加规范的写文章，所以就记录下所有的错误信息以便查找
+MD001 - Heading levels should only increment by one level at a time 标题级数只能每次扩大一个，也就是说不能隔级创建标题，必须h1-h2-h3&amp;hellip;这样
+MD002 - First heading should be a top level heading 文档的第一个标题必须是最高级的标题，也就是h1
+MD003 - Heading style 整篇文档的标题格式要采取统一的
+MD004 - Unordered list style 整篇文档的无序列表的格式要一致
+MD005 - Inconsistent indentation for list items at the same level 同一个等级的列表的缩进要一致
+MD006 - Consider starting bulleted lists at the beginning of the line 一级标题不能够缩进
+MD007 - Unordered list indentation 无序列表嵌套的时候默认采取两个空格的缩进方式
+MD008 - 无 Rules'>
+<meta property='og:url' content='/p/markdownlint%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98%E8%A7%A3%E9%87%8A/'>
+<meta property='og:site_name' content='Sandrew&#39;s Base'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Markdown' /><meta property='article:published_time' content='2024-01-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-01-22T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="MarkdownLint错误问题解释">
+<meta name="twitter:description" content="前言 最近在用VSCode写markdown的文件，编辑器一直在给我提示一个插件叫做markdownlint，用了之后感觉很不错，可以帮助自己更加规范的写文章，所以就记录下所有的错误信息以便查找
+MD001 - Heading levels should only increment by one level at a time 标题级数只能每次扩大一个，也就是说不能隔级创建标题，必须h1-h2-h3&amp;hellip;这样
+MD002 - First heading should be a top level heading 文档的第一个标题必须是最高级的标题，也就是h1
+MD003 - Heading style 整篇文档的标题格式要采取统一的
+MD004 - Unordered list style 整篇文档的无序列表的格式要一致
+MD005 - Inconsistent indentation for list items at the same level 同一个等级的列表的缩进要一致
+MD006 - Consider starting bulleted lists at the beginning of the line 一级标题不能够缩进
+MD007 - Unordered list indentation 无序列表嵌套的时候默认采取两个空格的缩进方式
+MD008 - 无 Rules">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "dark");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huf0ab02c9034de99e1467ba9ea4e8410d_73410_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Sandrew&#39;s Base</a></h1>
+            <h2 class="site-description">站点介绍.</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c1c1c1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="6" height="6" rx="1" />
+  <rect x="4" y="14" width="6" height="6" rx="1" />
+  <rect x="14" y="14" width="6" height="6" rx="1" />
+  <line x1="14" y1="7" x2="20" y2="7" />
+  <line x1="17" y1="4" x2="17" y2="10" />
+</svg>
+                
+                <span>工具收集</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>大佬博客</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#md001---heading-levels-should-only-increment-by-one-level-at-a-time">MD001 - Heading levels should only increment by one level at a time</a></li>
+    <li><a href="#md002---first-heading-should-be-a-top-level-heading">MD002 - First heading should be a top level heading</a></li>
+    <li><a href="#md003---heading-style">MD003 - Heading style</a></li>
+    <li><a href="#md004---unordered-list-style">MD004 - Unordered list style</a></li>
+    <li><a href="#md005---inconsistent-indentation-for-list-items-at-the-same-level">MD005 - Inconsistent indentation for list items at the same level</a></li>
+    <li><a href="#md006---consider-starting-bulleted-lists-at-the-beginning-of-the-line">MD006 - Consider starting bulleted lists at the beginning of the line</a></li>
+    <li><a href="#md007---unordered-list-indentation">MD007 - Unordered list indentation</a></li>
+    <li><a href="#md008---无">MD008 - 无</a></li>
+    <li><a href="#md009---trailing-spaces">MD009 - Trailing spaces</a></li>
+    <li><a href="#md010---hard-tabs">MD010 - Hard tabs</a></li>
+    <li><a href="#md011---reversed-link-syntax">MD011 - Reversed link syntax</a></li>
+    <li><a href="#md012---multiple-consecutive-blank-lines">MD012 - Multiple consecutive blank lines</a></li>
+    <li><a href="#md013---line-length">MD013 - Line length</a></li>
+    <li><a href="#md014---dollar-signs-used-before-commands-without-showing-output">MD014 - Dollar signs used before commands without showing output</a></li>
+    <li><a href="#md018---no-space-after-hash-on-atx-style-heading">MD018 - No space after hash on atx style heading</a></li>
+    <li><a href="#md019---multiple-spaces-after-hash-on-atx-style-heading">MD019 - Multiple spaces after hash on atx style heading</a></li>
+    <li><a href="#md020---no-space-inside-hashes-on-closed-atx-style-heading">MD020 - No space inside hashes on closed atx style heading</a></li>
+    <li><a href="#md021---multiple-spaces-inside-hashes-on-closed-atx-style-heading">MD021 - Multiple spaces inside hashes on closed atx style heading</a></li>
+    <li><a href="#md022---headings-should-be-surrounded-by-blank-lines">MD022 - Headings should be surrounded by blank lines</a></li>
+    <li><a href="#md023---headings-must-start-at-the-beginning-of-the-line">MD023 - Headings must start at the beginning of the line</a></li>
+    <li><a href="#md024---multiple-headings-with-the-same-content">MD024 - Multiple headings with the same content</a></li>
+    <li><a href="#md025---multiple-top-level-headings-in-the-same-document">MD025 - Multiple top level headings in the same document</a></li>
+    <li><a href="#md026---trailing-punctuation-in-heading">MD026 - Trailing punctuation in heading</a></li>
+    <li><a href="#md027---multiple-spaces-after-blockquote-symbol">MD027 - Multiple spaces after blockquote symbol</a></li>
+    <li><a href="#md028---blank-line-inside-blockquote">MD028 - Blank line inside blockquote</a></li>
+    <li><a href="#md029---ordered-list-item-prefix">MD029 - Ordered list item prefix</a></li>
+    <li><a href="#md030---spaces-after-list-markers">MD030 - Spaces after list markers</a></li>
+    <li><a href="#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines">MD031 - Fenced code blocks should be surrounded by blank lines</a></li>
+    <li><a href="#md032---lists-should-be-surrounded-by-blank-lines">MD032 - Lists should be surrounded by blank lines</a></li>
+    <li><a href="#md033---inline-html">MD033 - Inline HTML</a></li>
+    <li><a href="#md034---bare-url-used">MD034 - Bare URL used</a></li>
+    <li><a href="#md035---horizontal-rule-style">MD035 - Horizontal rule style</a></li>
+    <li><a href="#md036---emphasis-used-instead-of-a-heading">MD036 - Emphasis used instead of a heading</a></li>
+    <li><a href="#md037---spaces-inside-emphasis-markers">MD037 - Spaces inside emphasis markers</a></li>
+    <li><a href="#md038---spaces-inside-code-span-elements">MD038 - Spaces inside code span elements</a></li>
+    <li><a href="#md039---spaces-inside-link-text">MD039 - Spaces inside link text</a></li>
+    <li><a href="#md040---fenced-code-blocks-should-have-a-language-specified">MD040 - Fenced code blocks should have a language specified</a></li>
+    <li><a href="#md041---first-line-in-file-should-be-a-top-level-heading">MD041 - First line in file should be a top level heading</a></li>
+    <li><a href="#md042---no-empty-links">MD042 - No empty links</a></li>
+    <li><a href="#md043---required-heading-structure">MD043 - Required heading structure</a></li>
+    <li><a href="#md044---proper-names-should-have-the-correct-capitalization">MD044 - Proper names should have the correct capitalization</a></li>
+    <li><a href="#md045---images-should-have-alternate-text-alt-text">MD045 - Images should have alternate text (alt text)</a></li>
+    <li><a href="#md046---code-block-style">MD046 - Code block style</a></li>
+    <li><a href="#md047---files-should-end-with-a-single-newline-character">MD047 - Files should end with a single newline character</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/markdown/" >
+                Markdown
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/markdownlint%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98%E8%A7%A3%E9%87%8A/">MarkdownLint错误问题解释</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 22, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="前言">前言</h1>
+<blockquote>
+<p>最近在用VSCode写markdown的文件，编辑器一直在给我提示一个插件叫做markdownlint，用了之后感觉很不错，可以帮助自己更加规范的写文章，所以就记录下所有的错误信息以便查找</p>
+</blockquote>
+<h2 id="md001---heading-levels-should-only-increment-by-one-level-at-a-time">MD001 - Heading levels should only increment by one level at a time</h2>
+<blockquote>
+<p>标题级数只能每次扩大一个，也就是说不能隔级创建标题，必须h1-h2-h3&hellip;这样</p>
+</blockquote>
+<h2 id="md002---first-heading-should-be-a-top-level-heading">MD002 - First heading should be a top level heading</h2>
+<blockquote>
+<p>文档的第一个标题必须是最高级的标题，也就是h1</p>
+</blockquote>
+<h2 id="md003---heading-style">MD003 - Heading style</h2>
+<blockquote>
+<p>整篇文档的标题格式要采取统一的</p>
+</blockquote>
+<h2 id="md004---unordered-list-style">MD004 - Unordered list style</h2>
+<blockquote>
+<p>整篇文档的无序列表的格式要一致</p>
+</blockquote>
+<h2 id="md005---inconsistent-indentation-for-list-items-at-the-same-level">MD005 - Inconsistent indentation for list items at the same level</h2>
+<blockquote>
+<p>同一个等级的列表的缩进要一致</p>
+</blockquote>
+<h2 id="md006---consider-starting-bulleted-lists-at-the-beginning-of-the-line">MD006 - Consider starting bulleted lists at the beginning of the line</h2>
+<blockquote>
+<p>一级标题不能够缩进</p>
+</blockquote>
+<h2 id="md007---unordered-list-indentation">MD007 - Unordered list indentation</h2>
+<blockquote>
+<p>无序列表嵌套的时候默认采取两个空格的缩进方式</p>
+</blockquote>
+<h2 id="md008---无">MD008 - 无</h2>
+<p><a class="link" href="https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FDavidAnson%2Fmarkdownlint%2Fblob%2Fmaster%2Fdoc%2FRules.md%23md002---first-heading-should-be-a-top-level-heading"  title="https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md002---first-heading-should-be-a-top-level-heading"
+     target="_blank" rel="noopener"
+    >Rules</a></p>
+<h2 id="md009---trailing-spaces">MD009 - Trailing spaces</h2>
+<blockquote>
+<p>行尾最多可以添加两个空格，超出之后会有警告，最好每次都是两个空格因为两个空格刚好可以用来换行</p>
+</blockquote>
+<h2 id="md010---hard-tabs">MD010 - Hard tabs</h2>
+<blockquote>
+<p>不能使用tab来进行缩进，要使用空格</p>
+</blockquote>
+<h2 id="md011---reversed-link-syntax">MD011 - Reversed link syntax</h2>
+<blockquote>
+<p>内联形式的链接和创建方式是否错误，中括号和圆括号是否使用正确</p>
+</blockquote>
+<h2 id="md012---multiple-consecutive-blank-lines">MD012 - Multiple consecutive blank lines</h2>
+<blockquote>
+<p>文档中不能有连续的空行（文档末可以有一个空行），在代码块中这个规则不会生效</p>
+</blockquote>
+<h2 id="md013---line-length">MD013 - Line length</h2>
+<blockquote>
+<p>默认行的最大长度是80，对表格代码块标题都起效果</p>
+</blockquote>
+<h2 id="md014---dollar-signs-used-before-commands-without-showing-output">MD014 - Dollar signs used before commands without showing output</h2>
+<blockquote>
+<p>在代码块中，终端命令前面不需要有美元符号，如果如果代码块中既有终端命令，也有命令的输出，则终端命令前可以有美元符号($)</p>
+</blockquote>
+<h2 id="md018---no-space-after-hash-on-atx-style-heading">MD018 - No space after hash on atx style heading</h2>
+<blockquote>
+<p>标题格式如果是&quot;atx&quot;的话，#号和文字之间需要一个空格隔开</p>
+</blockquote>
+<h2 id="md019---multiple-spaces-after-hash-on-atx-style-heading">MD019 - Multiple spaces after hash on atx style heading</h2>
+<blockquote>
+<p>标题格式如果是&quot;atx&quot;的话，#号和文字之间只需要一个空格隔开，不需要多个</p>
+</blockquote>
+<h2 id="md020---no-space-inside-hashes-on-closed-atx-style-heading">MD020 - No space inside hashes on closed atx style heading</h2>
+<blockquote>
+<p>在closed_atx格式的标题中，文字和前后的#号之间都需要一个空格隔开</p>
+</blockquote>
+<h2 id="md021---multiple-spaces-inside-hashes-on-closed-atx-style-heading">MD021 - Multiple spaces inside hashes on closed atx style heading</h2>
+<blockquote>
+<p>在closed_atx格式的标题中，文字和前后的#号之间只需要一个空格隔开，不能有多余的</p>
+</blockquote>
+<h2 id="md022---headings-should-be-surrounded-by-blank-lines">MD022 - Headings should be surrounded by blank lines</h2>
+<blockquote>
+<p>标题的上下行必须都是空格</p>
+</blockquote>
+<h2 id="md023---headings-must-start-at-the-beginning-of-the-line">MD023 - Headings must start at the beginning of the line</h2>
+<blockquote>
+<p>标题行不能缩进</p>
+</blockquote>
+<h2 id="md024---multiple-headings-with-the-same-content">MD024 - Multiple headings with the same content</h2>
+<blockquote>
+<p>在文档中不能有重复性的标题</p>
+</blockquote>
+<h2 id="md025---multiple-top-level-headings-in-the-same-document">MD025 - Multiple top level headings in the same document</h2>
+<blockquote>
+<p>同一个文档中，只能有一个最高级的标题，默认也只能有一个一级标题</p>
+</blockquote>
+<h2 id="md026---trailing-punctuation-in-heading">MD026 - Trailing punctuation in heading</h2>
+<blockquote>
+<p>标题的末尾不能有&quot;. , ; : ! ? &ldquo;这些符号</p>
+</blockquote>
+<h2 id="md027---multiple-spaces-after-blockquote-symbol">MD027 - Multiple spaces after blockquote symbol</h2>
+<blockquote>
+<p>在创建引用块的时候，右尖号与文字之间必须有且只有一个空格</p>
+</blockquote>
+<h2 id="md028---blank-line-inside-blockquote">MD028 - Blank line inside blockquote</h2>
+<blockquote>
+<p>两个引用区块间不能仅用一个空行隔开或者同一引用区块中不能有空行，如果一行中没有内容，则这一行要用&gt;开头</p>
+</blockquote>
+<h2 id="md029---ordered-list-item-prefix">MD029 - Ordered list item prefix</h2>
+<blockquote>
+<p>有序列表的前缀序号格式必须只用1或者从1开始的加1递增数字</p>
+</blockquote>
+<h2 id="md030---spaces-after-list-markers">MD030 - Spaces after list markers</h2>
+<blockquote>
+<p>列表（有序、无序）的前缀符号和文字之间用1个空格隔开，在列表嵌套或者同一列表项中有多个段落时，无序列表缩进两个空格，有序列表缩进3个空格</p>
+</blockquote>
+<h2 id="md031---fenced-code-blocks-should-be-surrounded-by-blank-lines">MD031 - Fenced code blocks should be surrounded by blank lines</h2>
+<blockquote>
+<p>单独的代码块前后需要用空行隔开（除非是在文档开头或末尾），否则有些解释器不会解释为代码块</p>
+</blockquote>
+<h2 id="md032---lists-should-be-surrounded-by-blank-lines">MD032 - Lists should be surrounded by blank lines</h2>
+<blockquote>
+<p>列表（有序、无序）前后需要用空行隔开，否则有些解释器不会解释为列表，列表的缩进必须一致，否则会警告</p>
+</blockquote>
+<h2 id="md033---inline-html">MD033 - Inline HTML</h2>
+<blockquote>
+<p>文档中不允许使用html语句</p>
+</blockquote>
+<h2 id="md034---bare-url-used">MD034 - Bare URL used</h2>
+<blockquote>
+<p>单纯的链接地址需要用尖括号 (&lt;&gt;) 包裹，否则有些解释器不会解释为链接</p>
+</blockquote>
+<h2 id="md035---horizontal-rule-style">MD035 - Horizontal rule style</h2>
+<blockquote>
+<p>创建水平线时整篇文档要统一，要和文档中第一次创建水平线使用的符号一致</p>
+</blockquote>
+<h2 id="md036---emphasis-used-instead-of-a-heading">MD036 - Emphasis used instead of a heading</h2>
+<blockquote>
+<p>不能用强调来代替标题 ****</p>
+</blockquote>
+<h2 id="md037---spaces-inside-emphasis-markers">MD037 - Spaces inside emphasis markers</h2>
+<blockquote>
+<p>强调的符号和文字之间不能有空格</p>
+</blockquote>
+<h2 id="md038---spaces-inside-code-span-elements">MD038 - Spaces inside code span elements</h2>
+<blockquote>
+<p>当用单反引号创建代码段的时候，单反引号和它们之间的代码不能有空格，如果要把单反引号嵌入到代码段的首尾，创建代码段的单反引号和嵌入的单反引号间要有一个空格隔开</p>
+</blockquote>
+<h2 id="md039---spaces-inside-link-text">MD039 - Spaces inside link text</h2>
+<blockquote>
+<p>链接名和包围它的中括号之间不能有空格，但链接名中间可以有空格</p>
+</blockquote>
+<h2 id="md040---fenced-code-blocks-should-have-a-language-specified">MD040 - Fenced code blocks should have a language specified</h2>
+<blockquote>
+<p>单独的代码块（此处是指上下用三个反引号包围的代码块）应该指定代码块的编程语言，这一点有助于解释器对代码进行代码高亮</p>
+</blockquote>
+<h2 id="md041---first-line-in-file-should-be-a-top-level-heading">MD041 - First line in file should be a top level heading</h2>
+<blockquote>
+<p>文档的第一个非空行应该是文档最高级的标题，默认是1级标题</p>
+</blockquote>
+<h2 id="md042---no-empty-links">MD042 - No empty links</h2>
+<blockquote>
+<p>链接的地址不能为空</p>
+</blockquote>
+<h2 id="md043---required-heading-structure">MD043 - Required heading structure</h2>
+<blockquote>
+<p>要求标题遵循一定的结构，默认是没有规定的结构</p>
+</blockquote>
+<h2 id="md044---proper-names-should-have-the-correct-capitalization">MD044 - Proper names should have the correct capitalization</h2>
+<blockquote>
+<p>指定一些名称，会检查它是否有正确的大写</p>
+</blockquote>
+<h2 id="md045---images-should-have-alternate-text-alt-text">MD045 - Images should have alternate text (alt text)</h2>
+<blockquote>
+<p>图片链接必须包含描述文本 all文本</p>
+</blockquote>
+<h2 id="md046---code-block-style">MD046 - Code block style</h2>
+<blockquote>
+<p>整篇文档采用一致的代码格式</p>
+</blockquote>
+<h2 id="md047---files-should-end-with-a-single-newline-character">MD047 - Files should end with a single newline character</h2>
+<blockquote>
+<p>文档末尾需要一个空行结尾</p>
+</blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/markdown/">Markdown</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2024 Sandrew&#39;s Base
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

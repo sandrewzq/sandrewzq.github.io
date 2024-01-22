@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Markdown on Sandrew&#39;s Base</title>
+        <link>/tags/markdown/</link>
+        <description>Recent content in Markdown on Sandrew&#39;s Base</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MarkdownLint错误问题解释</title>
+        <link>/p/markdownlint%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98%E8%A7%A3%E9%87%8A/</link>
+        <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+        
+        <guid>/p/markdownlint%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98%E8%A7%A3%E9%87%8A/</guid>
+        <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最近在用VSCode写markdown的文件，编辑器一直在给我提示一个插件叫做markdownlint，用了之后感觉很不错，可以帮助自己更加规范的写文章，所以就记录下所有的错误信息以便查找&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md001---heading-levels-should-only-increment-by-one-level-at-a-time&#34;&gt;MD001 - Heading levels should only increment by one level at a time&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;标题级数只能每次扩大一个，也就是说不能隔级创建标题，必须h1-h2-h3&amp;hellip;这样&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md002---first-heading-should-be-a-top-level-heading&#34;&gt;MD002 - First heading should be a top level heading&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文档的第一个标题必须是最高级的标题，也就是h1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md003---heading-style&#34;&gt;MD003 - Heading style&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;整篇文档的标题格式要采取统一的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md004---unordered-list-style&#34;&gt;MD004 - Unordered list style&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;整篇文档的无序列表的格式要一致&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md005---inconsistent-indentation-for-list-items-at-the-same-level&#34;&gt;MD005 - Inconsistent indentation for list items at the same level&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;同一个等级的列表的缩进要一致&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md006---consider-starting-bulleted-lists-at-the-beginning-of-the-line&#34;&gt;MD006 - Consider starting bulleted lists at the beginning of the line&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一级标题不能够缩进&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md007---unordered-list-indentation&#34;&gt;MD007 - Unordered list indentation&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;无序列表嵌套的时候默认采取两个空格的缩进方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md008---无&#34;&gt;MD008 - 无&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FDavidAnson%2Fmarkdownlint%2Fblob%2Fmaster%2Fdoc%2FRules.md%23md002---first-heading-should-be-a-top-level-heading&#34;  title=&#34;https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md002---first-heading-should-be-a-top-level-heading&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rules&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;md009---trailing-spaces&#34;&gt;MD009 - Trailing spaces&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;行尾最多可以添加两个空格，超出之后会有警告，最好每次都是两个空格因为两个空格刚好可以用来换行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md010---hard-tabs&#34;&gt;MD010 - Hard tabs&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不能使用tab来进行缩进，要使用空格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md011---reversed-link-syntax&#34;&gt;MD011 - Reversed link syntax&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;内联形式的链接和创建方式是否错误，中括号和圆括号是否使用正确&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md012---multiple-consecutive-blank-lines&#34;&gt;MD012 - Multiple consecutive blank lines&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文档中不能有连续的空行（文档末可以有一个空行），在代码块中这个规则不会生效&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md013---line-length&#34;&gt;MD013 - Line length&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;默认行的最大长度是80，对表格代码块标题都起效果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md014---dollar-signs-used-before-commands-without-showing-output&#34;&gt;MD014 - Dollar signs used before commands without showing output&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在代码块中，终端命令前面不需要有美元符号，如果如果代码块中既有终端命令，也有命令的输出，则终端命令前可以有美元符号($)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md018---no-space-after-hash-on-atx-style-heading&#34;&gt;MD018 - No space after hash on atx style heading&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;标题格式如果是&amp;quot;atx&amp;quot;的话，#号和文字之间需要一个空格隔开&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md019---multiple-spaces-after-hash-on-atx-style-heading&#34;&gt;MD019 - Multiple spaces after hash on atx style heading&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;标题格式如果是&amp;quot;atx&amp;quot;的话，#号和文字之间只需要一个空格隔开，不需要多个&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md020---no-space-inside-hashes-on-closed-atx-style-heading&#34;&gt;MD020 - No space inside hashes on closed atx style heading&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在closed_atx格式的标题中，文字和前后的#号之间都需要一个空格隔开&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md021---multiple-spaces-inside-hashes-on-closed-atx-style-heading&#34;&gt;MD021 - Multiple spaces inside hashes on closed atx style heading&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在closed_atx格式的标题中，文字和前后的#号之间只需要一个空格隔开，不能有多余的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md022---headings-should-be-surrounded-by-blank-lines&#34;&gt;MD022 - Headings should be surrounded by blank lines&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;标题的上下行必须都是空格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md023---headings-must-start-at-the-beginning-of-the-line&#34;&gt;MD023 - Headings must start at the beginning of the line&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;标题行不能缩进&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md024---multiple-headings-with-the-same-content&#34;&gt;MD024 - Multiple headings with the same content&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在文档中不能有重复性的标题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md025---multiple-top-level-headings-in-the-same-document&#34;&gt;MD025 - Multiple top level headings in the same document&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;同一个文档中，只能有一个最高级的标题，默认也只能有一个一级标题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md026---trailing-punctuation-in-heading&#34;&gt;MD026 - Trailing punctuation in heading&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;标题的末尾不能有&amp;quot;. , ; : ! ? &amp;ldquo;这些符号&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md027---multiple-spaces-after-blockquote-symbol&#34;&gt;MD027 - Multiple spaces after blockquote symbol&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在创建引用块的时候，右尖号与文字之间必须有且只有一个空格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md028---blank-line-inside-blockquote&#34;&gt;MD028 - Blank line inside blockquote&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;两个引用区块间不能仅用一个空行隔开或者同一引用区块中不能有空行，如果一行中没有内容，则这一行要用&amp;gt;开头&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md029---ordered-list-item-prefix&#34;&gt;MD029 - Ordered list item prefix&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有序列表的前缀序号格式必须只用1或者从1开始的加1递增数字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md030---spaces-after-list-markers&#34;&gt;MD030 - Spaces after list markers&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;列表（有序、无序）的前缀符号和文字之间用1个空格隔开，在列表嵌套或者同一列表项中有多个段落时，无序列表缩进两个空格，有序列表缩进3个空格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md031---fenced-code-blocks-should-be-surrounded-by-blank-lines&#34;&gt;MD031 - Fenced code blocks should be surrounded by blank lines&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;单独的代码块前后需要用空行隔开（除非是在文档开头或末尾），否则有些解释器不会解释为代码块&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md032---lists-should-be-surrounded-by-blank-lines&#34;&gt;MD032 - Lists should be surrounded by blank lines&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;列表（有序、无序）前后需要用空行隔开，否则有些解释器不会解释为列表，列表的缩进必须一致，否则会警告&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md033---inline-html&#34;&gt;MD033 - Inline HTML&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文档中不允许使用html语句&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md034---bare-url-used&#34;&gt;MD034 - Bare URL used&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;单纯的链接地址需要用尖括号 (&amp;lt;&amp;gt;) 包裹，否则有些解释器不会解释为链接&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md035---horizontal-rule-style&#34;&gt;MD035 - Horizontal rule style&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;创建水平线时整篇文档要统一，要和文档中第一次创建水平线使用的符号一致&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md036---emphasis-used-instead-of-a-heading&#34;&gt;MD036 - Emphasis used instead of a heading&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不能用强调来代替标题 ****&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md037---spaces-inside-emphasis-markers&#34;&gt;MD037 - Spaces inside emphasis markers&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;强调的符号和文字之间不能有空格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md038---spaces-inside-code-span-elements&#34;&gt;MD038 - Spaces inside code span elements&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当用单反引号创建代码段的时候，单反引号和它们之间的代码不能有空格，如果要把单反引号嵌入到代码段的首尾，创建代码段的单反引号和嵌入的单反引号间要有一个空格隔开&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md039---spaces-inside-link-text&#34;&gt;MD039 - Spaces inside link text&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;链接名和包围它的中括号之间不能有空格，但链接名中间可以有空格&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md040---fenced-code-blocks-should-have-a-language-specified&#34;&gt;MD040 - Fenced code blocks should have a language specified&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;单独的代码块（此处是指上下用三个反引号包围的代码块）应该指定代码块的编程语言，这一点有助于解释器对代码进行代码高亮&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md041---first-line-in-file-should-be-a-top-level-heading&#34;&gt;MD041 - First line in file should be a top level heading&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文档的第一个非空行应该是文档最高级的标题，默认是1级标题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md042---no-empty-links&#34;&gt;MD042 - No empty links&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;链接的地址不能为空&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md043---required-heading-structure&#34;&gt;MD043 - Required heading structure&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;要求标题遵循一定的结构，默认是没有规定的结构&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md044---proper-names-should-have-the-correct-capitalization&#34;&gt;MD044 - Proper names should have the correct capitalization&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;指定一些名称，会检查它是否有正确的大写&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md045---images-should-have-alternate-text-alt-text&#34;&gt;MD045 - Images should have alternate text (alt text)&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;图片链接必须包含描述文本 all文本&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md046---code-block-style&#34;&gt;MD046 - Code block style&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;整篇文档采用一致的代码格式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;md047---files-should-end-with-a-single-newline-character&#34;&gt;MD047 - Files should end with a single newline character&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文档末尾需要一个空行结尾&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
