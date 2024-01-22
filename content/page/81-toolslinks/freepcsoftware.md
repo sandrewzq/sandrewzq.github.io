@@ -1,32 +1,23 @@
-***
-
+---
 title: 免费PC软件
-
 # menu:
-
-# main:
-
-# name: 免费软件
-
-# weight: -10
-
-# params:
-
-# icon: apps
-
+#     main: 
+#         name: 在线工具
+#         weight: -20
+#         params:
+#             icon: cloud
 categories:
+- Software
+tags: 
+- Software
+---
 
-*   Software
-    tags:
-*   Software
-
-***
 
 # 说明
 
 `这是一个免费软件收集表~`
 
-### office
+## office
 
 | NAME                                                                | DESC |
 | :------------------------------------------------------------------ | ---: |
@@ -36,7 +27,7 @@ categories:
 | [WPS](https://pc.wps.cn/)                                           |      |
 | [万彩办公大师](http://www.wofficebox.com/)                                |      |
 
-### editor
+## editor
 
 | NAME                                                                             | DESC |
 | :------------------------------------------------------------------------------- | ---: |
@@ -44,7 +35,7 @@ categories:
 | [Notepad++](https://notepad-plus-plus.org/)                                      |      |
 | [VS Code](https://code.visualstudio.com/)                                        |      |
 
-### ssh工具
+## ssh工具
 
 | NAME                                                      |  DESC |
 | :-------------------------------------------------------- | ----: |
@@ -56,25 +47,25 @@ categories:
 | [Termius](https://www.termius.com/)                       |       |
 | [XShell](https://www.xshell.com/zh/free-for-home-school/) | 非商业使用 |
 
-### 看图软件
+## 看图软件
 
 | NAME                                              | DESC |
 | :------------------------------------------------ | ---: |
 | [Honeyview](https://www.bandisoft.com/honeyview/) |      |
 
-### 播放器
+## 播放器
 
 | NAME                                     | DESC |
 | :--------------------------------------- | ---: |
 | [PotPlayer](http://www.potplayercn.com/) |      |
 
-### 视频处理
+## 视频处理
 
 | NAME                               | DESC |
 | :--------------------------------- | ---: |
 | [小丸工具箱](https://maruko.appinn.me/) |      |
 
-### 视频录制软件
+## 视频录制软件
 
 | NAME                                               | DESC |
 | :------------------------------------------------- | ---: |
@@ -83,7 +74,7 @@ categories:
 | [EvCapture](https://www.ieway.cn/evcapture.html)   |      |
 | [ScreenToGif](https://www.screentogif.com/)        |      |
 
-### 硬盘工具
+## 硬盘工具
 
 | NAME                                                                                        | DESC |
 | :------------------------------------------------------------------------------------------ | ---: |
@@ -92,14 +83,17 @@ categories:
 | [DiskGenius](https://www.diskgenius.cn/)                                                    |      |
 | [HD Tune](https://www.hdtune.com/)                                                          |      |
 
-### 网络工具
+## 网络工具
 
 | NAME                                                                | DESC |
 | :------------------------------------------------------------------ | ---: |
 | [DNS Jumper](https://www.sordum.org/7952/dns-jumper-v2-2/)          |      |
 | [NatTypeTester](https://github.com/HMBSbige/NatTypeTester/releases) |      |
+| [Freefrp](https://freefrp.net/)                                     |      |
+| [Radmin LAN](https://www.radmin-lan.cn/)                            |      |
+| [OPENFRP](https://www.openfrp.net/)                                 | 免费流量有限 |
 
-### 验机工具
+## 验机工具
 
 | NAME                                                             | DESC |
 | :--------------------------------------------------------------- | ---: |
@@ -109,7 +103,7 @@ categories:
 | [图吧工具箱](http://www.tbtool.cn/)                                   |      |
 | [入梦工具箱](https://github.com/weiyourumeng/RM-Toolbox)              |      |
 
-### 清理工具
+## 清理工具
 
 | NAME                                             | DESC |
 | :----------------------------------------------- | ---: |
@@ -117,7 +111,7 @@ categories:
 | [EmptyFolderNuker](https://www.fosshub.com/)     |      |
 | [Bulk Crap Uninstaller](https://github.com/Klocman/Bulk-Crap-Uninstaller)     |      |
 
-### 文件比较工具
+## 文件比较工具
 
 | NAME                                              | DESC |
 | :------------------------------------------------ | ---: |
@@ -126,7 +120,7 @@ categories:
 | [VisiPics](http://www.visipics.info/index.php)    |      |
 | [WinMerge](https://winmerge.org/)                 |      |
 
-### 下载工具
+## 下载工具
 
 | NAME                                        | DESC |
 | :------------------------------------------ | ---: |
@@ -134,7 +128,7 @@ categories:
 | [qBittorrent](https://www.qbittorrent.org/) |      |
 | [motrix](https://motrix.app/) |      |
 
-### 文件压缩工具
+## 文件压缩工具
 
 | NAME                                  | DESC |
 | :------------------------------------ | ---: |
@@ -143,15 +137,7 @@ categories:
 | [PeaZip](https://www.peazip.org/)     |      |
 | [WinRAR](https://www.win-rar.com/)    |      |
 
-### 网络工具
-
-| NAME                                     |   DESC |
-| :--------------------------------------- | -----: |
-| [Freefrp](https://freefrp.net/)          |        |
-| [Radmin LAN](https://www.radmin-lan.cn/) |        |
-| [OPENFRP](https://www.openfrp.net/)      | 免费流量有限 |
-
-### 游戏工具
+## 游戏工具
 
 | NAME                                                         | DESC |
 | :----------------------------------------------------------- | ---: |
@@ -159,17 +145,14 @@ categories:
 | [Watt Toolkit](https://steampp.net/)                         |      |
 | [UsbEAm Hosts Editor](https://www.dogfight360.com/blog/475/) |      |
 
-### 装机工具
+## 装机工具
 
 | NAME                               | DESC |
 | :--------------------------------- | ---: |
 | [微PE工具箱](https://www.wepe.com.cn/) |      |
 
-
-
-### 其他工具
+## 其他工具
 
 | NAME                                                     | DESC |
 | :------------------------------------------------------- | ---: |
 | [Everything](https://www.voidtools.com/zh-cn/downloads/) |      |
-
