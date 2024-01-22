@@ -9,13 +9,16 @@ tags:
 ---
 
 ## 前言
+
 ### 前排提示
+
 > 本文并不适合对于Linux不了解的新手，对于小白玩家或者新手，强烈推荐此篇教程[【Linux&开服教程】从零开始的Linux服务器技术从萌新到入门教程](https://www.mcbbs.net/thread-894575-1-1.html)
 
 前段时间特价买了一台腾讯云服务器(1核2G)，由于比较忙，一直闲置状态。等到年底事情忙完了，就开始搭建一个我的世界服务器，准备春节和朋友一起联机游玩。
 系统选择的是 **CentOs 7**，其他Linux系统操作类似，本文仅作为本人搭建的记录,并不严谨，仅供参考。
 
 ### 运行环境
+
     操作系统：CentOS 7.6 64位
     Java:jdk1.8.0_241
     我的世界服务端Server:Paper-1.14.4-b236
@@ -23,22 +26,26 @@ tags:
     SSH客户端:Xshell
     FTP客户端:XFtp
 
-
 ## 准备一台作为服务器的主机
+
 我买的是一台腾讯云服务器，阿里云或者其他云服务器类似，操作很简单。如何购买服务器以及初始化主机可以百度解决。
-![](腾讯云服务器.png)
+![腾讯云服务器](腾讯云服务器.png)
 
 ## 准备工作
+
 ### 远程连接服务器
+
 使用任意SSH客户端连接到准备好的Linux服务器，我这里使用的是Xshell
 新建两个文件夹，download以及minecraft_server。download文件夹用来存储下载的文件，我的世界服务端安装在minecraft_server文件夹。
-![](新建文件夹.png)
+![新建文件夹](新建文件夹.png)
 
 ### 下载Java
+
 根据机器的情况选择对应版本，我选择的是[Linux x64版本](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-![](java.png)
+![java](java.png)
 
 ### 安装Java
+
 安装Java过程可以看[Linux 下安装JDK1.8](https://www.cnblogs.com/xuliangxing/p/7066913.html)，我也记录下我的安装过程。
 
 由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。
@@ -151,21 +158,21 @@ chmod +x stop.sh
 ```
 
 ## 其他事项
+
 ### 服务器参数配置
+
 服务器参数使用server.properties文件及其他yml文件设置，具体设置可以参考[Minecraft服务器优化教程 —— 让多带50%的玩家不再是梦](https://www.mcbbs.net/thread-478126-1-1.html)
 
 ### 如何使用客户端并游玩
+
 参见[我的世界Minecraft Java版 下载指南|文件结构说明|推荐启动器](https://www.mcbbs.net/thread-38297-1-1.html)
 
 ### 服务器运行状态查看
+
 查看游戏目录安装目录下的/minecraft_server/logs文件夹的latest.log文件
 
-
-
 ## 参考资料及感谢
+
 [Linux下搭建带mod的Minecraft服务器](https://www.jianshu.com/p/89f14756d16c)
 
 [Ubuntu(Linux)开服教程](https://www.mcbbs.net/thread-770886-1-1.html)
-
-
-

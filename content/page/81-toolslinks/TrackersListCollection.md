@@ -42,13 +42,9 @@ https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_best.txt
 
 https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_all.txt
 
-
 ## OtherTracker
 
 http://open.acgtracker.com:1096/announce
-
-
-
 
 ## Reference
 

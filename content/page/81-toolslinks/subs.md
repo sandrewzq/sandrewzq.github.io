@@ -14,26 +14,22 @@ tags:
 
 ## 国内
 
-SubHD https://subhd.tv/
+SubHD <https://subhd.tv/>
 
-射手网 https://assrt.net/
+射手网 <https://assrt.net/>
 
-点点字幕 http://www.ddzimu.com/
+点点字幕 <http://www.ddzimu.com/>
 
-Opensubtitles https://www.opensubtitles.org/zh
-
-
+Opensubtitles <https://www.opensubtitles.org/zh>
 
 ## 国外
 
-subscene https://subscene.com/
+subscene <https://subscene.com/>
 
-MovieSub http://www.moviesubtitles.org/
+MovieSub <http://www.moviesubtitles.org/>
 
-TVsubs http://www.tvsubs.net/
+TVsubs <http://www.tvsubs.net/>
 
-Subdivx https://www.subdivx.com/index.php
+Subdivx <https://www.subdivx.com/index.php>
 
-DivxSub https://www.divxmoviesenglishsubtitles.com/
-
-
+DivxSub <https://www.divxmoviesenglishsubtitles.com/>
