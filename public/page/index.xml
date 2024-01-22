@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Sandrew&#39;s Base</title>
+        <link>/page/</link>
+        <description>Recent content in Pages on Sandrew&#39;s Base</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 15 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>TrackersListCollection</title>
+        <link>/trackerslistcollection/</link>
+        <pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>/trackerslistcollection/</guid>
+        <description>&lt;h2 id=&#34;trackerslist&#34;&gt;TrackersList&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://trackerslist.com/all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://trackerslist.com/all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ngosang.github.io/trackerslist/trackers_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ngosang.github.io/trackerslist/trackers_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.staticaly.com/gh/XIU2/TrackersListCollection/master/all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.staticaly.com/gh/XIU2/TrackersListCollection/master/all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://at.raxianch.moe/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://at.raxianch.moe/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://at.raxianch.moe/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://at.raxianch.moe/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_best.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_best.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_all.txt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cdn.jsdelivr.net/gh/DeSireFire/animeTrackerList/AT_all.txt&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;othertracker&#34;&gt;OtherTracker&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://open.acgtracker.com:1096/announce&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://open.acgtracker.com:1096/announce&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;h3 id=&#34;acgtracker&#34;&gt;ACGTracker&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://acgtracker.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://acgtracker.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;trackerslist-1&#34;&gt;trackerslist&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ngosang/trackerslist&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/ngosang/trackerslist&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ngosang.github.io/trackerslist/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ngosang.github.io/trackerslist/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;xiu2trackerslistcollection&#34;&gt;XIU2/TrackersListCollection&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/XIU2/TrackersListCollection&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/XIU2/TrackersListCollection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://trackerslist.com/#/zh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://trackerslist.com/#/zh&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>pojie</title>
+        <link>/pojie/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/pojie/</guid>
+        <description>&lt;h3 id=&#34;激活工具&#34;&gt;激活工具&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.lond.cn/down/otp.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Office Tool Plus&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;docs%5cTools%5cHWIDGEN.zip&#34; &gt;HWIDGEN&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://cmwtat.cloudmoe.com/cn.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;云萌 Win10 激活工具&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>大佬博客</title>
+        <link>/%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        <item>
+        <title>工具收集</title>
+        <link>/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/</guid>
+        <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/&#34; &gt;免费软件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/&#34; &gt;在线工具&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/trackerslistcollection/&#34; &gt;TrackersListCollection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%AD%97%E5%B9%95/&#34; &gt;字幕搜索&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>关于</title>
+        <link>/%E5%85%B3%E4%BA%8E/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;p&gt;This is a test page .&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>免费PC软件</title>
+        <link>/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%85%8D%E8%B4%B9pc%E8%BD%AF%E4%BB%B6/</guid>
+        <description>&lt;h1 id=&#34;说明&#34;&gt;说明&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;这是一个免费软件收集表~&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;office&#34;&gt;office&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/jgraph/drawio-desktop/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;drawio&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.islide.cc/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;iSlide&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://zh-cn.libreoffice.org/download/libreoffice/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Libre Office&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://pc.wps.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WPS&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.wofficebox.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;万彩办公大师&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;editor&#34;&gt;editor&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/rizonesoft/Notepad3&#34;  title=&#34;https://www.rizonesoft.com/&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Notepad3&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://notepad-plus-plus.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Notepad++&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VS Code&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;ssh工具&#34;&gt;ssh工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.bitvise.com/ssh-client-download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bitvise&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/electerm/electerm/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;electerm&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.hostbuf.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;FinalShell&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://mobaxterm.mobatek.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MobaXterm&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tabby.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tabby&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.termius.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Termius&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.xshell.com/zh/free-for-home-school/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;XShell&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;非商业使用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;看图软件&#34;&gt;看图软件&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bandisoft.com/honeyview/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Honeyview&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;播放器&#34;&gt;播放器&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.potplayercn.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PotPlayer&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;视频处理&#34;&gt;视频处理&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://maruko.appinn.me/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;小丸工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;视频录制软件&#34;&gt;视频录制软件&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bandicam.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bandicam&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://mathewsachin.github.io/Captura/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Captura&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ieway.cn/evcapture.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;EvCapture&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.screentogif.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ScreenToGif&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;硬盘工具&#34;&gt;硬盘工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.alex-is.de/PHP/fusion/downloads.php?cat_id=4%5c&amp;amp;download_id=9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AS SSD Benchmark&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://crystalmark.info/en/software/crystaldiskinfo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CrystalDiskInfo&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.diskgenius.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DiskGenius&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hdtune.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;HD Tune&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;网络工具&#34;&gt;网络工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sordum.org/7952/dns-jumper-v2-2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DNS Jumper&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/HMBSbige/NatTypeTester/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;NatTypeTester&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://freefrp.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Freefrp&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.radmin-lan.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Radmin LAN&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.openfrp.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OPENFRP&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;免费流量有限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;验机工具&#34;&gt;验机工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cpuid.com/softwares/cpu-z.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CPU-Z&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.techpowerup.com/download/techpowerup-gpu-z/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GPU-Z&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.kbtool.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;卡硬工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.tbtool.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;图吧工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/weiyourumeng/RM-Toolbox&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;入梦工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;清理工具&#34;&gt;清理工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://geekuninstaller.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Geek Uninstaller&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.fosshub.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;EmptyFolderNuker&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Klocman/Bulk-Crap-Uninstaller&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bulk Crap Uninstaller&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;文件比较工具&#34;&gt;文件比较工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.sourcegear.com/diffmerge/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DiffMerge&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://dupeguru.voltaicideas.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DupeGuru&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.visipics.info/index.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VisiPics&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://winmerge.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WinMerge&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;下载工具&#34;&gt;下载工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.freedownloadmanager.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;FDM&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.qbittorrent.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;qBittorrent&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://motrix.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;motrix&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;文件压缩工具&#34;&gt;文件压缩工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.7-zip.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;7-Zip&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.bandisoft.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bandizip&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.peazip.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PeaZip&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.win-rar.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WinRAR&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;游戏工具&#34;&gt;游戏工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.kookapp.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KOOK&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://steampp.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Watt Toolkit&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.dogfight360.com/blog/475/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UsbEAm Hosts Editor&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;装机工具&#34;&gt;装机工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.wepe.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;微PE工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;其他工具&#34;&gt;其他工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.voidtools.com/zh-cn/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Everything&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>在线工具</title>
+        <link>/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</guid>
+        <description>&lt;h2 id=&#34;正则工具&#34;&gt;正则工具&lt;/h2&gt;
+&lt;p&gt;Regex101 &lt;a class=&#34;link&#34; href=&#34;https://regex101.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://regex101.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Regex-Vis &lt;a class=&#34;link&#34; href=&#34;https://regex-vis.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://regex-vis.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;网络工具&#34;&gt;网络工具&lt;/h2&gt;
+&lt;p&gt;iP地址查询 &lt;a class=&#34;link&#34; href=&#34;https://www.ip138.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.ip138.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;站长工具 &lt;a class=&#34;link&#34; href=&#34;https://tool.chinaz.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tool.chinaz.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DNS工具 &lt;a class=&#34;link&#34; href=&#34;https://tools.ipip.net/dns.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tools.ipip.net/dns.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;端口检测 &lt;a class=&#34;link&#34; href=&#34;https://canyouseeme.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://canyouseeme.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;端口扫描 &lt;a class=&#34;link&#34; href=&#34;https://tool.chinaz.com/port/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tool.chinaz.com/port/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;编译&#34;&gt;编译&lt;/h2&gt;
+&lt;p&gt;多语言编译浏览器 &lt;a class=&#34;link&#34; href=&#34;https://godbolt.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://godbolt.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在线工具箱&#34;&gt;在线工具箱&lt;/h2&gt;
+&lt;p&gt;程序员的工具箱 &lt;a class=&#34;link&#34; href=&#34;https://tool.lu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tool.lu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Toolfk &lt;a class=&#34;link&#34; href=&#34;https://www.toolfk.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.toolfk.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在线图片编辑&#34;&gt;在线图片编辑&lt;/h2&gt;
+&lt;p&gt;美图秀秀 &lt;a class=&#34;link&#34; href=&#34;https://pc.meitu.com/design/edit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://pc.meitu.com/design/edit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;爱给图片编辑器 &lt;a class=&#34;link&#34; href=&#34;https://www.aigei.com/tool/image&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.aigei.com/tool/image&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;免费svg图标&#34;&gt;免费SVG图标&lt;/h2&gt;
+&lt;p&gt;Tabler Icons &lt;a class=&#34;link&#34; href=&#34;https://tablericons.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tablericons.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;流程图工具&#34;&gt;流程图工具&lt;/h2&gt;
+&lt;p&gt;diagrams &lt;a class=&#34;link&#34; href=&#34;https://www.diagrams.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.diagrams.net/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在线文件转换&#34;&gt;在线文件转换&lt;/h2&gt;
+&lt;p&gt;凹凸凹 &lt;a class=&#34;link&#34; href=&#34;https://www.alltoall.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.alltoall.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;convertio &lt;a class=&#34;link&#34; href=&#34;https://convertio.co/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://convertio.co/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>字幕</title>
+        <link>/%E5%AD%97%E5%B9%95/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/%E5%AD%97%E5%B9%95/</guid>
+        <description>&lt;h2 id=&#34;国内&#34;&gt;国内&lt;/h2&gt;
+&lt;p&gt;SubHD &lt;a class=&#34;link&#34; href=&#34;https://subhd.tv/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://subhd.tv/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;射手网 &lt;a class=&#34;link&#34; href=&#34;https://assrt.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://assrt.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;点点字幕 &lt;a class=&#34;link&#34; href=&#34;http://www.ddzimu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.ddzimu.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Opensubtitles &lt;a class=&#34;link&#34; href=&#34;https://www.opensubtitles.org/zh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.opensubtitles.org/zh&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;国外&#34;&gt;国外&lt;/h2&gt;
+&lt;p&gt;subscene &lt;a class=&#34;link&#34; href=&#34;https://subscene.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://subscene.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MovieSub &lt;a class=&#34;link&#34; href=&#34;http://www.moviesubtitles.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.moviesubtitles.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TVsubs &lt;a class=&#34;link&#34; href=&#34;http://www.tvsubs.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.tvsubs.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Subdivx &lt;a class=&#34;link&#34; href=&#34;https://www.subdivx.com/index.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.subdivx.com/index.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DivxSub &lt;a class=&#34;link&#34; href=&#34;https://www.divxmoviesenglishsubtitles.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.divxmoviesenglishsubtitles.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
