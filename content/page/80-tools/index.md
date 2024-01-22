@@ -15,3 +15,5 @@ menu:
 [TrackersListCollection]({{< ref "/page/81-toolslinks/TrackersListCollection.md" >}} )
 
 [字幕搜索]({{< ref "/page/81-toolslinks/subs.md" >}} )
+
+[静态网站生成工具](https://jamstack.org/generators/)
