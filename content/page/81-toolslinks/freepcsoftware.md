@@ -115,6 +115,7 @@ categories:
 | :----------------------------------------------- | ---: |
 | [Geek Uninstaller](https://geekuninstaller.com/) |      |
 | [EmptyFolderNuker](https://www.fosshub.com/)     |      |
+| [Bulk Crap Uninstaller](https://github.com/Klocman/Bulk-Crap-Uninstaller)     |      |
 
 ### 文件比较工具
 
@@ -131,6 +132,7 @@ categories:
 | :------------------------------------------ | ---: |
 | [FDM](https://www.freedownloadmanager.org/) |      |
 | [qBittorrent](https://www.qbittorrent.org/) |      |
+| [motrix](https://motrix.app/) |      |
 
 ### 文件压缩工具
 

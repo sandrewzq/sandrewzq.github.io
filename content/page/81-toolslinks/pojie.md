@@ -9,10 +9,10 @@ title: pojie
 ---
 
 ### 激活工具
-NAME                                   | WINDOWS | LINUX |  MAC  |
-:--------------------------------------| ------: | ----: | ----: |
-[Office Tool Plus][Office Tool Plus]   |    ✅   |  ❌  |   ❌  |
-[HWIDGEN][HWIDGEN]                     |    ✅   |  ❌  |   ❌  |
+NAME                                       | WINDOWS | LINUX |  MAC  |
+:--------------------------------------    | ------: | ----: | ----: |
+[Office Tool Plus][Office Tool Plus]       |    ✅   |  ❌  |   ❌  |
+[HWIDGEN][HWIDGEN]                         |    ✅   |  ❌  |   ❌  |
 [云萌 Win10 激活工具][云萌 Win10 激活工具] |    ✅   |  ❌  |   ❌  |
 
 [Office Tool Plus]: http://www.lond.cn/down/otp.htm
