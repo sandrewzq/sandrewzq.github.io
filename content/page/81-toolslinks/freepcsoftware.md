@@ -34,6 +34,7 @@ tags:
 | [Notepad3](https://github.com/rizonesoft/Notepad3 "https://www.rizonesoft.com/") |      |
 | [Notepad++](https://notepad-plus-plus.org/)                                      |      |
 | [VS Code](https://code.visualstudio.com/)                                        |      |
+| [notepad--](https://gitee.com/cxasm/notepad--)                                   |强烈推荐  |
 
 ## ssh工具
 
@@ -115,6 +116,7 @@ tags:
 
 | NAME                                              | DESC |
 | :------------------------------------------------ | ---: |
+| [cc-compare](https://gitee.com/cxasm/cc-compare) |      |
 | [DiffMerge](http://www.sourcegear.com/diffmerge/) |      |
 | [DupeGuru](https://dupeguru.voltaicideas.net/)    |      |
 | [VisiPics](http://www.visipics.info/index.php)    |      |
@@ -151,8 +153,16 @@ tags:
 | :--------------------------------- | ---: |
 | [微PE工具箱](https://www.wepe.com.cn/) |      |
 
+## 系统工具
+
+| NAME                               | DESC |
+| :--------------------------------- | ---: |
+| [RAMMap](https://learn.microsoft.com/zh-cn/sysinternals/downloads/rammap) |      |
+| [Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals/) |      |
+
 ## 其他工具
 
 | NAME                                                     | DESC |
 | :------------------------------------------------------- | ---: |
 | [Everything](https://www.voidtools.com/zh-cn/downloads/) |      |
+| [uTools](https://u.tools/)                               |      |

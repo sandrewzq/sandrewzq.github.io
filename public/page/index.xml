@@ -127,6 +127,12 @@
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/&#34; &gt;在线工具&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/trackerslistcollection/&#34; &gt;TrackersListCollection&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/%E5%AD%97%E5%B9%95/&#34; &gt;字幕搜索&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://jamstack.org/generators/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;静态网站生成工具&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.injdk.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;各种JAVA JDK的镜像分发&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://miuiver.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MIUI 历史版本&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -206,6 +212,11 @@
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;VS Code&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/cxasm/notepad--&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;notepad&amp;ndash;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;强烈推荐&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -473,6 +484,11 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/cxasm/cc-compare&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;cc-compare&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.sourcegear.com/diffmerge/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;DiffMerge&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
@@ -593,6 +609,27 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h2 id=&#34;系统工具&#34;&gt;系统工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://learn.microsoft.com/zh-cn/sysinternals/downloads/rammap&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;RAMMap&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://learn.microsoft.com/zh-cn/sysinternals/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sysinternals&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h2 id=&#34;其他工具&#34;&gt;其他工具&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -605,6 +642,11 @@
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.voidtools.com/zh-cn/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Everything&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://u.tools/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;uTools&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

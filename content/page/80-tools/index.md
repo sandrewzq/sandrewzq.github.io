@@ -17,3 +17,7 @@ menu:
 [字幕搜索]({{< ref "/page/81-toolslinks/subs.md" >}} )
 
 [静态网站生成工具](https://jamstack.org/generators/)
+
+[各种JAVA JDK的镜像分发](https://www.injdk.cn/)
+
+[MIUI 历史版本](https://miuiver.com/)
