@@ -51,20 +51,26 @@ tags:
 由于我是本地下载的java，所以下载完成后手动用ftp工具上传到之前创建的download目录，一般阿里云和腾讯云的服务器都自动开启了22端口，直接使用工具连接即可。
 
 然后使用进入jdk-8u241-linux-x64.tar.gz所在目录
-```
+
+```shell
 cd  /download
 ```
+
 解压jdk-8u241-linux-x64.tar.gz
-```
+
+```shell
 tar  -zxvf  jdk-8u241-linux-x64.tar.gz
 ```
+
 解压后完成后会看到jdk
 ![](jdk.png)
 
 要将jdk安装在usr/java当中，所以在usr目录下新建一个java文件夹
-```
+
+```shell
 mkdir /usr/java
 ```
+
 本人已测试，我的世界服务器server端仅需要jre即可运行，所以我们只需安装jre即可，先进入刚才解压好的java目录
 ```
 cd  /download/jdk1.8.0_241
@@ -134,26 +140,29 @@ touch stop.sh
 vim stop.sh
 ```
 添加关闭命令
-```
+```shell
 screen -dr mc -X stuff "say 服务器将在10S后关闭！\n"
 sleep 10
 screen -dr mc -X stuff "stop\n"
 ```
+
 两个脚本都创建好之后，使用chmod命令添加执行权限
-```
+
+```shell
 chmod +x launch.sh
 chmod +x stop.sh
 ```
+
 接下来就能看到launch.sh和stop.sh都变成可以执行文件了
 ![](可执行脚本.png)
 大功告成之后我们就可以使用脚本来进行后台起停操作了
 
 启动服务器
-```
+```shell
 ./launch.sh
 ```
 关闭服务器
-```
+```shell
 ./stop.sh
 ```
 

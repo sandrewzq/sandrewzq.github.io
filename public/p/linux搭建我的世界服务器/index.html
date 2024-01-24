@@ -453,7 +453,7 @@ FTP客户端:XFtp
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">cd</span>  <span class="o">/</span><span class="n">download</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span>  /download
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>解压jdk-8u241-linux-x64.tar.gz</p>
@@ -462,7 +462,7 @@ FTP客户端:XFtp
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tar  -zxvf  jdk-8u241-linux-x64.tar.gz
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">tar  -zxvf  jdk-8u241-linux-x64.tar.gz
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>解压后完成后会看到jdk
@@ -484,7 +484,7 @@ FTP客户端:XFtp
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mkdir /usr/java
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir /usr/java
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>本人已测试，我的世界服务器server端仅需要jre即可运行，所以我们只需安装jre即可，先进入刚才解压好的java目录</p>
@@ -681,9 +681,9 @@ FTP客户端:XFtp
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">screen -dr mc -X stuff &#34;say 服务器将在10S后关闭！\n&#34;
-</span></span><span class="line"><span class="cl">sleep 10
-</span></span><span class="line"><span class="cl">screen -dr mc -X stuff &#34;stop\n&#34;
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">screen -dr mc -X stuff <span class="s2">&#34;say 服务器将在10S后关闭！\n&#34;</span>
+</span></span><span class="line"><span class="cl">sleep <span class="m">10</span>
+</span></span><span class="line"><span class="cl">screen -dr mc -X stuff <span class="s2">&#34;stop\n&#34;</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>两个脚本都创建好之后，使用chmod命令添加执行权限</p>
@@ -693,7 +693,7 @@ FTP客户端:XFtp
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">chmod +x launch.sh
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">chmod +x launch.sh
 </span></span><span class="line"><span class="cl">chmod +x stop.sh
 </span></span></code></pre></td></tr></table>
 </div>
@@ -717,7 +717,7 @@ FTP客户端:XFtp
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">./launch.sh
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">./launch.sh
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>关闭服务器</p>
@@ -726,7 +726,7 @@ FTP客户端:XFtp
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">./stop.sh
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">./stop.sh
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="其他事项">其他事项</h2>

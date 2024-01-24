@@ -24,7 +24,7 @@ Loki:负责存储日志数据，提供 HTTP API 的日志查询，以及数据�
 
 Grafana: 负责 UI 展示日志数据。
 
-![](./Loki介绍.png)
+![](Loki介绍.png)
 
 ## Loki对比ELK
 
@@ -159,33 +159,33 @@ yum install -y grafana-10.2.0-1.x86_64.rpm
 
 左侧导航栏选择Connections-Data sources并新建
 
-![](./grafana添加数据源.png)
+![](grafana添加数据源.png)
 
 选择Loki并创建
 
-![](./创建loki.png)
+![](创建loki.png)
 
 Connection-url填入Loki地址及参数
 
-![](./创建loki2.png)
+![](创建loki2.png)
 
 点击Save & Test，提示Data source successfully connected即代表成功。
 
-![](./创建loki3.png)
+![](创建loki3.png)
 
 # 使用Loki查看日志
 
 点击左侧Explore
 
-![](./使用loki1.png)
+![](使用loki1.png)
 
 最上面下拉选择刚才创建好的Loki数据源，再选择自定义的label标签，点击Run Query即可看到日志
 
-![](./使用loki2.png)
+![](使用loki2.png)
 
 查看上下文方法，点击某行日志的的Show context按钮即可
 
-![](./使用loki3.png)
+![](使用loki3.png)
 
 ## 参考文档
 
