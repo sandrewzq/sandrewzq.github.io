@@ -24,7 +24,7 @@ Loki:负责存储日志数据，提供 HTTP API 的日志查询，以及数据�
 
 Grafana: 负责 UI 展示日志数据。
 
-![](https://idoc.longfor.com/editor-server/doc/wv8hvfx7fKLtretf8xlxFxgVPX32/resources/QWrGGiegzDOUDtTBfVgPRg_xhLXE7I3EBTOqYeCIRV0.png?token=W.uENCf76j57K93JLeVg7Vy_oIx-cu8UjgQs1YiJw5MRaJ-20)
+![](./Loki介绍.png)
 
 ## Loki对比ELK
 
@@ -78,69 +78,41 @@ Grafana下载地址：<https://grafana.com/grafana/download?edition=oss>
 
 打开安装目录，创建配置文件loki-config.yml，配置文件参考
 
-```
-auth\_enabled: false
-
+```yaml
+auth_enabled: false
 server:
-
-  http\_listen\_port: 3100
-
+  http_listen_port: 3100
 common:
-
-  ring:
-
-   instance\_addr: 127.0.0.1
-
-   kvstore:
-
-     store: inmemory
-
-  replication\_factor: 1
-
-  path\_prefix: /data/loki
-
-schema\_config:
-
-  configs:
-
-  - from: 2020-05-15
-
-   store: boltdb-shipper
-
-   object\_store: filesystem
-
-   schema: v11
-
-   index:
-
-     prefix: index\_
-
-     period: 24h
-
-limits\_config:
-
-  reject\_old\_samples: true
-
-  reject\_old\_samples\_max\_age: 168h
-
-chunk\_store\_config:
-
-  # 最大可查询历史日期 90天
-
-  max\_look\_back\_period: 2160h
-
-\# 表的保留期90天  
-
-table\_manager:
-
-  retention\_deletes\_enabled: true
-
-  retention\_period: 2160h
+  ring:
+    instance_addr: 127.0.0.1
+    kvstore:
+      store: inmemory
+  replication_factor: 1
+  path_prefix: /data/loki
+schema_config:
+  configs:
+  - from: 2020-05-15
+    store: boltdb-shipper
+    object_store: filesystem
+    schema: v11
+    index:
+      prefix: index_
+      period: 24h
+limits_config:
+  reject_old_samples: true
+  reject_old_samples_max_age: 168h
+chunk_store_config:
+  # 最大可查询历史日期 90天
+  max_look_back_period: 2160h
+# 表的保留期90天  
+table_manager:
+  retention_deletes_enabled: true
+  retention_period: 2160h
 ```
 
 启动Loki
 
-```
+```shell
 nohup ./loki-linux-amd64 -config.file=/data/loki/loki-config.yml &
 ```
 
@@ -150,101 +122,78 @@ nohup ./loki-linux-amd64 -config.file=/data/loki/loki-config.yml &
 
 打开安装目录，创建配置文件config-promtail.yml，配置文件参考，clients-url修改为Loki的安装地址
 
-```
+```yaml
 server:
-
-  http\_listen\_port: 9080
-
-  grpc\_listen\_port: 0
-
+  http_listen_port: 9080
+  grpc_listen_port: 0
 positions:
-
-  filename: /tmp/positions.yaml # This location needs to be writeable by Promtail.
-
+  filename: /tmp/positions.yaml # This location needs to be writeable by Promtail.
 clients:
-
-  - url: <http://10.12.100.83:3100/loki/api/v1/push>
-
-scrape\_configs:
-
- - job\_name: system
-
-  pipeline\_stages:
-
-  static\_configs:
-
-  - targets:
-
-      - localhost
-
-    labels:
-
-      env: dev
-
-      job: applogs  # A \`job\` label is fairly standard in prometheus and useful for linking metrics and logs.
-
-      host: 10.12.100.85 # A \`host\` label will help identify logs from this machine vs others
-
-      \_\_path\_\_: /data/log/\*.log  # The path matching uses a third party library: <https://github.com/bmatcuk/doublestar>
+  - url: http://10.12.100.83:3100/loki/api/v1/push
+scrape_configs:
+ - job_name: system
+   pipeline_stages:
+   static_configs:
+   - targets:
+      - localhost
+     labels:
+      env: dev
+      job: applogs  # A `job` label is fairly standard in prometheus and useful for linking metrics and logs.
+      host: 10.12.100.85 # A `host` label will help identify logs from this machine vs others
+      __path__: /data/log/*.log  # The path matching uses a third party library: https://github.com/bmatcuk/doublestar
 ```
 
 启动promtail
 
-```
+```shell
 nohup ./promtail-linux-amd64 -config.file=/data/promtail/config-promtail.yml &
 ```
 
 ## 安装Grafana
 
-```
-yum install -y grafana-10.2.0-1.x86\_64.rpm
+```shell
+yum install -y grafana-10.2.0-1.x86_64.rpm
 ```
 
 ## Grafana 添加数据源
 
 左侧导航栏选择Connections-Data sources并新建
 
-![](https://idoc.longfor.com/editor-server/doc/wv8hvfx7fKLtretf8xlxFxgVPX32/resources/aJlbWL95yL-j1ukaKctmy7-jO6rWYYQ4QLCPmythvDI.png?token=W.uENCf76j57K93JLeVg7Vy_oIx-cu8UjgQs1YiJw5MRaJ-20)
+![](./grafana添加数据源.png)
 
 选择Loki并创建
 
-![](https://idoc.longfor.com/editor-server/doc/wv8hvfx7fKLtretf8xlxFxgVPX32/resources/UK-5UnNSy2TB6kPPAbCVOdhL813h4bhilIYFDZ1cfs8.png?token=W.uENCf76j57K93JLeVg7Vy_oIx-cu8UjgQs1YiJw5MRaJ-20)
+![](./创建loki.png)
 
 Connection-url填入Loki地址及参数
 
-![](https://idoc.longfor.com/editor-server/doc/wv8hvfx7fKLtretf8xlxFxgVPX32/resources/WViU0bM4d-5WUTHH1IrRpUSpDpFVTzcr2FGFjKudPwQ.png?token=W.uENCf76j57K93JLeVg7Vy_oIx-cu8UjgQs1YiJw5MRaJ-20)
+![](./创建loki2.png)
 
 点击Save & Test，提示Data source successfully connected即代表成功。
 
-![](https://idoc.longfor.com/editor-server/doc/wv8hvfx7fKLtretf8xlxFxgVPX32/resources/xJVNyKEsYHPg4ozUJa9Tc0VtIeomko-is2JcMb2iNvM.png?token=W.uENCf76j57K93JLeVg7Vy_oIx-cu8UjgQs1YiJw5MRaJ-20)
+![](./创建loki3.png)
 
 # 使用Loki查看日志
 
 点击左侧Explore
 
-![](https://idoc.longfor.com/editor-server/doc/wv8hvfx7fKLtretf8xlxFxgVPX32/resources/fyMXXC2tebqtWHJG74JxnmOvoy7v50iucJbjg8Ng6lY.png?token=W.uENCf76j57K93JLeVg7Vy_oIx-cu8UjgQs1YiJw5MRaJ-20)
+![](./使用loki1.png)
 
 最上面下拉选择刚才创建好的Loki数据源，再选择自定义的label标签，点击Run Query即可看到日志
 
-![](https://idoc.longfor.com/editor-server/doc/wv8hvfx7fKLtretf8xlxFxgVPX32/resources/0uQzLDPqVv6WzizB_hvmmmzzTTd4Le91mNFUa5zbDZE.png?token=W.uENCf76j57K93JLeVg7Vy_oIx-cu8UjgQs1YiJw5MRaJ-20)
+![](./使用loki2.png)
 
 查看上下文方法，点击某行日志的的Show context按钮即可
 
-![](https://idoc.longfor.com/editor-server/doc/wv8hvfx7fKLtretf8xlxFxgVPX32/resources/TmulczEolSOguvyrMun66wMLL1Ji_cQebLefA9P9g2k.png?token=W.uENCf76j57K93JLeVg7Vy_oIx-cu8UjgQs1YiJw5MRaJ-20)
+![](./使用loki3.png)
 
-# 参考文档
+## 参考文档
 
-1.  [Loki官方部署文档](https://grafana.com/docs/loki/latest/get-started/)
+1. [Loki官方部署文档](https://grafana.com/docs/loki/latest/get-started/)
 
+1. [Loki配置文件说明](https://grafana.com/docs/loki/latest/configure/)
 
+1. [Promtail配置文件说明](https://grafana.com/docs/loki/latest/send-data/promtail/configuration/)
 
-1.  [Loki配置文件说明](https://grafana.com/docs/loki/latest/configure/)
-
-
-
-1.  [Promtail配置文件说明](https://grafana.com/docs/loki/latest/send-data/promtail/configuration/)
-
-
-
-1.  [日志收集系统loki部署](https://blog.51cto.com/u_15315026/3206956)
+1. [日志收集系统loki部署](https://blog.51cto.com/u_15315026/3206956)
 

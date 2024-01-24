@@ -32,7 +32,7 @@ tags:
 | NAME                                                                             | DESC |
 | :------------------------------------------------------------------------------- | ---: |
 | [Notepad3](https://github.com/rizonesoft/Notepad3 "https://www.rizonesoft.com/") |      |
-| [Notepad++](https://notepad-plus-plus.org/)                                      |      |
+| [~~Notepad++~~](https://notepad-plus-plus.org/)                                  |不推荐 |
 | [VS Code](https://code.visualstudio.com/)                                        |      |
 | [notepad--](https://gitee.com/cxasm/notepad--)                                   |强烈推荐  |
 
@@ -44,7 +44,7 @@ tags:
 | [electerm](https://github.com/electerm/electerm/releases) |       |
 | [FinalShell](http://www.hostbuf.com/)                     |       |
 | [MobaXterm](https://mobaxterm.mobatek.net/)               |       |
-| [Tabby](https://tabby.sh/)                                |       |
+| [Tabby](https://github.com/Eugeny/tabby)                  |       |
 | [Termius](https://www.termius.com/)                       |       |
 | [XShell](https://www.xshell.com/zh/free-for-home-school/) | 非商业使用 |
 
