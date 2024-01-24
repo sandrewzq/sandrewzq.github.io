@@ -66,8 +66,8 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://notepad-plus-plus.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Notepad++&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+    &gt;&lt;del&gt;Notepad++&lt;/del&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;不推荐&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -111,7 +111,7 @@
 &lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tabby.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Eugeny/tabby&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Tabby&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
