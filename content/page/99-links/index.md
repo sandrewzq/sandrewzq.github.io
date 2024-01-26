@@ -11,7 +11,11 @@ links:
 
   - title: Jimmy Cai
     description: 主题作者
-    website: https://jimmycai.com/
+    website: https://jimmycai.com/.
+
+  - title: 左手代码右手诗
+    description: kangkang223
+    website: https://www.chenweikang.top/
 menu:
     main: 
         weight: 99

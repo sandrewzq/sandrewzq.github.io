@@ -6,7 +6,340 @@
         <description>Recent content on Sandrew&#39;s Base</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>极空间申请ssl证书实现https访问</title>
+        <link>/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/</link>
+        <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/</guid>
+        <description>&lt;h1 id=&#34;极空间申请ssl证书实现https访问&#34;&gt;极空间申请ssl证书实现https访问&lt;/h1&gt;
+&lt;h2 id=&#34;必要前置条件&#34;&gt;必要前置条件&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;已经实现公网域名访问，请参考：&lt;a class=&#34;link&#34; href=&#34;../2024-01-25-%e6%9e%81%e7%a9%ba%e9%97%b4%e9%80%9a%e8%bf%87docker%e5%ae%9e%e7%8e%b0%e5%85%ac%e7%bd%91%e5%9f%9f%e5%90%8d%e8%ae%bf%e9%97%ae/index.md&#34; &gt;极空间通过docker实现公网域名访问&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;nginx-proxy-manager&#34;&gt;nginx-proxy-manager&lt;/h2&gt;
+&lt;p&gt;首先打开docker仓库搜索chishin/nginx-proxy-manager-zh镜像并下载&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/1.jpg&#34;
+	width=&#34;984&#34;
+	height=&#34;399&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/1_hu211b50feb3e9b3be378002b0427fbde2_82166_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/1_hu211b50feb3e9b3be378002b0427fbde2_82166_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;246&#34;
+		data-flex-basis=&#34;591px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;创建容器&#34;&gt;创建容器&lt;/h3&gt;
+&lt;p&gt;文件夹路径自行填写即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/2.jpg&#34;
+	width=&#34;807&#34;
+	height=&#34;376&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/2_hu9077aa35a23663ad3f11fcd6235d5f1b_56924_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/2_hu9077aa35a23663ad3f11fcd6235d5f1b_56924_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;214&#34;
+		data-flex-basis=&#34;515px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;网络配置不用动，端口自定义即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/3.jpg&#34;
+	width=&#34;815&#34;
+	height=&#34;440&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/3_hu008e98f5f286046a82ed5194f3a45910_61141_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/3_hu008e98f5f286046a82ed5194f3a45910_61141_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;444px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最后点击应用创建完成&lt;/p&gt;
+&lt;h3 id=&#34;设置反向代理&#34;&gt;设置反向代理&lt;/h3&gt;
+&lt;p&gt;使用内网IP+刚才映射的81对应的端口访问管理页面，使用默认登录邮箱和密码登录，登录后设置自己的邮箱及密码。
+（默认邮箱：admin@example.com   默认密码: changeme）&lt;/p&gt;
+&lt;p&gt;登陆后点击代理服务&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/4.jpg&#34;
+	width=&#34;476&#34;
+	height=&#34;202&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/4_hu60bc99584c5b2ca55085311166cd6fc7_25801_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/4_hu60bc99584c5b2ca55085311166cd6fc7_25801_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;235&#34;
+		data-flex-basis=&#34;565px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;点击添加代理服务，并填入需要代理的域名，协议不用动，转发ip填写需要转发的内网ip，端口填写需要转发的服务的对应端口，再勾选阻止常见漏洞，最后点击保存&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/5.jpg&#34;
+	width=&#34;494&#34;
+	height=&#34;537&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/5_hu5ef65c0b66247e0d06f19b5080bd21af_52308_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/5_hu5ef65c0b66247e0d06f19b5080bd21af_52308_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;91&#34;
+		data-flex-basis=&#34;220px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;通过刚才设置好的规则里的域名及端口访问测试，能打开即代表转发成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/6.jpg&#34;
+	width=&#34;420&#34;
+	height=&#34;166&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/6_hu70c4f4051bc91e201d74027b4383839c_14029_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/6_hu70c4f4051bc91e201d74027b4383839c_14029_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;253&#34;
+		data-flex-basis=&#34;607px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置https访问&#34;&gt;配置https访问&lt;/h2&gt;
+&lt;h3 id=&#34;申请ssl证书&#34;&gt;申请ssl证书&lt;/h3&gt;
+&lt;h4 id=&#34;方式1&#34;&gt;方式1&lt;/h4&gt;
+&lt;p&gt;选择“SSL证书”页面，点击右上角的“添加SSL证书”，选择Let&amp;rsquo;s Encrypt&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/7.jpg&#34;
+	width=&#34;1307&#34;
+	height=&#34;351&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/7_hu1e3f21da11f7e4c8826e459d572733c7_64062_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/7_hu1e3f21da11f7e4c8826e459d572733c7_64062_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;372&#34;
+		data-flex-basis=&#34;893px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;根据页面提示填写，Let&amp;rsquo;s Encrypt栏填写要接收信息的邮箱，勾选DNS认证，选择aliyun的dns，并填写accesskey及access_key_secret&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/8.jpg&#34;
+	width=&#34;485&#34;
+	height=&#34;830&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/8_hu76a0bcd4906ec227ff67e8e1dab406b2_106342_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/8_hu76a0bcd4906ec227ff67e8e1dab406b2_106342_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;58&#34;
+		data-flex-basis=&#34;140px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最后点击保存，等待申请成功&lt;/p&gt;
+&lt;h4 id=&#34;方式2&#34;&gt;方式2&lt;/h4&gt;
+&lt;p&gt;选择“SSL证书”页面，点击右上角的“上传证书”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/9.jpg&#34;
+	width=&#34;494&#34;
+	height=&#34;521&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/9_hu4fc1111ed21df4f073b55f02f18e126f_42311_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/9_hu4fc1111ed21df4f073b55f02f18e126f_42311_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;94&#34;
+		data-flex-basis=&#34;227px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;填入信息并上传证书皆可&lt;/p&gt;
+&lt;h3 id=&#34;配置ssl&#34;&gt;配置ssl&lt;/h3&gt;
+&lt;p&gt;回到最开始创建的代理服务，点击编辑&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/10.jpg&#34;
+	width=&#34;1182&#34;
+	height=&#34;395&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/10_hu4beeb157a5f18d9456dc67896aad746f_73887_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/10_hu4beeb157a5f18d9456dc67896aad746f_73887_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;299&#34;
+		data-flex-basis=&#34;718px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在ssl栏选择刚才申请好的证书，并勾选对应的设置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/11.jpg&#34;
+	width=&#34;491&#34;
+	height=&#34;376&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/11_hu821400313d7b2cca45d3faf7d5b39e5b_34289_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/11_hu821400313d7b2cca45d3faf7d5b39e5b_34289_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;313px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最后点击保存即可&lt;/p&gt;
+&lt;h2 id=&#34;验证&#34;&gt;验证&lt;/h2&gt;
+&lt;p&gt;使用“https://设置好的域名:docker里443转发的端口”来测试下访问&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/12.jpg&#34;
+	width=&#34;1056&#34;
+	height=&#34;495&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/12_hu9fe9b1800d0a39ef7c9d1294262fb59f_59200_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/12_hu9fe9b1800d0a39ef7c9d1294262fb59f_59200_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;213&#34;
+		data-flex-basis=&#34;512px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hao4k.cn/thread-73967-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;极空间NginxProxyManager部署及应用教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>极空间通过docker实现公网域名访问</title>
+        <link>/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/</link>
+        <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/</guid>
+        <description>&lt;h1 id=&#34;极空间通过docker实现公网域名访问&#34;&gt;极空间通过docker实现公网域名访问&lt;/h1&gt;
+&lt;h2 id=&#34;必要前置条件&#34;&gt;必要前置条件&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;路由器能获取到公网ip&lt;/li&gt;
+&lt;li&gt;路由器有管理员权限，可配置端口转发&lt;/li&gt;
+&lt;li&gt;已经注册好的域名，本文以阿里云域名为例，其他注册商操作类似&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;安装ddns-go&#34;&gt;安装ddns-go&lt;/h2&gt;
+&lt;p&gt;首先打开docker仓库搜索jeessy/ddns-go镜像并下载&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/1.jpg&#34;
+	width=&#34;980&#34;
+	height=&#34;456&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/1_hua4d4f0857a7682ca1fed5ca01e83602f_93897_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/1_hua4d4f0857a7682ca1fed5ca01e83602f_93897_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;214&#34;
+		data-flex-basis=&#34;515px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;创建容器&#34;&gt;创建容器&lt;/h3&gt;
+&lt;p&gt;文件夹路径自行填写即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/2.jpg&#34;
+	width=&#34;825&#34;
+	height=&#34;357&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/2_hu3c7acdbbc438f65a5ae74ce54a056ac8_47349_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/2_hu3c7acdbbc438f65a5ae74ce54a056ac8_47349_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;231&#34;
+		data-flex-basis=&#34;554px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;网络配置不用动&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/3.jpg&#34;
+	width=&#34;787&#34;
+	height=&#34;311&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/3_hu18c210ca68a40fca7a4c6039596b816e_41197_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/3_hu18c210ca68a40fca7a4c6039596b816e_41197_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;253&#34;
+		data-flex-basis=&#34;607px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;端口自定义即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/4.jpg&#34;
+	width=&#34;750&#34;
+	height=&#34;329&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/4_huf20a01d5ac86ad1c26a3b20783b471a0_40771_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/4_huf20a01d5ac86ad1c26a3b20783b471a0_40771_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;227&#34;
+		data-flex-basis=&#34;547px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最后点击应用创建完成&lt;/p&gt;
+&lt;h2 id=&#34;设置云解析获取阿里云aksk&#34;&gt;设置云解析、获取阿里云ak/sk&lt;/h2&gt;
+&lt;h3 id=&#34;获取阿里云aksk&#34;&gt;获取阿里云ak/sk&lt;/h3&gt;
+&lt;p&gt;打开通过设置好的端口打开ddns-go页面
+选择aliyun并点击创建 AccessKey&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/5.jpg&#34;
+	width=&#34;1329&#34;
+	height=&#34;659&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/5_hu182df3cf1a143268f039e6079d7f9631_146758_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/5_hu182df3cf1a143268f039e6079d7f9631_146758_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;201&#34;
+		data-flex-basis=&#34;484px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置ddns-go&#34;&gt;配置DDNS-GO&lt;/h2&gt;
+&lt;p&gt;填写对应的AccessKey ID及AccessKey Secret，设置好后点击上面的保存&lt;/p&gt;
+&lt;p&gt;往下再根据自己的网络情况和需求分别设置ipv4及ipv6
+如果是根域名转发则填写
+&lt;code&gt;*.你的域名.com&lt;/code&gt;
+其他情况则自行根据情况填写&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/6.jpg&#34;
+	width=&#34;1241&#34;
+	height=&#34;964&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/6_hu065c4c6f00d2c841067008645a0f1f39_223336_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/6_hu065c4c6f00d2c841067008645a0f1f39_223336_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;308px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;其他栏根据自己的情况自行设置，最好勾选禁止外网访问&lt;/p&gt;
+&lt;p&gt;都设置好后点击最下面的保存&lt;/p&gt;
+&lt;p&gt;最后登录到阿里云域名解析页查看是否记录成功，如没有也可以手动创建。稍等一会显示对应的公网ip则说明设置成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/7.jpg&#34;
+	width=&#34;1667&#34;
+	height=&#34;470&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/7_hu132910870718814119b75cb5622dbb98_122365_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/7_hu132910870718814119b75cb5622dbb98_122365_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;354&#34;
+		data-flex-basis=&#34;851px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;验证&#34;&gt;验证&lt;/h2&gt;
+&lt;p&gt;通过设置好的域名访问&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/8.jpg&#34;
+	width=&#34;1154&#34;
+	height=&#34;667&#34;
+	srcset=&#34;/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/8_hu1e86597c3a42f48d8e5dbbf7c657cdeb_160029_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/8_hu1e86597c3a42f48d8e5dbbf7c657cdeb_160029_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;415px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hao4k.cn/thread-73968-1-1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;外网访问极空间和容器：使用DDNS-GO和IPv6&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.chenweikang.top/?p=1062&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;极空间Nas-Docker篇-[ddns-go ]&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>(转载)Vscode 等宽字体</title>
         <link>/p/%E8%BD%AC%E8%BD%BDvscode-%E7%AD%89%E5%AE%BD%E5%AD%97%E4%BD%93/</link>
         <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>

@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='极空间申请ssl证书实现https访问 必要前置条件 已经实现公网域名访问，请参考：极空间通过docker实现公网域名访问 nginx-proxy-manager 首先打开docker仓库搜索chishin/nginx-proxy-manager-zh镜像并下载
+创建容器 文件夹路径自行填写即可
+网络配置不用动，端口自定义即可
+最后点击应用创建完成
+设置反向代理 使用内网IP&#43;刚才映射的81对应的端口访问管理页面，使用默认登录邮箱和密码登录，登录后设置自己的邮箱及密码。 （默认邮箱：admin@example.com 默认密码: changeme）
+登陆后点击代理服务
+点击添加代理服务，并填入需要代理的域名，协议不用动，转发ip填写需要转发的内网ip，端口填写需要转发的服务的对应端口，再勾选阻止常见漏洞，最后点击保存
+通过刚才设置好的规则里的域名及端口访问测试，能打开即代表转发成功
+配置https访问 申请ssl证书 方式1 选择“SSL证书”页面，点击右上角的“添加SSL证书”，选择Let&amp;rsquo;s Encrypt
+根据页面提示填写，Let&amp;rsquo;s Encrypt栏填写要接收信息的邮箱，勾选DNS认证，选择aliyun的dns，并填写accesskey及access_key_secret
+最后点击保存，等待申请成功
+方式2 选择“SSL证书”页面，点击右上角的“上传证书”
+填入信息并上传证书皆可
+配置ssl 回到最开始创建的代理服务，点击编辑
+在ssl栏选择刚才申请好的证书，并勾选对应的设置
+最后点击保存即可
+验证 使用“https://设置好的域名:docker里443转发的端口”来测试下访问
+参考 极空间NginxProxyManager部署及应用教程 '>
+<title>极空间申请ssl证书实现https访问</title>
+
+<link rel='canonical' href='/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/'>
+
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='极空间申请ssl证书实现https访问'>
+<meta property='og:description' content='极空间申请ssl证书实现https访问 必要前置条件 已经实现公网域名访问，请参考：极空间通过docker实现公网域名访问 nginx-proxy-manager 首先打开docker仓库搜索chishin/nginx-proxy-manager-zh镜像并下载
+创建容器 文件夹路径自行填写即可
+网络配置不用动，端口自定义即可
+最后点击应用创建完成
+设置反向代理 使用内网IP&#43;刚才映射的81对应的端口访问管理页面，使用默认登录邮箱和密码登录，登录后设置自己的邮箱及密码。 （默认邮箱：admin@example.com 默认密码: changeme）
+登陆后点击代理服务
+点击添加代理服务，并填入需要代理的域名，协议不用动，转发ip填写需要转发的内网ip，端口填写需要转发的服务的对应端口，再勾选阻止常见漏洞，最后点击保存
+通过刚才设置好的规则里的域名及端口访问测试，能打开即代表转发成功
+配置https访问 申请ssl证书 方式1 选择“SSL证书”页面，点击右上角的“添加SSL证书”，选择Let&amp;rsquo;s Encrypt
+根据页面提示填写，Let&amp;rsquo;s Encrypt栏填写要接收信息的邮箱，勾选DNS认证，选择aliyun的dns，并填写accesskey及access_key_secret
+最后点击保存，等待申请成功
+方式2 选择“SSL证书”页面，点击右上角的“上传证书”
+填入信息并上传证书皆可
+配置ssl 回到最开始创建的代理服务，点击编辑
+在ssl栏选择刚才申请好的证书，并勾选对应的设置
+最后点击保存即可
+验证 使用“https://设置好的域名:docker里443转发的端口”来测试下访问
+参考 极空间NginxProxyManager部署及应用教程 '>
+<meta property='og:url' content='/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/'>
+<meta property='og:site_name' content='Sandrew&#39;s Base'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='极空间' /><meta property='article:tag' content='ssl' /><meta property='article:published_time' content='2024-01-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-01-26T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="极空间申请ssl证书实现https访问">
+<meta name="twitter:description" content="极空间申请ssl证书实现https访问 必要前置条件 已经实现公网域名访问，请参考：极空间通过docker实现公网域名访问 nginx-proxy-manager 首先打开docker仓库搜索chishin/nginx-proxy-manager-zh镜像并下载
+创建容器 文件夹路径自行填写即可
+网络配置不用动，端口自定义即可
+最后点击应用创建完成
+设置反向代理 使用内网IP&#43;刚才映射的81对应的端口访问管理页面，使用默认登录邮箱和密码登录，登录后设置自己的邮箱及密码。 （默认邮箱：admin@example.com 默认密码: changeme）
+登陆后点击代理服务
+点击添加代理服务，并填入需要代理的域名，协议不用动，转发ip填写需要转发的内网ip，端口填写需要转发的服务的对应端口，再勾选阻止常见漏洞，最后点击保存
+通过刚才设置好的规则里的域名及端口访问测试，能打开即代表转发成功
+配置https访问 申请ssl证书 方式1 选择“SSL证书”页面，点击右上角的“添加SSL证书”，选择Let&amp;rsquo;s Encrypt
+根据页面提示填写，Let&amp;rsquo;s Encrypt栏填写要接收信息的邮箱，勾选DNS认证，选择aliyun的dns，并填写accesskey及access_key_secret
+最后点击保存，等待申请成功
+方式2 选择“SSL证书”页面，点击右上角的“上传证书”
+填入信息并上传证书皆可
+配置ssl 回到最开始创建的代理服务，点击编辑
+在ssl栏选择刚才申请好的证书，并勾选对应的设置
+最后点击保存即可
+验证 使用“https://设置好的域名:docker里443转发的端口”来测试下访问
+参考 极空间NginxProxyManager部署及应用教程 ">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "dark");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huf0ab02c9034de99e1467ba9ea4e8410d_73410_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Sandrew&#39;s Base</a></h1>
+            <h2 class="site-description">站点介绍.</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%B7%A5%E5%85%B7%E6%94%B6%E9%9B%86/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c1c1c1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="6" height="6" rx="1" />
+  <rect x="4" y="14" width="6" height="6" rx="1" />
+  <rect x="14" y="14" width="6" height="6" rx="1" />
+  <line x1="14" y1="7" x2="20" y2="7" />
+  <line x1="17" y1="4" x2="17" y2="10" />
+</svg>
+                
+                <span>工具收集</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>大佬博客</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#必要前置条件">必要前置条件</a></li>
+    <li><a href="#nginx-proxy-manager">nginx-proxy-manager</a>
+      <ol>
+        <li><a href="#创建容器">创建容器</a></li>
+        <li><a href="#设置反向代理">设置反向代理</a></li>
+      </ol>
+    </li>
+    <li><a href="#配置https访问">配置https访问</a>
+      <ol>
+        <li><a href="#申请ssl证书">申请ssl证书</a>
+          <ol>
+            <li><a href="#方式1">方式1</a></li>
+            <li><a href="#方式2">方式2</a></li>
+          </ol>
+        </li>
+        <li><a href="#配置ssl">配置ssl</a></li>
+      </ol>
+    </li>
+    <li><a href="#验证">验证</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%9E%81%E7%A9%BA%E9%97%B4/" >
+                极空间
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/">极空间申请ssl证书实现https访问</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 26, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="极空间申请ssl证书实现https访问">极空间申请ssl证书实现https访问</h1>
+<h2 id="必要前置条件">必要前置条件</h2>
+<ol>
+<li>已经实现公网域名访问，请参考：<a class="link" href="../2024-01-25-%e6%9e%81%e7%a9%ba%e9%97%b4%e9%80%9a%e8%bf%87docker%e5%ae%9e%e7%8e%b0%e5%85%ac%e7%bd%91%e5%9f%9f%e5%90%8d%e8%ae%bf%e9%97%ae/index.md" >极空间通过docker实现公网域名访问</a></li>
+</ol>
+<h2 id="nginx-proxy-manager">nginx-proxy-manager</h2>
+<p>首先打开docker仓库搜索chishin/nginx-proxy-manager-zh镜像并下载</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/1.jpg"
+	width="984"
+	height="399"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/1_hu211b50feb3e9b3be378002b0427fbde2_82166_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/1_hu211b50feb3e9b3be378002b0427fbde2_82166_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="246"
+		data-flex-basis="591px"
+	
+></p>
+<h3 id="创建容器">创建容器</h3>
+<p>文件夹路径自行填写即可</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/2.jpg"
+	width="807"
+	height="376"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/2_hu9077aa35a23663ad3f11fcd6235d5f1b_56924_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/2_hu9077aa35a23663ad3f11fcd6235d5f1b_56924_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="214"
+		data-flex-basis="515px"
+	
+></p>
+<p>网络配置不用动，端口自定义即可</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/3.jpg"
+	width="815"
+	height="440"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/3_hu008e98f5f286046a82ed5194f3a45910_61141_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/3_hu008e98f5f286046a82ed5194f3a45910_61141_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="185"
+		data-flex-basis="444px"
+	
+></p>
+<p>最后点击应用创建完成</p>
+<h3 id="设置反向代理">设置反向代理</h3>
+<p>使用内网IP+刚才映射的81对应的端口访问管理页面，使用默认登录邮箱和密码登录，登录后设置自己的邮箱及密码。
+（默认邮箱：admin@example.com   默认密码: changeme）</p>
+<p>登陆后点击代理服务</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/4.jpg"
+	width="476"
+	height="202"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/4_hu60bc99584c5b2ca55085311166cd6fc7_25801_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/4_hu60bc99584c5b2ca55085311166cd6fc7_25801_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="235"
+		data-flex-basis="565px"
+	
+></p>
+<p>点击添加代理服务，并填入需要代理的域名，协议不用动，转发ip填写需要转发的内网ip，端口填写需要转发的服务的对应端口，再勾选阻止常见漏洞，最后点击保存</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/5.jpg"
+	width="494"
+	height="537"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/5_hu5ef65c0b66247e0d06f19b5080bd21af_52308_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/5_hu5ef65c0b66247e0d06f19b5080bd21af_52308_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="91"
+		data-flex-basis="220px"
+	
+></p>
+<p>通过刚才设置好的规则里的域名及端口访问测试，能打开即代表转发成功</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/6.jpg"
+	width="420"
+	height="166"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/6_hu70c4f4051bc91e201d74027b4383839c_14029_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/6_hu70c4f4051bc91e201d74027b4383839c_14029_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="253"
+		data-flex-basis="607px"
+	
+></p>
+<h2 id="配置https访问">配置https访问</h2>
+<h3 id="申请ssl证书">申请ssl证书</h3>
+<h4 id="方式1">方式1</h4>
+<p>选择“SSL证书”页面，点击右上角的“添加SSL证书”，选择Let&rsquo;s Encrypt</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/7.jpg"
+	width="1307"
+	height="351"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/7_hu1e3f21da11f7e4c8826e459d572733c7_64062_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/7_hu1e3f21da11f7e4c8826e459d572733c7_64062_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="372"
+		data-flex-basis="893px"
+	
+></p>
+<p>根据页面提示填写，Let&rsquo;s Encrypt栏填写要接收信息的邮箱，勾选DNS认证，选择aliyun的dns，并填写accesskey及access_key_secret</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/8.jpg"
+	width="485"
+	height="830"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/8_hu76a0bcd4906ec227ff67e8e1dab406b2_106342_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/8_hu76a0bcd4906ec227ff67e8e1dab406b2_106342_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="58"
+		data-flex-basis="140px"
+	
+></p>
+<p>最后点击保存，等待申请成功</p>
+<h4 id="方式2">方式2</h4>
+<p>选择“SSL证书”页面，点击右上角的“上传证书”</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/9.jpg"
+	width="494"
+	height="521"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/9_hu4fc1111ed21df4f073b55f02f18e126f_42311_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/9_hu4fc1111ed21df4f073b55f02f18e126f_42311_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="94"
+		data-flex-basis="227px"
+	
+></p>
+<p>填入信息并上传证书皆可</p>
+<h3 id="配置ssl">配置ssl</h3>
+<p>回到最开始创建的代理服务，点击编辑</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/10.jpg"
+	width="1182"
+	height="395"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/10_hu4beeb157a5f18d9456dc67896aad746f_73887_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/10_hu4beeb157a5f18d9456dc67896aad746f_73887_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="299"
+		data-flex-basis="718px"
+	
+></p>
+<p>在ssl栏选择刚才申请好的证书，并勾选对应的设置</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/11.jpg"
+	width="491"
+	height="376"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/11_hu821400313d7b2cca45d3faf7d5b39e5b_34289_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/11_hu821400313d7b2cca45d3faf7d5b39e5b_34289_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="130"
+		data-flex-basis="313px"
+	
+></p>
+<p>最后点击保存即可</p>
+<h2 id="验证">验证</h2>
+<p>使用“https://设置好的域名:docker里443转发的端口”来测试下访问</p>
+<p><img src="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/12.jpg"
+	width="1056"
+	height="495"
+	srcset="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/12_hu9fe9b1800d0a39ef7c9d1294262fb59f_59200_480x0_resize_q75_box.jpg 480w, /p/%E6%9E%81%E7%A9%BA%E9%97%B4%E7%94%B3%E8%AF%B7ssl%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0https%E8%AE%BF%E9%97%AE/12_hu9fe9b1800d0a39ef7c9d1294262fb59f_59200_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="213"
+		data-flex-basis="512px"
+	
+></p>
+<h2 id="参考">参考</h2>
+<ol>
+<li><a class="link" href="https://www.hao4k.cn/thread-73967-1-1.html"  target="_blank" rel="noopener"
+    >极空间NginxProxyManager部署及应用教程</a></li>
+</ol>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%9E%81%E7%A9%BA%E9%97%B4/">极空间</a>
+        
+            <a href="/tags/ssl/">ssl</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E6%9E%81%E7%A9%BA%E9%97%B4%E9%80%9A%E8%BF%87docker%E5%AE%9E%E7%8E%B0%E5%85%AC%E7%BD%91%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">极空间通过docker实现公网域名访问</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2024 Sandrew&#39;s Base
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
