@@ -12,8 +12,6 @@ title: GitHub项目收集
 
 spring-boot-starters <https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters>
 
-射手网 <https://assrt.net/>
-
 
 ## 梯子
 
