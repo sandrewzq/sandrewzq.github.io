@@ -34,7 +34,7 @@ tags:
 | [Notepad3](https://github.com/rizonesoft/Notepad3 "https://www.rizonesoft.com/") |      |
 | [~~Notepad++~~](https://notepad-plus-plus.org/)                                  |不推荐 |
 | [VS Code](https://code.visualstudio.com/)                                        |      |
-| [notepad--](https://gitee.com/cxasm/notepad--)                                   |强烈推荐  |
+| [notepad--](https://gitee.com/cxasm/notepad--)                                   |      |
 
 ## ssh工具
 
