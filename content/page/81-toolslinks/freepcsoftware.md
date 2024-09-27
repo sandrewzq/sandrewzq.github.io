@@ -83,6 +83,7 @@ tags:
 | [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)                    |      |
 | [DiskGenius](https://www.diskgenius.cn/)                                                    |      |
 | [HD Tune](https://www.hdtune.com/)                                                          |      |
+| [傲梅分区助手](https://www.disktool.cn/)                                                          |      |
 
 ## 网络工具
 
@@ -111,6 +112,7 @@ tags:
 | [Geek Uninstaller](https://geekuninstaller.com/) |      |
 | [EmptyFolderNuker](https://www.fosshub.com/)     |      |
 | [Bulk Crap Uninstaller](https://github.com/Klocman/Bulk-Crap-Uninstaller)     |      |
+| [WizTree](https://diskanalyzer.com/)     |      |
 
 ## 文件比较工具
 
@@ -128,7 +130,7 @@ tags:
 | :------------------------------------------ | ---: |
 | [FDM](https://www.freedownloadmanager.org/) |      |
 | [qBittorrent](https://www.qbittorrent.org/) |      |
-| [motrix](https://motrix.app/) |      |
+| [motrix](https://motrix.app/)               |      |
 
 ## 文件压缩工具
 
@@ -146,6 +148,10 @@ tags:
 | [KOOK](https://www.kookapp.cn/)                              |      |
 | [Watt Toolkit](https://steampp.net/)                         |      |
 | [UsbEAm Hosts Editor](https://www.dogfight360.com/blog/475/) |      |
+| [游戏加加](https://gamepp.com/) |      |
+| [老猫汉化](https://www.lmaoyx.com/pc/laomao) |      |
+| [一修大师](https://www.lmaoyx.com/pc/yixiu) |      |
+| [风灵月影](https://flingtrainer.com/) |      |
 
 ## 装机工具
 

@@ -22,3 +22,4 @@ menu:
 
 [MIUI 历史版本](https://miuiver.com/)
 
+[GitHub项目收集]({{< ref "/page/81-toolslinks/github.md" >}} )
