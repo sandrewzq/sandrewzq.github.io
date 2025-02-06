@@ -67,6 +67,28 @@
         <description></description>
         </item>
         <item>
+        <title>GitHub项目收集</title>
+        <link>/github%E9%A1%B9%E7%9B%AE%E6%94%B6%E9%9B%86/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/github%E9%A1%B9%E7%9B%AE%E6%94%B6%E9%9B%86/</guid>
+        <description>&lt;h2 id=&#34;开发&#34;&gt;开发&lt;/h2&gt;
+&lt;p&gt;spring-boot-starters &lt;a class=&#34;link&#34; href=&#34;https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;梯子&#34;&gt;梯子&lt;/h2&gt;
+&lt;p&gt;clash-verge-rev &lt;a class=&#34;link&#34; href=&#34;https://github.com/clash-verge-rev/clash-verge-rev&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/clash-verge-rev/clash-verge-rev&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ClashMetaForAndroid &lt;a class=&#34;link&#34; href=&#34;https://github.com/MetaCubeX/ClashMetaForAndroid&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/MetaCubeX/ClashMetaForAndroid&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;任天堂ns相关&#34;&gt;任天堂NS相关&lt;/h2&gt;
+&lt;p&gt;AK-Atmosphere &lt;a class=&#34;link&#34; href=&#34;https://github.com/AK478BB/AK-Atmosphere&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/AK478BB/AK-Atmosphere&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
+&lt;p&gt;周报生成器 &lt;a class=&#34;link&#34; href=&#34;https://github.com/guaguaguaxia/weekly_report&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/guaguaguaxia/weekly_report&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>pojie</title>
         <link>/pojie/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -77,31 +99,23 @@
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:left&#34;&gt;NAME&lt;/th&gt;
-&lt;th style=&#34;text-align:right&#34;&gt;WINDOWS&lt;/th&gt;
-&lt;th style=&#34;text-align:right&#34;&gt;LINUX&lt;/th&gt;
-&lt;th style=&#34;text-align:right&#34;&gt;MAC&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;DESC&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.lond.cn/down/otp.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Office Tool Plus&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;docs%5cTools%5cHWIDGEN.zip&#34; &gt;HWIDGEN&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;[HWIDGEN]&lt;a class=&#34;link&#34; href=&#34;docs%5cTools%5cHWIDGEN.zip&#34; &gt;HWIDGEN&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://cmwtat.cloudmoe.com/cn.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;云萌 Win10 激活工具&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;✅&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;❌&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -133,6 +147,7 @@
     &gt;各种JAVA JDK的镜像分发&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://miuiver.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;MIUI 历史版本&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;/github%E9%A1%B9%E7%9B%AE%E6%94%B6%E9%9B%86/&#34; &gt;GitHub项目收集&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -216,7 +231,7 @@
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/cxasm/notepad--&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;notepad&amp;ndash;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;强烈推荐&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -374,6 +389,11 @@
     &gt;HD Tune&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.disktool.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;傲梅分区助手&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;网络工具&#34;&gt;网络工具&lt;/h2&gt;
@@ -470,6 +490,11 @@
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Klocman/Bulk-Crap-Uninstaller&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Bulk Crap Uninstaller&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://diskanalyzer.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WizTree&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -589,6 +614,26 @@
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.dogfight360.com/blog/475/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;UsbEAm Hosts Editor&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://gamepp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;游戏加加&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.lmaoyx.com/pc/laomao&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;老猫汉化&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.lmaoyx.com/pc/yixiu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;一修大师&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://flingtrainer.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;风灵月影&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

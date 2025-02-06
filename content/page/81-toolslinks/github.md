@@ -12,7 +12,6 @@ title: GitHub项目收集
 
 spring-boot-starters <https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters>
 
-
 ## 梯子
 
 clash-verge-rev <https://github.com/clash-verge-rev/clash-verge-rev>

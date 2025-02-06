@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
-第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
-1 2 select c.*,st_distance_sphere(point(#{baseLongitude}, #{baseLatitude}),point(c.longitude, c.latitude)) as distance from community c 参考链接 mysql根据经纬度求两地距离 Spatial Convenience Functions'>
-<title>mysql根据经纬度求两地距离</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='开发 spring-boot-starters https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters
+梯子 clash-verge-rev https://github.com/clash-verge-rev/clash-verge-rev
+ClashMetaForAndroid https://github.com/MetaCubeX/ClashMetaForAndroid
+任天堂NS相关 AK-Atmosphere https://github.com/AK478BB/AK-Atmosphere
+其他 周报生成器 https://github.com/guaguaguaxia/weekly_report'>
+<title>GitHub项目收集</title>
 
-<link rel='canonical' href='/p/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/'>
+<link rel='canonical' href='/github%E9%A1%B9%E7%9B%AE%E6%94%B6%E9%9B%86/'>
 
-<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='mysql根据经纬度求两地距离'>
-<meta property='og:description' content='mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
-第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
-1 2 select c.*,st_distance_sphere(point(#{baseLongitude}, #{baseLatitude}),point(c.longitude, c.latitude)) as distance from community c 参考链接 mysql根据经纬度求两地距离 Spatial Convenience Functions'>
-<meta property='og:url' content='/p/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/'>
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='GitHub项目收集'>
+<meta property='og:description' content='开发 spring-boot-starters https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters
+梯子 clash-verge-rev https://github.com/clash-verge-rev/clash-verge-rev
+ClashMetaForAndroid https://github.com/MetaCubeX/ClashMetaForAndroid
+任天堂NS相关 AK-Atmosphere https://github.com/AK478BB/AK-Atmosphere
+其他 周报生成器 https://github.com/guaguaguaxia/weekly_report'>
+<meta property='og:url' content='/github%E9%A1%B9%E7%9B%AE%E6%94%B6%E9%9B%86/'>
 <meta property='og:site_name' content='Sandrew&#39;s Base'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='MySql' /><meta property='article:published_time' content='2021-12-23T16:05:02&#43;00:00'/><meta property='article:modified_time' content='2021-12-23T16:05:02&#43;00:00'/>
-<meta name="twitter:title" content="mysql根据经纬度求两地距离">
-<meta name="twitter:description" content="mysql提供了两个函数 1 2 3 4 5 6 7 #1.两点距离(1.4142135623730951) select st_distance(point(0,0),point(1,1)); select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加 #2.两点球面距离（157249.0357231545m） select st_distance_sphere(point(0,0),point(1,1)); select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6. 第一个函数是计算平面坐标系下，两点的距离，就是 1 |AB| = \sqrt{(x1-x2)^2 &#43; (y1-y2)^2} 如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。
-第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。 1 ST_Distance_Sphere(g1, g2 [, radius]) 调用方式
-1 2 select c.*,st_distance_sphere(point(#{baseLongitude}, #{baseLatitude}),point(c.longitude, c.latitude)) as distance from community c 参考链接 mysql根据经纬度求两地距离 Spatial Convenience Functions">
+<meta property='og:type' content='article'><meta property='article:section' content='Page' />
+<meta name="twitter:title" content="GitHub项目收集">
+<meta name="twitter:description" content="开发 spring-boot-starters https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters
+梯子 clash-verge-rev https://github.com/clash-verge-rev/clash-verge-rev
+ClashMetaForAndroid https://github.com/MetaCubeX/ClashMetaForAndroid
+任天堂NS相关 AK-Atmosphere https://github.com/AK478BB/AK-Atmosphere
+其他 周报生成器 https://github.com/guaguaguaxia/weekly_report">
     </head>
     <body class="
     article-page
@@ -245,10 +251,10 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#mysql提供了两个函数">mysql提供了两个函数</a></li>
-    <li><a href="#第一个函数是计算平面坐标系下两点的距离就是">第一个函数是计算平面坐标系下，两点的距离，就是</a></li>
-    <li><a href="#第二个函数是计算球面距离的公式传入的参数是经纬度经度-180180纬度-9090返回的值以m为单位的距离">第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。</a></li>
-    <li><a href="#参考链接">参考链接</a></li>
+    <li><a href="#开发">开发</a></li>
+    <li><a href="#梯子">梯子</a></li>
+    <li><a href="#任天堂ns相关">任天堂NS相关</a></li>
+    <li><a href="#其他">其他</a></li>
   </ol>
 </nav>
         </div>
@@ -265,18 +271,10 @@
 
     <div class="article-details">
     
-    <header class="article-category">
-        
-            <a href="/categories/mysql/" >
-                MySql
-            </a>
-        
-    </header>
-    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/mysql%E6%A0%B9%E6%8D%AE%E7%BB%8F%E7%BA%AC%E5%BA%A6%E6%B1%82%E4%B8%A4%E5%9C%B0%E8%B7%9D%E7%A6%BB/">mysql根据经纬度求两地距离</a>
+            <a href="/github%E9%A1%B9%E7%9B%AE%E6%94%B6%E9%9B%86/">GitHub项目收集</a>
         </h2>
     
         
@@ -287,19 +285,6 @@
     
     
     <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Dec 23, 2021</time>
-            </div>
         
 
         
@@ -328,74 +313,26 @@
     <section class="article-content">
     
     
-    <h2 id="mysql提供了两个函数">mysql提供了两个函数</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#1.两点距离(1.4142135623730951)
-</span></span><span class="line"><span class="cl">select st_distance(point(0,0),point(1,1));
-</span></span><span class="line"><span class="cl">select st_distance(point (120.10591, 30.30163),point(120.13026,30.25961));mysql 5.6 添加
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#2.两点球面距离（157249.0357231545m）
-</span></span><span class="line"><span class="cl">select st_distance_sphere(point(0,0),point(1,1));
-</span></span><span class="line"><span class="cl">select st_distance_sphere(point (120.10591, 30.30163),point(120.13026,30.25961));This function was added in MySQL 5.7.6.
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="第一个函数是计算平面坐标系下两点的距离就是">第一个函数是计算平面坐标系下，两点的距离，就是</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">|AB| = \sqrt{(x1-x2)^2 + (y1-y2)^2}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>如果用于计算地球两点的距离，带入的参数是角度（经纬度），则计算的单位也是相差的角度，用此角度计算距离不准。纬度距离约111km每度，经度距离在赤道平面上是111km每度，随纬度的升高逐渐降低为0。</p>
-<h2 id="第二个函数是计算球面距离的公式传入的参数是经纬度经度-180180纬度-9090返回的值以m为单位的距离">第二个函数是计算球面距离的公式，传入的参数是经纬度（经度-180～180，纬度-90～90），返回的值以m为单位的距离。</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ST_Distance_Sphere(g1, g2 [, radius])
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>调用方式</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">select c.*,st_distance_sphere(point(#{baseLongitude}, #{baseLatitude}),point(c.longitude, c.latitude)) as distance
-</span></span><span class="line"><span class="cl">from community c
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="参考链接">参考链接</h2>
-<p><a class="link" href="https://www.cnblogs.com/hdwang/p/9994153.html"  target="_blank" rel="noopener"
-    >mysql根据经纬度求两地距离</a>
-<a class="link" href="https://dev.mysql.com/doc/refman/5.7/en/spatial-convenience-functions.html#function_st-distance-sphere"  target="_blank" rel="noopener"
-    >Spatial Convenience Functions</a></p>
+    <h2 id="开发">开发</h2>
+<p>spring-boot-starters <a class="link" href="https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters"  target="_blank" rel="noopener"
+    >https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters</a></p>
+<h2 id="梯子">梯子</h2>
+<p>clash-verge-rev <a class="link" href="https://github.com/clash-verge-rev/clash-verge-rev"  target="_blank" rel="noopener"
+    >https://github.com/clash-verge-rev/clash-verge-rev</a></p>
+<p>ClashMetaForAndroid <a class="link" href="https://github.com/MetaCubeX/ClashMetaForAndroid"  target="_blank" rel="noopener"
+    >https://github.com/MetaCubeX/ClashMetaForAndroid</a></p>
+<h2 id="任天堂ns相关">任天堂NS相关</h2>
+<p>AK-Atmosphere <a class="link" href="https://github.com/AK478BB/AK-Atmosphere"  target="_blank" rel="noopener"
+    >https://github.com/AK478BB/AK-Atmosphere</a></p>
+<h2 id="其他">其他</h2>
+<p>周报生成器 <a class="link" href="https://github.com/guaguaguaxia/weekly_report"  target="_blank" rel="noopener"
+    >https://github.com/guaguaguaxia/weekly_report</a></p>
 
 </section>
 
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/tags/mysql/">MySql</a>
-        
-    </section>
-
 
     
     <section class="article-copyright">

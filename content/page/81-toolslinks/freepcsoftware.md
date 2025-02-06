@@ -166,6 +166,19 @@ tags:
 | [RAMMap](https://learn.microsoft.com/zh-cn/sysinternals/downloads/rammap) |      |
 | [Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals/) |      |
 
+## 截图工具
+
+| NAME                               | DESC |
+| :--------------------------------- | ---: |
+| [PixPin](https://pixpin.cn/) |      |
+
+## API工具
+
+| NAME                               | DESC |
+| :--------------------------------- | ---: |
+| [Apifox](https://apifox.com/) |      |
+| [Reqable](https://reqable.com/) |      |
+
 ## 其他工具
 
 | NAME                                                     | DESC |
