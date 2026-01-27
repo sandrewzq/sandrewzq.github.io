@@ -10,6 +10,8 @@ menu:
 
 [免费软件]({{< ref "/page/81-toolslinks/freepcsoftware.md" >}} )
 
+[AI工具]({{< ref "/page/81-toolslinks/ai-tools.md" >}} )
+
 [在线工具]({{< ref "/page/81-toolslinks/onlineTools.md" >}} )
 
 [TrackersListCollection]({{< ref "/page/81-toolslinks/TrackersListCollection.md" >}} )
