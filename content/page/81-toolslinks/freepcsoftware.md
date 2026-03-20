@@ -43,10 +43,12 @@ tags:
 | [Bitvise](http://www.bitvise.com/ssh-client-download)     |       |
 | [electerm](https://github.com/electerm/electerm/releases) |       |
 | [FinalShell](http://www.hostbuf.com/)                     |       |
+| [Xterminal](https://www.xterminal.cn/)                     |       |
 | [MobaXterm](https://mobaxterm.mobatek.net/)               |       |
 | [Tabby](https://github.com/Eugeny/tabby)                  |       |
 | [Termius](https://www.termius.com/)                       |       |
 | [XShell](https://www.xshell.com/zh/free-for-home-school/) | 非商业使用 |
+
 
 ## 看图软件
 
