@@ -1,5 +1,5 @@
-# Except this file !.gitignore 
-#public
-#resources
-themes
+# Except this file !.gitignore
+public/
+resources/
+.hugo_build.lock
 .obsidian
