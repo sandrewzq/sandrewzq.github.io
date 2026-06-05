@@ -1,5 +1,5 @@
 # baseurl: https://sandrew.gitee.io
-languageCode: en-us
+languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
 title: Sandrew's Base
