@@ -12,55 +12,71 @@ tags:
 - 在线工具
 ---
 
+# 说明
+
+`这是一个在线工具导航，适合临时使用、格式转换、代码调试和网络排查。`
+
+推荐标记：`⭐️⭐️⭐️` 优先推荐，`⭐️⭐️` 常用选择，`⭐️` 按需使用。
+
 ## 正则工具
 
-Regex101 <https://regex101.com/>
-
-Regex-Vis <https://regex-vis.com/>
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [Regex101](https://regex101.com/) | 正则表达式测试、解释和调试 | ⭐️⭐️⭐️ | 支持多种正则语法和匹配解释 |
+| [Regex-Vis](https://regex-vis.com/) | 正则表达式可视化 | ⭐️⭐️ | 适合理解复杂正则结构 |
 
 ## 网络工具
 
-iP地址查询 <https://www.ip138.com/>
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [IP 地址查询](https://www.ip138.com/) | 查询公网 IP、归属地和运营商信息 | ⭐️⭐️ | 国内访问友好 |
+| [站长工具](https://tool.chinaz.com/) | SEO、域名、备案和站点检测 | ⭐️⭐️ | 工具集合较全 |
+| [DNS 工具](https://tools.ipip.net/dns.php) | DNS 解析查询和排查 | ⭐️⭐️ | 适合检查域名解析结果 |
+| [端口检测](https://canyouseeme.org/) | 检测公网端口是否可访问 | ⭐️⭐️ | 适合排查端口映射 |
+| [端口扫描](https://tool.chinaz.com/port/) | 在线扫描目标端口开放状态 | ⭐️ | 使用时注意目标授权 |
 
-站长工具 <https://tool.chinaz.com/>
+## 代码编译 / 调试
 
-DNS工具 <https://tools.ipip.net/dns.php>
-
-端口检测 <https://canyouseeme.org/>
-
-端口扫描 <https://tool.chinaz.com/port/>
-
-## 编译
-
-多语言编译浏览器 <https://godbolt.org/>
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [Compiler Explorer](https://godbolt.org/) | 在线编译多语言代码并查看汇编结果 | ⭐️⭐️⭐️ | 适合学习编译器和性能分析 |
 
 ## 在线工具箱
 
-程序员的工具箱 <https://tool.lu>
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [程序员的工具箱](https://tool.lu) | 编码转换、格式化、加解密等开发工具合集 | ⭐️⭐️⭐️ | 程序员常用在线工具站 |
+| [Toolfk](https://www.toolfk.com/) | 开发、文本、图片和站长工具合集 | ⭐️⭐️ | 工具分类较多 |
 
-Toolfk <https://www.toolfk.com/>
+## 图片编辑
 
-## 在线图片编辑
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [美图秀秀](https://pc.meitu.com/design/edit) | 在线图片编辑和设计 | ⭐️⭐️ | 适合快速修图和海报制作 |
+| [爱给图片编辑器](https://www.aigei.com/tool/image) | 在线图片裁剪、压缩和格式处理 | ⭐️⭐️ | 适合轻量图片处理 |
 
-美图秀秀 <https://pc.meitu.com/design/edit>
+## 图标资源
 
-爱给图片编辑器 <https://www.aigei.com/tool/image>
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [Tabler Icons](https://tablericons.com/) | 免费 SVG 图标库 | ⭐️⭐️⭐️ | 风格统一，适合网站和应用界面 |
 
-## 免费SVG图标
+## 流程图 / 绘图
 
-Tabler Icons <https://tablericons.com/>
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [diagrams.net](https://www.diagrams.net/) | 在线流程图、架构图和 UML 绘图 | ⭐️⭐️⭐️ | 原 draw.io，可配合桌面版使用 |
 
-## 流程图工具
+## 文件转换
 
-diagrams <https://www.diagrams.net/>
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [凹凸凹](https://www.alltoall.net/) | 在线文件格式转换 | ⭐️⭐️ | 支持常见文档、图片和音视频格式 |
+| [Convertio](https://convertio.co/) | 在线文件格式转换 | ⭐️⭐️ | 国外站点，格式支持较多 |
 
-## 在线文件转换
+## HTML / Markdown 转换
 
-凹凸凹 <https://www.alltoall.net/>
-
-convertio <https://convertio.co/>
-
-## HTML 转换为 Markdown工具
-
-SitDown <https://sitdown.mdnice.com/zh-hans/>
+| 工具 | 用途 | 推荐 | 备注 |
+| :--- | :--- | :--- | :--- |
+| [SitDown](https://sitdown.mdnice.com/zh-hans/) | HTML 转 Markdown | ⭐️⭐️ | 适合网页内容清洗和转换 |
 
