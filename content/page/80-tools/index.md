@@ -1,7 +1,7 @@
 ---
 title: 工具收集
 menu:
-    main: 
+    main:
         name: 工具收集
         weight: 80
         params:
