@@ -58,6 +58,8 @@ tags:
 | 工具 | 用途 | 平台 | 开源 | 推荐 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [Honeyview](https://www.bandisoft.com/honeyview/) | 快速图片查看 | Windows | 否 | ⭐️⭐️ | Bandisoft 已停止更新，仍可使用 |
+| [BandiView](https://www.bandisoft.com/bandiview/) | 快速图片查看 | Windows | 否 | ⭐️⭐️⭐️ | Honeyview 官方继任者 |
+| [GuoheView / 果核看图](https://pic.ghxi.com/) | 快速图片查看 | Windows | 否 | ⭐️⭐️⭐️ | 轻量极速，支持 HEIC / AVIF / RAW / PSD 等格式 |
 
 ## 影音播放
 
