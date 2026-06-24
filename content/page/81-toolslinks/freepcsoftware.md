@@ -187,6 +187,8 @@ tags:
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [dbx](https://github.com/t8y2/dbx) | 轻量跨平台数据库客户端 | Windows / macOS / Linux / Docker | 是 | ⭐️⭐️⭐️ | 支持多数据库和 AI / MCP 集成 |
 | [GoNavi](https://github.com/Syngnat/GoNavi) | 现代轻量数据库客户端 | Windows / macOS / Linux | 是 | ⭐️⭐️ | 基于 Go / Wails，支持多数据源 |
+| [WhoDB](https://github.com/clidey/whodb) | 现代化数据库管理工具 | Windows / macOS / Linux / Docker | 是 | ⭐️⭐️⭐️ | 轻量快速，支持 AI 查询和可视化 Schema |
+| [Tabularis](https://github.com/TabularisDB/tabularis) | 开源桌面数据库客户端 | Windows / macOS / Linux | 是 | ⭐️⭐️ | 支持插件、Notebook、AI 和 MCP |
 
 ## 效率 / 启动工具
 
