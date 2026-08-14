@@ -49,6 +49,7 @@ tags:
 | [Xterminal](https://www.xterminal.cn/) | SSH 终端和远程连接管理 | Windows / macOS / Linux | 否 | ⭐️⭐️ | 云同步能力较强 |
 | [MobaXterm](https://mobaxterm.mobatek.net/) | SSH、X11、SFTP 多功能终端 | Windows | 否 | ⭐️⭐️⭐️ | 免费版有限制 |
 | [Tabby](https://github.com/Eugeny/tabby) | 现代化跨平台终端 | Windows / macOS / Linux | 是 | ⭐️⭐️⭐️ | 界面现代，插件较多 |
+| [Termark](https://www.termark.app/zh-cn/#pricing) | 跨平台 SSH 终端工作台，内置 AI 助手 | Windows / macOS / Linux / 移动端 | 否 | ⭐️⭐️ | 基础功能免费，进阶功能付费 |
 | [Termius](https://www.termius.com/) | SSH 客户端和主机管理 | Windows / macOS / Linux / 移动端 | 否 | ⭐️⭐️ | 免费版功能有限 |
 | [XShell](https://www.xshell.com/zh/free-for-home-school/) | 专业 SSH 终端 | Windows | 否 | ⭐️⭐️ | 非商业使用 |
 | [IShell](https://ishell.cc/zh-CN) | SSH 终端和服务器管理 | Windows / macOS / Linux | 否 | ⭐️⭐️ | 免费版可用 |

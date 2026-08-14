@@ -11,3 +11,6 @@ tmp_build/
 
 # Obsidian
 .obsidian
+
+# WorkBuddy local data
+.workbuddy/
